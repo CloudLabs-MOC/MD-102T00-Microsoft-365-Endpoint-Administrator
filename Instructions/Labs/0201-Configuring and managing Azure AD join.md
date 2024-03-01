@@ -70,7 +70,7 @@ You need to configure Azure Active Directory device settings to ensure that all 
 
 5. In the **Access work or school** page, select **Connect**.
 
-6. In the **Microsoft account** window, select **Join this device to Azure Active Directory**.
+6. In the **Microsoft account** window, select **Join this device to Microsoft Entra ID**.
 
 7. On the **Sign in** page, type **`JoniS@yourtenant.onmicrosoft.com`** and then select **Next**.
 
