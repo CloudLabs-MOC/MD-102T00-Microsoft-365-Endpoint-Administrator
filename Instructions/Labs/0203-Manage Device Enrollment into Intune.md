@@ -64,9 +64,9 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
 2. In the Microsoft Intune admin center, select **Devices**.
 
-3. On the Devices pane, under **Device enrollment** select **Enroll devices**.
+3. On the Devices pane, select **Enrollment** under **Device onboarding** section.
 
-4. In the Enroll devices pane, select **Windows enrollment**.
+4. In the Enroll devices pane, select **Windows** tab.
 
 5. In the General section, select **Automatic Enrollment**.
 
@@ -80,17 +80,17 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
 1. In the Microsoft Intune admin center, select **Devices**.
 
-2. On the Devices pane, under **Device enrollment** select **Enroll devices**.
+2. On the Devices pane, select **Enrollment** under **Device onboarding** section.
 
 3. On the **Enroll devices** pane, note that you can create enrollment device limit and platform restrictions. 
 
-4. Select **Enrollment device platform restrictions**. 
+4. Select **Device platform restrictions**. 
 
    > Notice that there is a Default device type restriction that is assigned to **All Users**. This default restriction allows all device types.
 
 5. In the details pane, select the **Android restrictions** tab, and then select **+ Create restriction**.
 
-   ![](../media/10.png)
+   ![](../media/windows1.png)
 
 6. On the Create restriction page, in the Name box enter **Android Personal Device Restriction**. Select **Next**.
 
@@ -111,11 +111,11 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
     > Notice the Android Personal Device Restriction assigned with a priority of 1.
 
-13. On the **Enroll devices** pane, select **Enrollment device limit restrictions**. 
+13. On the **Enroll devices** pane, select **Device limit restrictions**. 
 
     > Notice that there is a Default device limit restriction that is assigned to **All Users**. This default restriction sets a device enrollment limit to 5 devices per user.
 
-14. In the details pane, select **Create restriction**.
+14. In the details pane, select **+ Create restriction**.
 
 15. On the Create restriction page, in the Name box enter **Sales Device Enrollment Limit**. Select **Next**.
 
@@ -137,7 +137,7 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
 2. On the Devices pane, select **Enroll devices**.
 
-3. On the **Enroll devices** pane, select **Device enrollment managers**. 
+3. On the **Enroll devices** pane, select **Device enrollment managers** tab. 
 
    > Notice that, by default, there are no Device enrollment managers configured.
 
