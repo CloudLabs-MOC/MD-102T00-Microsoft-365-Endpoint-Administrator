@@ -88,7 +88,7 @@ You have been asked to configure SEA-WS2 as a Windows 11 kiosk to allow Contoso 
 
 2. On the **Devices | Overview** page, select **Configuration** under **Manage devices** section.
 
-3. On the **Devices | Configuration profiles** blade, in the details pane, click on **Create** and select **+ New policy**.
+3. On the **Devices | Configuration** blade, in the details pane, click on **Create** and select **+ New policy**.
 
     ![](../media/policy.png)
 
