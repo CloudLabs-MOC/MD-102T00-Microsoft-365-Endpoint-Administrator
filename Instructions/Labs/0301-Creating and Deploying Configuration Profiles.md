@@ -75,11 +75,11 @@ You need to use Azure Active Directory (Azure AD) and Intune to manage members o
 
 5. In the Microsoft Intune admin center, select **Devices** from the navigation bar.
 
-6. On the **Devices | Overview** page, select **Configuration Profiles**.
+6. On the **Devices | Overview** page, select **Configuration** under **Manage devices** section.
 
-7. On the **Devices | Configuration profiles** blade, in the details pane, click on **Create** and select **+ New policy**.
+7. On the **Devices | Configuration** blade, in the details pane, click on **Create** and select **+ New policy**.
 
-   ![](../media/03.png)
+   ![](../media/policy.png)
 
 8. In the **Create a profile** blade, select the following options, and then select **Create**:
 
@@ -163,9 +163,9 @@ You need to use Azure Active Directory (Azure AD) and Intune to manage members o
 
 1. In the Microsoft Intune admin center, in the navigation pane, select **Devices**. 
 
-2. On the **Devices | Overview** blade, select **Configuration profiles**.
+2. On the **Devices | Overview** blade, select **Configuration** under **Manage devices** section.
 
-3. On the **Devices | Configuration profiles** blade, in the details pane, select the **Contoso Developer – standard** profile.
+3. On the **Devices | Configuration** blade, in the details pane, select the **Contoso Developer – standard** profile.
 
 4. On the **Contoso Developer – standard** blade, scroll down to the **Assignments** section, and select **Edit**.
 
@@ -229,9 +229,9 @@ There was an exception to Contoso's policy that specifies that members of the De
 
 1. Switch to **SEA-SVR1** and use password **Pa55w.rd** to login.
 
-2. On **SEA-SVR1**, in the Microsoft Intune admin center, select **Devices** and then select **Configuration Profiles**. 
+2. On **SEA-SVR1**, in the Microsoft Intune admin center, select **Devices** and then select **Configuration** under **Manage devices** section
 
-3. On the **Devices | Configuration profiles** blade, in the details pane select **Contoso Developer -  standard**.
+3. On the **Devices | Configuration** blade, in the details pane select **Contoso Developer -  standard**.
 
 4. On the **Contoso Developer - standard** blade, scroll down to the **Configuration settings** section, and then select **Edit**.
 
