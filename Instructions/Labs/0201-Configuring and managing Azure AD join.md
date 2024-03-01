@@ -36,7 +36,7 @@ You need to configure Azure Active Directory device settings to ensure that all 
 
 6. On the **Devices | All devices** page, On the left menu select **Device settings**.
 
-7. On the **Devices|Device settings** page, in the details pane, under **Users may join devices to Azure AD**, verify that **All** is selected. 
+7. On the **Devices|Device settings** page, in the details pane, under **Users may join devices to Microsoft Entra**, verify that **All** is selected. 
 
    > This indicates that all Azure AD users are permitted to join Windows 10 or newer devices to Azure Active Directory. Note that this setting does not apply to hybrid Azure AD joined devices, or devices joined by using Windows Autopilot self-deployment mode.
 
