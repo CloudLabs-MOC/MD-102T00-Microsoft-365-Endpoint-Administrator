@@ -49,16 +49,16 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
 13. In the Edit rule syntax text box, add the following simple membership rule and select **OK**.
 
-```
-(device.devicePhysicalIDs -any (_ -contains "[ZTDId]"))
-```
+      ```
+      (device.devicePhysicalIDs -any (_ -contains "[ZTDId]"))
+      ```
 14. Select **Save** to close **Dynamic membership rules**, and then select **Create** to create the group.
 
 ### Task 2: Create a virtual machine using Hyper-V
 
 1. Switch to **HOSTVM**, Click on Hyper-V manager available on the Task bar
 
-1. In Actions click on **New(1)** and Click on **Virtual machine(2)**.
+1. Select **Actions**, click on **New (1)** and Click on **Virtual machine (2)**.
 
    ![](media/001.png)
 
@@ -66,7 +66,7 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
    ![](media/002.png)
 
-1. In Specify Name and location page, enter the name **SEA-W10-CL3(1)** and click on **Next(2)**.
+1. In Specify Name and location page, enter the name **SEA-W10-CL3 (1)** and click on **Next (2)**.
 
    ![](media/003.png)
 
@@ -74,19 +74,19 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
    ![](media/004.png)
 
-1. In Assign Memory enter the size **4096**(1) and enable **Use dynamic memory for this virtual machine(2)** and click on **Next(2)**
+1. In Assign Memory enter the size **4096**(1) and enable **Use dynamic memory for this virtual machine (2)** and click on **Next (2)**
 
    ![](media/005.png)
 
-1. In Configure networking Select the drop down and choose **Internalswitch(1)** and click on **Next(2)**
+1. In Configure networking Select the drop down and choose **Internalswitch (1)** and click on **Next (2)**
 
    ![](media/006.png)
 
 1. In Connect Virtual Hard disks Leave the default settings and click on **Next**
 
-1. In installation options select **Install operating system from bootable CD/DVD ROM(1)**. Under that select **Image file iso(2)**
+1. In installation options select **Install operating system from bootable CD/DVD ROM (1)**. Under that select **Image file iso (2)**
 
-1. Click on **Browse(3)** and navigate to **D:\Labfiles\ISOs** and select **Win10.iso(4)** and click on **Next(5)**
+1. Click on **Browse (3)** and navigate to **D:\Labfiles\ISOs** and select **Win10.iso (4)** and click on **Next (5)**
 
    ![](media/007.png)
 
@@ -96,25 +96,23 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
 1. Once the **SEA-W10-CL3** VM is created, right click and select **start**.
 
-1. Once it is in the Running state, right click and select **Connect**.
+1. Once it is in the Running state, right click and select **Connect (1)**.
 
    ![](media/0008.png)
 
-1. You can see the Windows setup wizard.
+1. You can see the Windows setup wizard. Click on **Next**
 
-1. Click on **Next**
-
-1. Click on **Install now**
+1. Click on **Install now (1)**
 
    ![](media/008.png)
 
-1. Select the checkbox **I Accept the License terms(1)**. and click on **Next(2)**
+1. Select the checkbox **I Accept the License terms (1)**. and click on **Next (2)**
 
    ![](media/009.png)
 
-1. On the *Which type of installation do you want* page, choose **Custom:Install Windows Only (advanced)** option
+1. On the *Which type of installation do you want* page, choose **Custom: Install Windows Only (advanced)** option
 
-1. On the *Which type of installation do you want* page, select the **Drive 0 unallocated space(1)** and click on **Next(2)** to begin the installation process.
+1. On the *Which type of installation do you want* page, select the **Drive 0 unallocated space (1)** and click on **Next (2)** to begin the installation process.
 
    ![](media/010.png)
 
@@ -156,7 +154,7 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
 1. Once Rebooted it asks for username and password. Enter **Admin** for username and **Pa55w.rd** for password.
 
-1. Once logged in to **SEA-W10-CL3** and search and select **Run** from Start menu to open Run command.
+1. Once logged in to **SEA-W10-CL3**, search and select **Run** from Start menu to open Run command.
 
 1. Type **sysdm.cpl** and press enter which opens System properties.
 
@@ -166,7 +164,7 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
    ![](media/023.png)
 
-1. When the screen pops-up leave the computer name as default, and under **Member of** select Domain and Type **Contoso.com**, Select Ok
+1. When the screen pops-up leave the computer name as default, and under **Member of** select Domain and Type **Contoso.com**, Select **OK**.
 
    ![](media/024.png)
 
@@ -212,27 +210,27 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
     type C:\Computer.csv
     ```
 
-9. Close out of **Windows Powershell**.
+9. Close **Windows Powershell**.
 
 ### Task 5: Work with a Windows Autopilot deployment profile
 
 1. On **SEA-W10-CL3**, in the windows taskbar, select **Microsoft Edge**.
 
-2. In **Microsoft Edge**, navigate to **https://intune.microsoft.com**. Sign in with your  **<inject key="AzureAdUserEmail"></inject>** account.
+1. In **Microsoft Edge**, navigate to **https://intune.microsoft.com**. Sign in with your  **<inject key="AzureAdUserEmail"></inject>** account.
 
-    >Note: If prompted to register for MFA. Follow the same procedures you used earlier in the course to add your phone number.
+    >**Note**: If prompted to register for MFA. Follow the same procedures you used earlier in the course to add your phone number.
 
-3. In the **Microsoft Intune admin center**, select **Devices**.
+1. In the **Microsoft Intune admin center**, select **Devices**.
 
-4. In the **Device enrollment** section, select **Enroll devices**. 
+1. In the **Device onboarding** section, select **Enrollment**. 
 
-5. In the details pane scroll down to **Windows Autopilot Deployment Program**, and then select **Devices**.
+1. In the **Windows** tab, scroll down to **Windows Autopilot**, and then select **Devices**.
 
-6. In the **Windows Autopilot devices** blade on the menu bar, select **Import**, select the **folder icon** and then browse to **C:\\**, select **Computer.csv**, select **Open**, and then select **Import**. 
+1. In the **Windows Autopilot devices** blade on the menu bar, select **Import**, select the **folder icon** and then browse to **C:\\**, select **Computer.csv**, select **Open**, and then select **Import**. 
 
-   _Note: The import process can take up to 15 minutes, but normally takes around 5 minutes._  
+   >**Note**: The import process can take up to 15 minutes, but normally takes around 5 minutes. 
 
-   _**Important**: After the process is complete, the device may not show automatically. If this is the case, select the **Refresh** button. If the device still does not appear, select the **Sync** button, wait a few minutes, and then select **Refresh**._
+   >**Important**: After the process is complete, the device may not show automatically. If this is the case, select the **Refresh** button. If the device still does not appear, select the **Sync** button, wait a few minutes, and then select **Refresh**.
 
 7. Select **X** to close the **Windows Autopilot devices** blade. 
 
@@ -256,7 +254,7 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
     - Hide change account options: **Hide**
 
-    - User account type: **Administrator**.
+    - User account type: **Administrator**
 
     - Allow pre-provisioned deployment: **No**
 
@@ -274,7 +272,7 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
 18. On the **Review + create** blade, review the information and then select **Create**.
 
-19. Close out of **Microsoft Edge**
+19. Close **Microsoft Edge**.
 
 ### Task 6: Reset the PC
 
@@ -286,7 +284,7 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
 4. Select **Next** and then select **Reset**.
 
-   >Note: Normally this task is not required for new deployment of physical devices. The device’s autopilot info is either provided by the manufacturer or can be obtained from the device prior to the OOBE. For the purposes of this lab, we must initiate a reset to simulate a new device OOBE.
+   >**Note**: Normally this task is not required for new deployment of physical devices. The device’s autopilot info is either provided by the manufacturer or can be obtained from the device prior to the OOBE. For the purposes of this lab, we must initiate a reset to simulate a new device OOBE.
 
    >**Note**: This process can take 30-60 minutes and will reboot several times during the process.
 
@@ -326,7 +324,7 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
 14. In the Microsoft Entra admin center, select **Identity**, select **Devices** and then select **All devices**. 
 
-    > Note that the new device displays with an icon that indicates an Autopilot device. Also note that the Join Type is **Microsoft Entra joined** with Aaron Nicholls as the owner.
+    >**Note:** the new device displays with an icon that indicates an Autopilot device. Also note that the Join Type is **Microsoft Entra joined** with Aaron Nicholls as the owner.
 
 15. Select the Autopilot device and then select **Manage**. 
 
