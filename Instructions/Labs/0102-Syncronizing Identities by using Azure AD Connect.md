@@ -62,7 +62,7 @@ Contoso Corporation is currently managing users in both AD DS and Azure AD as se
 
 1. On the taskbar, select **Microsoft Edge**.
 
-2. In the address bar, enter **https://admin.microsoft.com**.
+2. In the address bar, enter **https://entra.microsoft.com**.
 
 3. At the Sign-in prompt, enter **<inject key="AzureAdUserEmail"></inject>** and then select **Next**.
 
