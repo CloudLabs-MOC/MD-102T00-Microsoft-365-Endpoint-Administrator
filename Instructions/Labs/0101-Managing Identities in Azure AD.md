@@ -39,7 +39,7 @@ You've also been told that several more employees will be hired over the next co
 
 3. On the taskbar, select **Microsoft Edge**.
 
-4. In the address bar, enter **<https://admin.microsoft.com>**.
+4. In the address bar, enter **<https://entra.microsoft.com>**.
 
 5. At the Sign-in prompt, enter **<inject key="AzureAdUserEmail"></inject>** and then select **Next**.
 
@@ -47,13 +47,9 @@ You've also been told that several more employees will be hired over the next co
 
 7. At the Save password prompt, select **Save & Turn on**.
 
-8. At the Stay signed in prompt, select **No**. The Microsoft 365 admin center opens.
+8. At the Stay signed in prompt, select **No**. The Entra admin center opens.
 
    >**Note**: If the prompt asks for **Action Required** Select **Ask later**.
-
-10. Select the **Navigation menu** and then select **Show all**.
-
-11. In the Navigation pane, under **Admin centers** select **Identity**. The Microsoft Entra admin center opens.
 
 12. In the Microsoft Entra admin center, in the left navigation pane, under **Identity** click on  **Users** and select **All users**.
 
@@ -104,7 +100,7 @@ You've also been told that several more employees will be hired over the next co
 
 30. Uncheck **Auto-generated password**
 
-31. Next to **Password**, enter **Pa55-w.rd!**.
+31. Next to **Password**, enter **Pa55-w.rd!**
 
 32. Select **Next:Properties** located at the bottom of the page.
 
@@ -132,27 +128,16 @@ You've also been told that several more employees will be hired over the next co
 
 ### Task 2: Disable the security defaults (Only if it set to Enabled)
 
-1. On the taskbar, select **Microsoft Edge**.
+1. Navigate to: **Identity > Overview > Properties** in the Microsoft entra admin center.
 
-2. In the address bar, enter **https://portal.azure.com/**.
+2. Select: **Manage security defaults**.
 
-3. At the Sign-in prompt, enter **<inject key="AzureAdUserEmail"></inject>** and then select **Next**.
+3. On the **Security defaults** side screen, if Security defaults are enabled, set them to **Disabled**.
 
-4. At the Enter password page, enter the password for the Admin account as **<inject key="AzureAdUserPassword"></inject>** and then select **Sign in**.
+4. From the drop-down list, select **My organization is using Conditional Access**.
+Select **Save**.
 
-5. At the Save password prompt, select **Save & Turn on**.
-
-6. At the Stay signed in prompt, select **No**. The Microsoft 365 admin center opens.
-
-   >**Note**: If the prompt asks for **Action Required** Select **Ask later**.
-
-7. Go to Microsoft Entra ID.
-
-8. Select **Properties**, then select **Manage Security defaults**.
-
-9. On the **Security defaults** side screen, set the Security defaults to **disabled** only if it is showing enabled and from the drop down list, select the option **My organization is using Conditional Access** , then select **Save**.
-
-10. A pop-up will appear about the confirmation to disable the Security defaults, select **Disable**.
+5. A pop-up will appear to confirm disabling Security defaults. Select **Disable**.
 
 ### Task 3: Create users by using Powershell
 
@@ -171,12 +156,13 @@ You've also been told that several more employees will be hired over the next co
     ```
 
 4. A new tab in **Microsoft Edge** will appear prompting you to sign in. In the **Sign in to your account** dialog box, sign in as **<inject key="AzureAdUserEmail"></inject>** with the tenant password, and then select **Sign in**.
+   > If the account already exists then click on it.
 
-5. On the **Permissions Requested** prompt that appears, check **Consent on behalf of your organization** and then select **Accept**.
+6. On the **Permissions Requested** prompt that appears, check **Consent on behalf of your organization** and then select **Accept**.
 
-6. Close out of the **Authentication complete** tab and then minimize **Microsoft Edge**
+7. Close out of the **Authentication complete** tab and then minimize **Microsoft Edge**
 
-7. Back In the **PowerShell 7** window, type the following code to create a new profile object, and then press **enter**. Replace **Pa55-w.rd!** with a complex password of your choice:
+8. Back In the **PowerShell 7** window, type the following code to create a new profile object, and then press **enter**. Replace **Pa55-w.rd!** with a complex password of your choice:
 
    >**Note**: Copy paste the Commands on notepad before pasting it in the powershell to avoid mistakes.
 
@@ -261,41 +247,43 @@ You have been provided a list of users should have administrative roles assigned
 
 1. On SEA-SVR1, switch to Microsoft Edge.
 
-2. In the **Microsoft Entra admin center**, in the Navigation pane, expand **Roles** Select **Role Assignment**.
+2. In the **Microsoft Entra admin center**, in the Navigation pane, expand **Identity** click on Show more Select **Roles & admins**.
 
-3. Using the search box, search for **Global administrator**.
+3. In all roles tab, using the search box, search for **Global administrator**.
 
 4. Select **Global administrator**.
 
-5. In the **Global administrator** pane, select **Assigned**.
-
-6. In the **Assigned** pane, select **Add Users** and selecr **Allan Deyoung**
+6. In the **Assignments** pane, select **Add assignments** and select **Allan Deyoung**
 
 7. Select **Add**. go back to the role assignment section by clicking on the cancel **X** on top right side.
 
 8. Using the search box, search for **User administrator**.
 
-9. Select **User administrator**.
+9. to the role assignment section by clicking on the cancel **X** on top right side.
 
-10. In the **User administrator** pane, select **Assigned**.
+10. Using the search box, search for **User administrator**.
 
-11. In the **Assigned** pane, search for and select **Edmund Reeve**.
+11. Select **User administrator**.
 
-12. Select **Add**. go back to the role assignment section by clicking on the cancel **X** on top right side.
+12. In the **User administrator** pane, select **Add assignments**.
 
-13. In the navigation breadcrumbs.
+13. In the **Add assignments** pane, search for and select **Edmund Reeve**.
 
-14. Using the search box, search for **Helpdesk administrator**.
+14. Select **Add**.
 
-15. Select **Helpdesk administrator**.
+15. In the navigation breadcrumbs, select **Roles & administrators | All roles**.
 
-16. In the **Helpdesk administrator** pane, select **Assigned**.
+16. Using the search box, search for **Helpdesk administrator**.
 
-17. In the **Assigned** pane, search for and select **Miranda Snider**.
+17. Select **Helpdesk administrator**.
 
-18. Select **Add**. go back to the role assignment section by clicking on the cancel **X** on top right side.
+18. In the **Helpdesk administrator** pane, select **Add assignments**.
 
-19. In the navigation pane, select **Home**.
+19. In the **Add assignments** pane, search for and select **Miranda Snider**.
+
+20. Select **Add**.
+
+21. In the navigation pane, select **Home**.
 
 **Results**: After completing this exercise, you should have successfully assigned administrative roles to users.
 
@@ -317,37 +305,35 @@ You also been asked to modify the Company branding for the sign-in page.
 
 ### Task 1: Create groups by using the Microsoft Entra admin center
 
-1. On **SEA-SVR1**, in the Microsoft Entra admin center, in the navigation pane, select **Teams & Groups** > **Active Teams & Groups**.
+1. On **SEA-SVR1**, in the Microsoft Entra admin center, in the navigation pane, select **Identity > Groups** > **All groups**.
 
-2. Select **Security groups** > Add a **Security Group**.
+2. Select **New group**.
 
 3. On the **New Group** page, enter the following:
 
+    - Group type: **Security**
     - Group name: **Contoso_Managers**
-    - Settings: **Check the box of Azure AD Roles**
-    - Finish: **Create group** & **Close**
+    - Membership type: **Assigned**
 
-4. Click on newly created group, under **Members**, select **View all and manage members**.
+4. Under Members, select **No members selected**.
 
-5. In the Add members page add **Edmund Reeve**, **Miranda Snider**, and then click **Add**.
+5. In the Add members page add **Edmund Reeve**, **Miranda Snider**, and then click **Select**.
 
-6. Select cancel **X** on top right corner.
+6. Select **Create**.
 
-7. On **SEA-SVR1**, in the Microsoft Entra admin center, in the navigation pane, select **Groups** > **All groups**.
+1. Back in **Groups|All groups** tab, select **New group**.
 
-8. Select **Security Group**.
+3. On the **New Group** page, enter the following:
 
-9. On the **New Group** page, enter the following:
-   
+    - Group type: **Security**
     - Group name: **Contoso_Admins**
-    - Settings: **Check the box of Azure AD Roles**
-    - Finish: **Create group** & **Close**
+    - Membership type: **Assigned**
 
-10. Click on newly created group, under **Members**, select **View all and manage members**.
+4. Under Members, select **No members selected**.
 
-11. In the Add members page add **Allan Deyoung**, **Alex Wilber**, and then click **Add**.
+5. In the Add members page add **Allan Deyoung**, **Alex Wilber**, and then click **Select**.
 
-12. Select cancel **X** on top right corner.
+6. Select **Create**.
 
 ### Task 2: Create groups by using PowerShell
 
@@ -397,57 +383,72 @@ You also been asked to modify the Company branding for the sign-in page.
 
 ### Task 3: Review licenses
 
-1. In the Microsoft Entra admin center, in the navigation pane, select **Billing** > **Licenses**.
+1. In the Microsoft Entra admin center, in the navigation pane, select **Identity > Billing** > **Licenses**.
 
 2. On the **Licenses|Overview** page, under **Manage**, select **All products**.
 
    > Take note of the current licenses available and assigned for **Enterprise Mobility + Security E5** and **Office 365 E5**.
 
-3. In the Microsoft Entra admin center, in the Navigation pane, select **Users** > **All users**.
+3. In the Microsoft Entra admin center, in the Navigation pane, select **Identity > User experiences** > **Company branding**.
 
-4. In the user list, select **Cody Godinez**.
+4. On the **Company Branding** page, under **Default sign-in experience**, select **Customize**.
 
-5. In the Cody Godinez Profile page, under Manage, select **Licenses & apps**.
+5. On the **Customize default sign-in experience** page, navigate to the **Sign-in form** tab and configure the following settings:
+
+   - Sign-in page text: **Contoso Corp. Sign-in Page**
+
+6. Select **Review + Create**, review the settings and then select **Create**.
+
+7. In the Microsoft Entra admin center, in the Navigation pane, select **Identity > Users** > **All users**.
+
+8. In the user list, select **Cody Godinez**.
+
+9. In the Cody Godinez Profile page, under Manage, select **Licenses**.
 
    > Notice that Cody does not have any current license assignments.
 
-6. In the **Licenses** section, select the check box next to **Enterprise Mobility + Security E5** and **Office 365 E5**.
+10. Select **Assignments**.
 
-7. Select **Save changes**.
+11. In the Update license assignments page, select the check box next to **Enterprise Mobility + Security E5** and **Office 365 E5**.
 
-8. In the Microsoft Azure Portal, Navigation to Entra ID, under manage > select **Groups**.
+12. Select **Save**.
 
-9. On the Groups section, select **Contoso_Admins**.
+13.  In the Microsoft Entra admin center, in the Navigation pane, select **Groups** > **All groups**.
 
-10. On the Contoso_Admins page, select **Licenses**.
+15. On the Groups|All groups page, select **Contoso_Admins**.
+
+16. On the Contoso_Admins page, select **Licenses**.
 
     > Notice that the Contoso_Admins group does not have any current license assignments.
 
-11. Select **Assignments**.
+17. Select **Assignments**.
 
-12. In the Update license assignments page, select the check box next to **Enterprise Mobility + Security E5** and **Office 365 E5**.
+18. In the Update license assignments page, select the check box next to **Enterprise Mobility + Security E5** and **Office 365 E5**.
 
-13. Select **Save** and select cancel **X** on top right corner..
+19. Select **Save**.
 
-14. On the Groups|All groups page, select **Contoso_Managers**.
 
-15. On the Contoso_Managers page, select **Licenses**.
+14. In the Microsoft Entra admin center, in the Navigation pane, select **Groups** > **All groups**.
+
+15. On the Groups|All groups page, select **Contoso_Managers**.
+
+16. On the Contoso_Managers page, select **Licenses**.
 
     > Notice that the Contoso_Managers group does not have any current license assignments.
 
-16. Select **Assignments**.
+17. Select **Assignments**.
 
-17. In the Update license assignments page, select the check box next to **Enterprise Mobility + Security E5** and **Office 365 E5**.
+18. In the Update license assignments page, select the check box next to **Enterprise Mobility + Security E5** and **Office 365 E5**.
 
-18. Select **Save** and select cancel **X** on top right corner..
+19. Select **Save**.
 
-19. In the Azure Entra ID, in the Navigation pane, select **Licenses**.
+20. In the Microsoft Entra admin center, in the Navigation pane, select **Billing** > **Licenses**.
 
-20. On the **Licenses|Overview** page, under **Manage**, select **All products**.
+21. On the **Licenses|Overview** page, under **Manage**, select **All products**.
 
-21. On the Licenses|All products page, select **Office 365 E5** and select the **Licensed users** under general tab.
+22. On the Licenses|All products page, select **Office 365 E5**.
 
-   > Take note of the users that are assigned the Office 365 E5 license. Notice the Assignment Paths column which indicates how license assignment is configured for each user. Edmund and Miranda both receive their license assignment from their membership in the Contoso_Managers group. Allan and Alex both receive heir license assignment from their membership in the Contoso_Admins group You may need to select **Refresh** a couple of times to update the Assignment path column.
+   > Take note of the users that are assigned the Office 365 E5 license. Notice the Assignment Paths column which indicates how license assignment is configured for each user. Edmund and Miranda both receive their license assignment from their membership in the Contoso_Managers group. You may need to select **Refresh** a couple of times to update the Assignment path column.
 
 22. Close Microsoft Edge.
 
