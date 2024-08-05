@@ -79,7 +79,7 @@ You need to use Entra and Intune to manage members of the Developers department 
 
 7. On the **Devices | Configuration** blade, in the details pane, select **+ Create**, and then select **+ New policy**.
 
-   ![](../media/win01.png)
+   ![](../media/intune1.png)
 
 8. In the **Create a profile** blade, select the following options, and then select **Create**:
 
