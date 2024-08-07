@@ -222,11 +222,14 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
     >Note: If prompted to register for MFA. Follow the same procedures you used earlier in the course to add your phone number.
 
-3. In the **Microsoft Intune admin center**, select **Devices**.
+4. In the **Microsoft Intune admin center**, select **Devices**.
 
-4. In the **Device enrollment** section, select **Enroll devices**. 
+4. In the **Device onboarding** section, select **Enrollment**. 
 
-5. In the details pane scroll down to **Windows Autopilot Deployment Program**, and then select **Devices**.
+5. In the **Windows** tab, scroll down to **Windows Autopilot**, and then select **Devices**.
+
+6. In the **Windows Autopilot devices** blade on the menu bar, select **Import**, select the **folder icon** and then browse to **C:\\**, select **Computer.csv**, select **Open**, and then select **Import**. 
+
 
 6. In the **Windows Autopilot devices** blade on the menu bar, select **Import**, select the **folder icon** and then browse to **C:\\**, select **Computer.csv**, select **Open**, and then select **Import**. 
 
