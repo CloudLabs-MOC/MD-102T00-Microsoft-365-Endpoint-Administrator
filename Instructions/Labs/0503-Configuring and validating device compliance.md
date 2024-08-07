@@ -41,9 +41,9 @@ If a device meets these requirements, it will be marked as compliant. If the dev
 
 4. Sign in as **<inject key="AzureAdUserEmail"></inject>**, and use the tenant Admin password **<inject key="AzureAdUserPassword"></inject>**
 
-5. From the navigation pane select **Devices**, then select **Compliance policies**.
+5. From the navigation pane select **Devices**, then select **Compliance**.
 
-6. On the **Compliance policies | Policies** blade, in the details pane select **Create policy**.
+6. On the **Compliance | Policies** blade, in the details pane select **Create policy**.
 
 7. On the **Create a policy** blade, provide the following value and select **Create**:
 
