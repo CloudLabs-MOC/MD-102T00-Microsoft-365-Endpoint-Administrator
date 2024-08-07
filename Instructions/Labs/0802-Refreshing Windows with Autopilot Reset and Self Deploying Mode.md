@@ -29,9 +29,9 @@ SEA-WS4 has been deployed by using Windows Autopilot. You need to test out anoth
 
 3. In the **Microsoft Intune admin center**, select **Devices**.
 
-4. In the **Device enrollment** section, select **Enroll devices**. 
+4. In the **Device onboarding** section, select **Enrollment**. 
 
-5. On the Windows enrollment blade, in the details pane, select **Deployment Profiles**.
+5. On the Windows enrollment tab, scroll down to **Windows Autopilot** in the details pane, and then select **Deployment Profiles**.
 
 6. On the **Windows AutoPilot deployment profiles** blade, select **Contoso Profile 1** and then select **Properties**.
 
