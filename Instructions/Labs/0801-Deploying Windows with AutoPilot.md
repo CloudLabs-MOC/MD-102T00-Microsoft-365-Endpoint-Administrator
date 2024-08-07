@@ -118,8 +118,7 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
    ![](media/010.png)
 
-   >**Note**: Installation might roughly take upto 15-20 mins.
-   >**Note**: **Do Not Press any key until the Windows Logo appears**.
+   >**Note**: Installation might roughly take upto 15-20 mins. Do Not Press any key until the Windows Logo appears.
 
 1. Once the installation is completed it will ask you to select Region. Select The default one (United States) and select **Yes**
 
