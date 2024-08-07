@@ -119,6 +119,7 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
    ![](media/010.png)
 
    >**Note**: Installation might roughly take upto 15-20 mins.
+   >**Note**: **Do Not Press any key until the Windows Logo appears**.
 
 1. Once the installation is completed it will ask you to select Region. Select The default one (United States) and select **Yes**
 
@@ -174,9 +175,8 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
    ![](media/025.png)
 
-1. A screen pops-up with Restart request. Select Restart now.
-
-   ![](media/026.png)
+1. Now Restart the System to apply changes.
+   
 
 ### Task 4: Generate a device-specific comma-separated value (CSV) file
 
