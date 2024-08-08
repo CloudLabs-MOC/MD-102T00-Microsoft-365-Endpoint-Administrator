@@ -132,7 +132,7 @@ You have assigned Aaron Nicholls appropriate licenses and will now test the proc
 
 4. On the **Devices | Overview** blade under **Intune enrolled devices**, verify that **1** is displayed next to **Windows**. It may take a while to display.
 
-    ![](../media/win01.png)
+    ![](../media/win12.png)
 
 6. On the **Devices** blade, select **All devices** and verify that **SEA-WS1** is listed.
 
