@@ -28,7 +28,7 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 5. On the **Connect to Azure AD** page, if needed type **<inject key="AzureAdUserEmail"></inject>** in the **USERNAME** text box, type your Admin tenant password **<inject key="AzureAdUserPassword"></inject>** in the **PASSWORD** text box, and then select **Next**.
 
-6. On the **Connect to your directories** page, select **Next**.
+6. On the **Connect your directories** page, select **Next**.
 
 7. On the **Domain and OU filtering** page, select **Next**.
 
