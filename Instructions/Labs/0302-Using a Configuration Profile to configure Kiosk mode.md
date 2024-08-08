@@ -86,9 +86,9 @@ You have been asked to configure SEA-WS2 as a Windows 11 kiosk to allow Contoso 
 
 1. In the Microsoft Intune admin center, select **Devices** from the navigation bar.
 
-2. On the **Devices | Overview** page, select **Configuration Profiles**.
+2. On the **Devices | Overview** page, select **Configuration**.
 
-3. On the **Devices | Configuration profiles** blade, in the details pane, click on **Create** and select **+ New policy**.
+3. On the **Devices | Configuration** blade, in the details pane, click on **Create** and select **+ New policy**.
 
    ![](../media/03.png)
 

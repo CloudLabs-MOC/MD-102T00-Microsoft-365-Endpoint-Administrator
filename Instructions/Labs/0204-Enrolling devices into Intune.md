@@ -132,23 +132,23 @@ You have assigned Aaron Nicholls appropriate licenses and will now test the proc
 
 4. On the **Devices | Overview** blade under **Intune enrolled devices**, verify that **1** is displayed next to **Windows**. It may take a while to display.
 
-    ![](../media/06.png)
+    ![](../media/win12.png)
 
-5. On the **Devices** blade, select **All devices** and verify that **SEA-WS1** is listed.
+6. On the **Devices** blade, select **All devices** and verify that **SEA-WS1** is listed.
 
-6. Note that for SEA-WS1, the **Managed by** column displays **Intune** and the **Ownership** column displays **Corporate**. 
+7. Note that for SEA-WS1, the **Managed by** column displays **Intune** and the **Ownership** column displays **Corporate**. 
 
    _Note: This view lists devices that are joined to Azure AD. Remember that you configured automatic enrollment between Azure AD and Intune, and because of that, any device that is joined to Azure AD is automatically enrolled in Intune. Any devices joined prior to setting up enrollment are only joined to Azure AD, but not enrolled in Intune._
 
-7. Open a new tab in **Microsoft Edge**, in the address bar type **https://entra.microsoft.com**, and then press **Enter**.
+8. Open a new tab in **Microsoft Edge**, in the address bar type **https://entra.microsoft.com**, and then press **Enter**.
 
-8. In the Microsoft Entra admin center, expand **Identity**.
+9. In the Microsoft Entra admin center, expand **Identity**.
 
-9. Select **Devices**, then select **All devices**. 
+10. Select **Devices**, then select **All devices**. 
 
    > Take note of SEA-WS1. Notice that the Join Type column displays **Microsoft Entra joined** and the MDM column displays **Microsoft Intune**.
 
-10. Close all open Windows.
+11. Close all open Windows.
 
 **Results**: After completing this exercise, you will have successfully joined a Windows client to Entra and verified that the device has automatically enrolled into Microsoft Intune.
 

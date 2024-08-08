@@ -118,7 +118,7 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
    ![](media/010.png)
 
-   >**Note**: Installation might roughly take upto 15-20 mins.
+   >**Note**: Installation might roughly take upto 15-20 mins. Do Not Press any key until the Windows Logo appears.
 
 1. Once the installation is completed it will ask you to select Region. Select The default one (United States) and select **Yes**
 
@@ -175,8 +175,8 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
    ![](media/025.png)
 
 1. A screen pops-up with Restart request. Select Restart now.
-
-   ![](media/026.png)
+>**Note** - If the pop-up does not appear, manually restart they system.
+   
 
 ### Task 4: Generate a device-specific comma-separated value (CSV) file
 
@@ -222,11 +222,14 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
     >Note: If prompted to register for MFA. Follow the same procedures you used earlier in the course to add your phone number.
 
-3. In the **Microsoft Intune admin center**, select **Devices**.
+4. In the **Microsoft Intune admin center**, select **Devices**.
 
-4. In the **Device enrollment** section, select **Enroll devices**. 
+4. In the **Device onboarding** section, select **Enrollment**. 
 
-5. In the details pane scroll down to **Windows Autopilot Deployment Program**, and then select **Devices**.
+5. In the **Windows** tab, scroll down to **Windows Autopilot**, and then select **Devices**.
+
+6. In the **Windows Autopilot devices** blade on the menu bar, select **Import**, select the **folder icon** and then browse to **C:\\**, select **Computer.csv**, select **Open**, and then select **Import**. 
+
 
 6. In the **Windows Autopilot devices** blade on the menu bar, select **Import**, select the **folder icon** and then browse to **C:\\**, select **Computer.csv**, select **Open**, and then select **Import**. 
 
