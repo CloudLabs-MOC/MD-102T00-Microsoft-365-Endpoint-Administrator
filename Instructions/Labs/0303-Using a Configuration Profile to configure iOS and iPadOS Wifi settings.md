@@ -50,7 +50,7 @@ You have been asked to create a Configuration profile to be used to automaticall
 
 3. On the **Devices | Configuration** blade, in the details pane, click on **Create** and select **+ New policy**.
 
-   ![](../media/intune1.png)
+   ![](../media/intune2.png)
 
 4. In the **Create a profile** blade, select the following options, and then select **Create**:
 
