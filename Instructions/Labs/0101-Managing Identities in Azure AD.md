@@ -156,7 +156,7 @@ Select **Save**.
     ```
 
 4. A new tab in **Microsoft Edge** will appear prompting you to sign in. In the **Sign in to your account** dialog box, sign in as **<inject key="AzureAdUserEmail"></inject>** with the tenant password, and then select **Sign in**.
-   > If the account already exists then click on it.
+   > **Note** - If the account already exists then click on it.
 
 6. On the **Permissions Requested** prompt that appears, check **Consent on behalf of your organization** and then select **Accept**.
 
