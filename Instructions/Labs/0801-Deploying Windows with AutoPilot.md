@@ -174,7 +174,8 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
    ![](media/025.png)
 
-1. Now Restart the System to apply changes.
+1. A screen pops-up with Restart request. Select Restart now.
+>**Note** - If the pop-up does not appear, manually restart they system.
    
 
 ### Task 4: Generate a device-specific comma-separated value (CSV) file
