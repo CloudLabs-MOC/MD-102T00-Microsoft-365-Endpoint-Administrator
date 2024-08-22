@@ -21,7 +21,7 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
 > **Important**: We cannot use Windows 11 Hyper-V based virtual machines for Autopilot testing (Which we configured in the previous lab, 0701). This is due to a physical Trusted Platform Module (TPM) requirement. In this lab, we will test autopilot using Windows 10, however in the real world you can follow the same process for deploying windows 11 via Autopilot. for more details, see [Troubleshooting Windows Enrollment Issues](https://learn.microsoft.com/en-us/troubleshoot/mem/intune/device-enrollment/troubleshoot-windows-enrollment-errors#securing-your-hardware-failed-0x800705b4).
 
-### Task 1: Create group in Azure AD
+### Task 1: Create group in Entra ID
 
 1. Sign in to **SEA-SVR1** as **Contoso\\Administrator** with the password **Pa55w.rd** and close **Server Manager**.
 
@@ -175,9 +175,9 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
    ![](media/025.png)
 
 1. A screen pops-up with Restart request. Select Restart now.
->**Note** - If the pop-up does not appear, manually restart they system.
-   
 
+  >**Note**: If the pop-up does not appear, manually restart the system.
+   
 ### Task 4: Generate a device-specific comma-separated value (CSV) file
 
 1. In the **SEA-W10-CL3** VM, sign in with **Admin** enter **Pa55w.rd** for password.
