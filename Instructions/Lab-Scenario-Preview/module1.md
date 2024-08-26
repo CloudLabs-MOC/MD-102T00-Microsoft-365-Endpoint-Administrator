@@ -9,7 +9,7 @@ In this lab, you will explore tasks such as deploying Windows 11, enrolling devi
 After completing this lab, you will be able to:
 
 - Manage and Syncronize Identities.
-- Configure and manage Azure AD Join/Register.
+- Configure and manage Entra Join/Register.
 - Enroll devices and manage through Intune.
 - Monitor device and User activity in Intune.
 - Configure MFA and self service password reset.
