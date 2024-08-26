@@ -16,7 +16,7 @@ In this lab, you will use the Entra ID admin center to create and modify users, 
 
 ### Scenario
 
-You need to create user accounts in Azure AD for new employees that will start next week. New users are listed in the following table:
+You need to create user accounts in Entra ID for new employees that will start next week. New users are listed in the following table:
 
 | Name           | User Name                             | Password   | Job title         | Department |
 | -------------- | ------------------------------------- | ---------- | ----------------- | ---------- |
