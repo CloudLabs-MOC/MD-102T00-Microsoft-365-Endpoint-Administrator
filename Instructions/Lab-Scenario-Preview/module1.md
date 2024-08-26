@@ -2,7 +2,7 @@
 
 ### Lab overview
 
-In this lab, you will explore tasks such as deploying Windows 11, enrolling devices, configuring device policies, managing applications, implementing security measures, and integrating Microsoft 365 services and also will develop skills in managing and securing endpoints within a Microsoft 365 environment.
+In this lab, you will explore tasks such as managing identity, security, access, policies, updates, and apps for endpoints, and implementing scalable solutions for deploying and managing endpoints using tools like Microsoft Intune, Windows 365, Windows Autopilot, and Microsoft Entra ID.
 
 ## Objective
   
