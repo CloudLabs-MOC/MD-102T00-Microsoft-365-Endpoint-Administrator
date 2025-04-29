@@ -215,7 +215,7 @@ Some Contoso Windows devices are currently joined to the local Active Directory 
 
 8. Close **Active Directory Users and Computers**.
 
-### Task 2: Configure Entra hybrid join in Azure Active Directory Connect
+### Task 2: Configure Entra hybrid join in Azure Active Directory Connect (Read Only)
 
 1. On **SEA-SVR1**, on the **Desktop**, double-click **Azure AD Connect**.
 
@@ -251,7 +251,7 @@ Some Contoso Windows devices are currently joined to the local Active Directory 
 
 16. After **SEA-CL2** has restarted, sign in as **Contoso\\Administrator** with the password of **Pa55w.rd**.
 
-### Task 3: Re-configure Azure AD Connect to sync the new OU
+### Task 3: Re-configure Azure AD Connect to sync the new OU (Read Only)
 
 1. On **SEA-SVR1**, on the **Desktop**, double-click **Azure AD Connect**.
 
@@ -275,7 +275,7 @@ Some Contoso Windows devices are currently joined to the local Active Directory 
 
     > **Note**: AAD Connect synchronizes automatically now when you modify the OUs being synced. You can use the **Synchronization Service** to monitor sync status.
 
-### Task 4: Verify the Entra hybrid join
+### Task 4: Verify the Entra hybrid join (Read Only)
 
 1. Switch to **SEA-CL2**.
 
