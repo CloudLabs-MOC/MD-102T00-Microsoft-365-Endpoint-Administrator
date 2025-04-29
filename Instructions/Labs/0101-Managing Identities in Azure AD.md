@@ -51,6 +51,8 @@ You've also been told that several more employees will be hired over the next co
 
    >**Note**: If the prompt asks for **Action Required** Select **Ask later**.
 
+9. For **Let's keep your account secure** pop up, click on **Next**.
+
 12. In the Microsoft Entra admin center, in the left navigation pane, under **Identity** click on  **Users** and select **All users**.
 
     > Take note of the users that already exist as members of the Azure AD domain. The **On-premises sync enabled** column states **No** for all current users. This indicates that each user was created directly in Azure AD and not synchronized from an on-premises directory service.
@@ -251,7 +253,7 @@ You have been provided a list of users should have administrative roles assigned
 
 3. In all roles tab, using the search box, search for **Global administrator**.
 
-4. Select **Global administrator**.
+4. Select **Global administrator** (select the name, not the checkbox).
 
 6. In the **Assignments** pane, select **Add assignments** and select **Allan Deyoung**
 
