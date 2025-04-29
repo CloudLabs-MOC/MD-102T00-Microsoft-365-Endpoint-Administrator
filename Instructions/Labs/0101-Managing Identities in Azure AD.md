@@ -229,7 +229,7 @@ Select **Save**.
 
 > Verify that the list of users from your tenant is displayed. Also take note of which users have a license assigned. Any user with the **isLicensed** value of **False** has not been assigned a license.
 
-**Results**: After completing this exercise, you will have successfully created new user accounts in Azure AD.
+**Results**: After completing this exercise, you will have successfully created new user accounts in Entra ID.
 
 ## Exercise 2: Assigning Administrative Roles in Entra ID
 
@@ -421,34 +421,49 @@ You also been asked to modify the Company branding for the sign-in page.
 
 16. On the Contoso_Admins page, select **Licenses**.
 
-    > Notice that the Contoso_Admins group does not have any current license assignments.
+   > Notice that Cody does not have any current license assignments. And that licensing must now be performed in the 365 Admin center.
 
-17. Select **Assignments**.
+1. Open a new tab in **Microsoft Edge**, in the address bar, enter **https://admin.microsoft.com**.
 
-18. In the Update license assignments page, select the check box next to **Enterprise Mobility + Security E5** and **Office 365 E5**.
+1. In the navigation pane on the left, select **Users** > **Active users**.
 
-19. Select **Save**.
+1. In the user list, select **Cody Godinez** (select the name, not the checkbox).
 
+1. Select the **Licenses and apps** tab.
 
-14. In the Microsoft Entra admin center, in the Navigation pane, select **Groups** > **All groups**.
+1. Select the check boxes next to **Enterprise Mobility + Security E5** and **Office 365 E5 (no Teams)**.
 
-15. On the Groups|All groups page, select **Contoso_Managers**.
+1. Select **Save changes**.
 
-16. On the Contoso_Managers page, select **Licenses**.
+1. Once the changes have been saved, select the **X** in the upper-right corner to close the **Cody Godinez** pane. 
 
-    > Notice that the Contoso_Managers group does not have any current license assignments.
+1. In the Microsoft 365 admin center, in the Navigation pane, select **Billing** > **Licenses**.
 
-17. Select **Assignments**.
+1. In the **Subscriptions** list, select **Enterprise Mobility + Security E5**.
 
-18. In the Update license assignments page, select the check box next to **Enterprise Mobility + Security E5** and **Office 365 E5**.
+1. Select the **Groups** tab, and then select **+ Assign licenses**.
 
-19. Select **Save**.
+1. Navigate into the **Enter a group name** textbox, and select the **Contoso_Managers** and **Contoso_Admins** group.
 
-20. In the Microsoft Entra admin center, in the Navigation pane, select **Billing** > **Licenses**.
+1. Select **Assign**.
 
-21. On the **Licenses|Overview** page, under **Manage**, select **All products**.
+1. On the **You assigned licenses to 2 groups** pane, select the **X** in the upper-right corner to close it.
 
-22. On the Licenses|All products page, select **Office 365 E5**.
+1. In the upper-left corner of the **Enterprise Mobility + Security E5** page, select the **Back to licenses** link.
+
+1. In the **Subscriptions** list, select **Office 365 E5 (no Teams)**.
+
+1. Select the **Groups** tab, and then select **+ Assign licenses**.
+
+1. Navigate into the **Enter a group name** textbox, and select the **Contoso_Managers** and **Contoso_Admins** group.
+
+1. Select **Assign**.
+
+1. On the **You assigned licenses to 2 groups** pane, select the **X** in the upper-right corner to close it.
+
+1. In the Microsoft 365 admin center, in the Navigation pane, select **Billing** > **Licenses**.
+
+1. In the **Subscriptions** list, select **Office 365 E5 (no Teams)**.
 
    > Take note of the users that are assigned the Office 365 E5 license. Notice the Assignment Paths column which indicates how license assignment is configured for each user. Edmund and Miranda both receive their license assignment from their membership in the Contoso_Managers group. Allan and Alex both receive heir license assignment from their membership in the Contoso_Admins group. You may need to select **Refresh** a couple of times to update the Assignment path column.
 
