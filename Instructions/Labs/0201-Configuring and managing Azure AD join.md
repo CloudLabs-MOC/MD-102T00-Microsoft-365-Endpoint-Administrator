@@ -56,6 +56,16 @@ You need to configure Entra ID device settings to ensure that all users are allo
 
 14. On the Device settings page, select **Save**.
 
+15. In the Microsoft Entra admin center, in the navigation pane, expand **Protection**.
+
+16. Select **Authentication methods**.
+
+17. Select **SMS**.
+
+18. Select **Enable**.
+
+19. At the bottom of the page, select **Save**.
+
 ### Task 2: Perform an Entra Join
 
 1. Switch to **HOSTVM** and sign in to **SEA-WS1** VM through desktop shortcut as **Admin** with the password of **Pa55w.rd**.
@@ -195,13 +205,13 @@ Some Contoso Windows devices are currently joined to the local Active Directory 
 
 3. In **Active Directory Users and Computers**, right-click **Contoso.com**, point to **New**, and then select **Organizational Unit**.
 
-4. In the **New-Object - Organizational Unit** dialog box, type **Azure AD clients** and then select **OK**.
+4. In the **New-Object - Organizational Unit** dialog box, type **`Entra ID clients`** and then select **OK**.
 
 5. In the navigation pane, select **Seattle Clients**.
 
 6. Right-click **SEA-CL2** and then select **Move**.
 
-7. In the **Move** dialog box, select **Azure AD clients** and then select **OK**.
+7. In the **Move** dialog box, select **Entra ID clients** and then select **OK**.
 
 8. Close **Active Directory Users and Computers**.
 
@@ -209,35 +219,37 @@ Some Contoso Windows devices are currently joined to the local Active Directory 
 
 1. On **SEA-SVR1**, on the **Desktop**, double-click **Azure AD Connect**.
 
-2. In the **Microsoft Azure Active Directory Connect** window select **Configure**.
+2. In the **Microsoft Entra Connect Sync** window select **Configure**.
 
 3. On the **Additional tasks** page, select **Configure device options** and select **Next**.
 
 4. On the **Overview** page, select **Next**.
 
-5. On the **Connect to Azure AD** page, enter the Admin Tenant password into the **PASSWORD** box, i.e **<inject key="AzureAdUserPassword"></inject>** then select **Next**.
+5. On the **Connect to Microsoft Entra ID** page, select **Next**.
 
-6. On the **Device options** page, select **Configure Hybrid Azure AD join**, and then select **Next**.
+6. On the **Sign in to your account** window, select the tenant admin account - **<inject key="AzureAdUserEmail"></inject>**, and then enter the tenant password -  and select **Sign in**.
 
-7. On the **Device operating systems** page, select **Windows 10 or later domain-joined devices**, and then select **Next**.
+7. On the **Device options** page, select **Configure Hybrid Microsoft Entra ID join**, and then select **Next**.
 
-8. On the **SCP configuration** page, select the check box next to **Contoso.com**. 
+8. On the **Device operating systems** page, select **Windows 10 or later domain-joined devices**, and then select **Next**.
 
-9. Select **Azure Active Directory** from the **Authentication Service** dropdown and select **Add**. 
+9. On the **SCP configuration** page, select the check box next to **Contoso.com**. 
 
-10. In the **Enterprise Admin Credentials** window enter **Contoso\\Administrator** as **User name** and **Pa55w.rd** as **Password**. Select **OK** and select **Next**.
+10. Select **Microsoft Entra ID** from the **Authentication Service** dropdown and select **Add**. 
 
-11. In the **Ready to configure** page, select **Configure** to run the configuration.
+11. In the **Enterprise Admin Credentials** window enter **Contoso\\Administrator** as **User name** and **Pa55w.rd** as **Password**. Select **OK** and select **Next**.
 
-12. When the configuration is complete, select **Exit**.
+12. In the **Ready to configure** page, select **Configure** to run the configuration.
 
-13. Switch to **SEA-CL2**.
+13. When the configuration is complete, select **Exit**.
 
-14. At the sign-in page, select the **Power** button and then select **Restart**.
+14. Switch to **SEA-CL2**.
+
+15. At the sign-in page, select the **Power** button and then select **Restart**.
 
     >**Note** Restarting **SEA-CL2** will enable quicker discovery of the SCP created by reconfiguring AAD Connect.
 
-15. After **SEA-CL2** has restarted, sign in as **Contoso\\Administrator** with the password of **Pa55w.rd**.
+16. After **SEA-CL2** has restarted, sign in as **Contoso\\Administrator** with the password of **Pa55w.rd**.
 
 ### Task 3: Re-configure Azure AD Connect to sync the new OU
 
