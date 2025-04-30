@@ -8,9 +8,9 @@ In this lab, you create and deploy cloud-based apps using Intune and the Company
 
 To following lab(s) must be completed before this lab:
 
-- 0101-Managing Identities in Azure AD
+- 0101-Managing Identities in Entra ID
 
-- 0102-Synchronizing Identities by using Azure AD Connect
+- 0102-Synchronizing Identities by using Microsoft Entra Connect
 
 - 0203-Manage Device Enrollment into Intune
 
