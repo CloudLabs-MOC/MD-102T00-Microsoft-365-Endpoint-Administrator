@@ -51,82 +51,80 @@ You've also been told that several more employees will be hired over the next co
 
    >**Note**: If the prompt asks for **Action Required** Select **Ask later**.
 
-9. For **Let's keep your account secure** pop up, click on **Next**.
-
-12. In the Microsoft Entra admin center, in the left navigation pane, under **Identity** click on  **Users** and select **All users**.
+9. In the Microsoft Entra admin center, in the left navigation pane, under **Identity** click on  **Users** and select **All users**.
 
     > Take note of the users that already exist as members of the Azure AD domain. The **On-premises sync enabled** column states **No** for all current users. This indicates that each user was created directly in Azure AD and not synchronized from an on-premises directory service.
 
-13. On the **Users | All users** page, select **+ New user** then select **Create new user**.
+10. On the **Users | All users** page, select **+ New user** then select **Create new user**.
 
-14. On the **Create new user** page, enter the following:
+11. On the **Create new user** page, enter the following:
 
     - User Principal Name: **`ereeve`**
     - Display Name: **Edmund Reeve**
 
-15. Uncheck **Auto-generated password**
+12. Uncheck **Auto-generated password**
 
-16. Next to **Password**, enter **Pa55-w.rd!**
+13. Next to **Password**, enter **Pa55-w.rd!**
 
-17. Select **Next:Properties** located at the bottom of the page.
+14. Select **Next:Properties** located at the bottom of the page.
 
-18. Next to **First name**, enter **Edmund**.
+15. Next to **First name**, enter **Edmund**.
 
-19. Next to **Last name**, enter **Reeve**.
+16. Next to **Last name**, enter **Reeve**.
 
-20. Next to **User type**, make note that **Member** is selected.
+17. Next to **User type**, make note that **Member** is selected.
     > Note: The **Member** user type is the default user type. This user type is used for most users in an organization.
 
-21. Next to **Job title**, enter **HR Rep**.
+18. Next to **Job title**, enter **HR Rep**.
 
-22. Next to **Department**, enter **HR**.
+19. Next to **Department**, enter **HR**.
 
-23. Under **Settings**, next to **Usage location**, select **United States**.
+20. Under **Settings**, next to **Usage location**, select **United States**.
 
-24. Select **Next:Assignments** located at the bottom of the page.
+21. Select **Next:Assignments** located at the bottom of the page.
 
-25. On the **Assignments** page, note that no assignments are selected.
+22. On the **Assignments** page, note that no assignments are selected.
     > by default no groups are assigned to the user. This is because the user is not a member of any groups until you assign them.
 
-26. Select **Next:Review + create** located at the bottom of the page.
+23. Select **Next:Review + create** located at the bottom of the page.
     > Review the information on this page to ensure that it is correct.
 
-27. Select **Create**.
+24. Select **Create**.
 
-28. On the **Users | All users** page, select **New user** then select **Create new user**.
+25. On the **Users | All users** page, select **New user** then select **Create new user**.
 
-29. On the **Create new user** page, enter the following:
+26. On the **Create new user** page, enter the following:
 
     - User Principal Name: **`msnider`**
     - Display Name: **Miranda Snider**
 
-30. Uncheck **Auto-generated password**
+27. Uncheck **Auto-generated password**
 
-31. Next to **Password**, enter **Pa55-w.rd!**
+28. Next to **Password**, enter **Pa55-w.rd!**
 
-32. Select **Next:Properties** located at the bottom of the page.
+29. Select **Next:Properties** located at the bottom of the page.
 
-33. Next to **First name**, enter **Miranda**.
+30. Next to **First name**, enter **Miranda**.
 
-34. Next to **Last name**, enter **Snider**.
+31. Next to **Last name**, enter **Snider**.
 
-35. Next to **User type**, make note that **Member** is selected.
+32. Next to **User type**, make note that **Member** is selected.
 
-36. Next to **Job title**, enter **Helpdesk Manager**.
+33. Next to **Job title**, enter **Helpdesk Manager**.
 
-37. Next to **Department**, enter **Operations**.
+34. Next to **Department**, enter **Operations**.
 
-38. Next to **Usage location**, select **United States**.
+35. Next to **Usage location**, select **United States**.
 
-39. Select **Next:Assignments** located at the bottom of the page.
+36. Select **Next:Assignments** located at the bottom of the page.
 
-40. On the **Assignments** page, note that no assignments are selected.
+37. On the **Assignments** page, note that no assignments are selected.
 
-41. Select **Next:Review + create** located at the bottom of the page.
+38. Select **Next:Review + create** located at the bottom of the page.
 
-42. Select **Create**.
+39. Select **Create**.
 
-43. Minimize the **Microsoft Edge** window.
+40. Minimize the **Microsoft Edge** window.
 
 ### Task 2: Disable the security defaults (Only if it set to Enabled)
 
