@@ -335,11 +335,11 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
 16. Again select the Autopilot device to review the management page. 
 
-    > Notice that you can Retire, Wipe, Sync, and Restart the device.
+17. Notice that you can Retire, Wipe, Sync, and Restart the device.
 
-17. Select the ellipsis at the end of the menu bar and take notice of the additional management capabilities.
+18. Select the ellipsis at the end of the menu bar and take notice of the additional management capabilities.
 
-    > Additional capabilities include Fresh Start, Autopilot Reset, Quick scan, Full scan, as well as others.
+    > **Note**: Additional capabilities include Fresh Start, Autopilot Reset, Quick scan, Full scan, as well as others.
 
 18. Close Microsoft Edge.
 
