@@ -38,7 +38,7 @@ You use Microsoft Intune to manage desktops and apps for Contoso Corporation. Th
 
 6. On the **Apps** page, in the navigation pane, select **All apps**.
 
-7. In the details pane, select **+ Add**.
+7. In the details pane, select **+ Create**.
 
 8. On the **Select app type** page, click the drop-down menu and then Choose **Microsoft store app (new)**. Click **Select**.
 
@@ -150,7 +150,7 @@ All the users of the Research department at Contoso require Microsoft 365 Apps. 
 
     - Suite Name: **Microsoft 365 Apps (Research)**
 
-    - Suite Description: **Microsoft 365 Apps for the Research dept at Contoso** (Select **Edit Description** to enter this information.)
+    - Description: Microsoft 365 Apps for the Research dept at Contoso
 
 5. On the **Configure app suite** tab, expand the **Select Office apps** dropdown, and ensure that only the following apps are selected:
 
