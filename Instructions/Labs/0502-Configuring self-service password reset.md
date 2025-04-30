@@ -1,4 +1,4 @@
-# Practice Lab: Configuring Self-service password reset for user accounts in Azure AD
+# Practice Lab: Configuring Self-service password reset for user accounts in Entra ID
 
 ## Summary
 
@@ -8,7 +8,7 @@ In this lab, you will configure and validate self-service password reset (SSPR) 
 
 To following lab(s) must be completed before this lab:
 
-- 0102-Synchronizing Identities by using Azure AD Connect
+- 0102-Synchronizing Identities by using Microsoft Entra Connect
 - 0203-Manage Device Enrollment into Intune
 
 
@@ -26,7 +26,9 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 4. On the **Additional tasks** page, select **Customize synchronization options**, and then select **Next**.
 
-5. On the **Connect to Azure AD** page, if needed type **<inject key="AzureAdUserEmail"></inject>** in the **USERNAME** text box, type your Admin tenant password **<inject key="AzureAdUserPassword"></inject>** in the **PASSWORD** text box, and then select **Next**.
+5. On the **Connect to Microsoft Entra ID** page, if needed type **<inject key="AzureAdUserEmail"></inject>** in the **USERNAME** text box, then select **Next**.
+
+6. On the **Sign in to your account** dialog, select your **<inject key="AzureAdUserEmail"></inject>** account and enter your Admin tenant password **<inject key="AzureAdUserPassword"></inject>**, and then select **Sign in**.
 
 6. On the **Connect your directories** page, select **Next**.
 
@@ -46,31 +48,31 @@ The Help Desk has indicated that a large number of support tickets are related t
 
    > The Microsoft Entra admin center opens.
 
-3. In the Microsoft Entra admin center, Navigate to the Search resources section of the site.
+1. In the navigation pane, under **Protection**, select **Authentication methods**. 
 
-4. In the search box, type **password reset**, and then select **Password reset**.
+1. Ensure that **SMS** and **Email OTP** show **Yes**** in the **Enabled** \(third\) column. 
 
-5. In the **Password reset | Properties** window, select **All** to enable self-service password reset to all users. Select **Save**.
+1. In the Microsoft Entra admin center, in the navigation pane, under **Protection**, select **Password reset**.
 
-6. On the **Password reset | Properties** blade, select **Authentication methods**.
+1. In the **Password reset | Properties** window, select **All** to enable self-service password reset to all users. Select **Save**.
 
-7. For the methods available to users, ensure that **Mobile Phone** and **Email** are selected, and then select **Security Questions**.
+1. In the **Password reset | Properties** window, select **Authentication methods** and then select **Security questions**.
 
-8. For the **Number of questions required to register**, select **3**.
+1. For the **Number of questions required to register**, select **3**.
 
-9. For the **Number of questions required to reset**, select **3**.
+1. For the **Number of questions required to reset**, select **3**.
 
-10. In the **Select security questions** section, select **No security questions configured**, then select **Predefined**. Select three questions of your choice, and then select **Ok**.
+1. In the **Select security questions** section, select **No security questions configured**, then select **Predefined**. Select three questions of your choice, and then select **Ok**.
 
-11. Select **Save**.
+1. Select **Save**.
 
-12. Select **Registration** Select **No** for **Require users to register when signing in**, and the select **Save**.
+1. Select **Registration** Select **No** for **Require users to register when signing in**, and then select **Save**.
 
-13. In the navigation pane, select **On-premises integration**.
+1. In the navigation pane, select **On-premises integration**.
 
-14. Verify that your on-premises writeback client is running and Select the checkbox for **Write back passwords with Microsoft Entra Connect cloud sync** and then click **Save**.
+1. Verify that your on-premises writeback client is running.
 
-15. Close Microsoft Edge.
+1. Close Microsoft Edge.
 
 ### Task 3: Validate self-service password reset
 
@@ -91,8 +93,8 @@ The Help Desk has indicated that a large number of support tickets are related t
 8. On the **My Account** page, in the navigation pane, select **Password**.
 
 9. On the **Change password** page, enter the following information and then select **submit**:
-     - Old password: **Pa55w.rd**
-     - Create new password: **Pa55w.rd1234!**
+
+     - New password: **Pa55w.rd1234!**
      - Confirm new password: **Pa55w.rd1234!**
 
 10. If Microsoft Edge prompts to save the password, select **Save**.
@@ -120,7 +122,11 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 1. Switch to **HOSTVM** and sign in to **SEA-CL1**.
 
-   >**Note** : If you are unable to sign in to SEA-CL1, then turnoff the Hyper-V VM's which are not being used in this lab from the HyperV-Manager which is available in the HOSTVM and then try to sign in to SEA-CL1.
+   >**Note** : If you are unable to sign in to SEA-CL1, then turnoff the **SEA-CL2** Hyper-V VM which is not being used in this lab from the HyperV-Manager which is available in the HOSTVM and then start the **SEA-CL1** VM.
+
+   ![](../media/md612.png)
+
+   ![](../media/md613.png)
 
    >**Note** : Before proceeding with the next step, ensure that you are in basic session mode and able to view Clipboard in the menu bar as shown in the below image. If not please change it to the basic session by selecting the icon which was highlighted in the tool bar in the below image.
 
