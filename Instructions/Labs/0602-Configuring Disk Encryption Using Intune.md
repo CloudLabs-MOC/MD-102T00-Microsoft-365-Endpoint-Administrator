@@ -76,9 +76,9 @@ It's been determined that all the information on SEA-WS1 should be encrypted. Yo
    
      >**Note** : Ensure that you are in basic session mode and able to view Clipboard in the menu bar as shown in the below image. If not please change it to the basic session by selecting the icon which was highlighted in the tool bar in the below image.
 
-   ![](../media/passwordwriteback1.png)
+    ![](../media/passwordwriteback1.png)
     
-  >**Note**: Inorder for the **PIN** to prompt you must start the VM in **basicmode** which will result in deactivating the clipboard shortcuts. You can use the Clipboard option in toolbar to perform copy paste actions.  
+    >**Note**: Inorder for the **PIN** to prompt you must start the VM in **basicmode** which will result in deactivating the clipboard shortcuts. You can use the Clipboard option in toolbar to perform copy paste actions.  
 
 2. On the taskbar, select **Start** and then select the **Settings** app.
 
