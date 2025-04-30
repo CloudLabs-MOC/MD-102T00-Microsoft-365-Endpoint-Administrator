@@ -48,6 +48,7 @@ If a device meets these requirements, it will be marked as compliant. If the dev
 7. On the **Create a policy** blade, provide the following value and select **Create**:
 
     - Platform: **Windows 10 and later**
+    - Profile type: **Windows 10/11 compliance policy**
 
 8. On the **Basics** tab, provide the following value and select **Next**:
 
@@ -101,7 +102,7 @@ When a user uses a device that is marked as non-compliant, they should not be ab
 
 6. On the **New** blade, in the **Target resources** section, select **No target resources selected**.
 
-7. Under **Include** choose the **Select apps** radio button, under the Select option select **None**, select **Office 365 Exchange Online**, and then click **Select**.
+7. Under Include choose the **Select resources** radio button, under the **Select** heading, select **None**, select **Office 365 Exchange Online**, and then click **Select**.
 
 8. On the **New** blade, in the **Conditions** section, select **0 conditions selected**. 
 
