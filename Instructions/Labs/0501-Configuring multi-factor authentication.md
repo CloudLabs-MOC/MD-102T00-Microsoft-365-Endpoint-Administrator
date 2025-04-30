@@ -54,27 +54,23 @@ To provide additional security for user sign on events, you need to configure an
 
 6. Select **Additional cloud-based multifactor authentication settings**.
 
-7. In the **multi-factor authentication** page, select **service settings**. Select **Allow users to remember multi-factor authentication on devices they trust**.
+7. In the Per-user multifactor authentication page, select **Service settings**.
+
+7. On the **Service settings** page, scroll down and select the checkbox for **Allow users to remember multi-factor authentication on devices they trust**.
 
 8. Next to **Number of days users can trust devices for**, enter **30** and then select **save**. 
 
-9. Close the **multi-factor authentication** page.
+9. Once saved, scroll back to the top of the Service settings page, and select **Users**.
 
-10. Navigate back to the **Microsoft Entra admin center** Edge tab and in the navigation pane, select **Users** > **All users**.
+10. In the user list, select the check box next to **Alex Wilber**.
 
-11. At the top of the user list, select Per-user MFA.
+11. Above the user list, select **Enable MFA**.
 
-   > The Per-user MFA page opens.
+12. On the Enable multifactor authentication message, select **Enable**.
 
-12. In the user list, select the check box next to **Alex Wilber**.
+13. Once Enabled, refresh the page. Take note that the Status for Alex Wilber is now **Enabled**.
 
-13. On the **quick steps** pane, select **Enable**.
-
-14. On the **About enabling multi-factor auth** message, select **enable multi-factor auth**.
-
-15. On the **Updates successful** message, select **close**. Take note that the **Multi-Factor Auth Status** for Alex Wilber is now **Enabled**.
-
-16. Close Microsoft Edge.
+14. Close Microsoft Edge.
 
 ### Task 3: Register and Validate MFA
 
@@ -88,11 +84,11 @@ To provide additional security for user sign on events, you need to configure an
 
 5. On the **Enter password** page, enter the tenant password **Pa55-w.rd!** and select **Sign in**.
 
-6. At the **More information required** page, select **Next**. The Keep your account secure page opens.
+6. At the **Let's keep your account secure** page, select **Next**. The Keep your account secure page opens.
 
    > Typically, you will want to use the Microsoft Authenticator app to manage multi-factor authentication. However for this lab scenario, you will use text messages.
 
-7. On the **Keep your account secure** page, select **I want to set up a different method**. Chose **Phone** From the dropdown menu and then click **Confirm**.
+7. On the **Keep your account secure** page, select **I want to set up a different method**. Chose **Phone** from the list of available choices.
 
 8. Enter your mobile phone number which you can receive text messages, and then select **Next**.
 
@@ -126,11 +122,11 @@ To provide additional security for user sign on events, you need to configure an
 
 6. In the user list, select the check box next to **Alex Wilber**.
 
-7. On the **quick steps** pane, select **Disable**.
+7. Above the user list, select **Disable MFA**.
 
-8. On the **Disable multi-factor authentication?** message, select **yes**.
+8. On the **Disable multifactor authentication** message, select **Disable**.
 
-9. On the **Updates successful** message, select **close**. Take note that the **Multi-Factor Auth Status** for Alex Wilber is now **Disabled**.
+9. Once Disabled, refresh the page. Take note that the **Status** for Alex Wilber is now **Disabled**.
 
 10. Close Microsoft Edge.
 
@@ -186,7 +182,7 @@ To provide additional security for user sign on events, you need to configure an
 
     > Note that typically you would specify a group, however for this exercise we will just test the setting on Alex Wilber.
 
-10. Select **No target resources selected** and then click **Select apps**.
+10. Select **No target resources selected** and then click **Select resources**.
 
     > Note the Control access based on client app setting. This setting allows you to specify the client app that is used to access the resource. For example, you can specify that only the Outlook app can be used to access Exchange Online. 
 
@@ -242,7 +238,7 @@ To provide additional security for user sign on events, you need to configure an
 
    > The Microsoft Entra admin center opens.
 
-4. In the Microsoft Entra admin center, in the navigation pane, expand **Protect & secure** and then select **Conditional Access**.
+4. In the Microsoft Entra admin center, in the navigation pane, expand **Protection** and then select **Conditional Access**.
 
 5. On the **Conditional Access** page, select **Policies** and then select **Contoso MFA Policy**.
 
