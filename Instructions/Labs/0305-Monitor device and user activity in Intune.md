@@ -8,9 +8,9 @@ In this lab, you will monitor user Sign-in activity, Audit logs, and device acti
 
 To following lab(s) must be completed before this lab:
 
-- 0101-Managing Identities in Azure AD
+- 0101-Managing Identities in Entra ID
 
-- 0102-Synchronizing Identities by using Azure AD Connect
+- 0102-Synchronizing Identities by using Microsoft Entra Connect
 
 - 0203-Manage Device Enrollment into Intune
 
