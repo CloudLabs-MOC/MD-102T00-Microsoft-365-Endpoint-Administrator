@@ -22,7 +22,7 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 2. On the desktop, double-click **Azure AD Connect**.
 
-3. On the **Welcome to Azure AD Connect** page, select **Configure**.
+3. On the **Welcome to Microsoft Entra Connect Sync** page, select **Configure**.
 
 4. On the **Additional tasks** page, select **Customize synchronization options**, and then select **Next**.
 
