@@ -34,30 +34,15 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
    ![](../media/switch.png)
  
-## Let's Get Started with Azure Portal
+## Support Contact
  
-1. On your virtual machine, click on the Azure Portal icon as shown below:
+The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels explicitly tailored for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
  
-   ![Launch Azure Portal](../media/sc900-image(1).png)
+Learner Support Contacts:
  
-2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
+- Email Support: cloudlabs-support@spektrasystems.com
+- Live Chat Support: https://cloudlabs.ai/labs-support
+
+Click on **Next** from the lower right corner to move on to the next page.
  
-   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
- 
-      ![Enter Your Username](../media/sc900-image-1.png)
- 
-3. Next, provide your password:
- 
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
- 
-      ![Enter Your Password](../media/sc900-image-2.png)
- 
-4. If prompted to stay signed in, you can click "No."
- 
-5. If a **Welcome to Microsoft Azure** pop-up window appears, simply click "Maybe Later" to skip the tour.
- 
-6. Click "Next" from the bottom right corner to embark on your Lab journey!
- 
-   ![Start Your Azure Journey](../media/sc900-image(3).png)
- 
-Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
+## Happy Learning !!
