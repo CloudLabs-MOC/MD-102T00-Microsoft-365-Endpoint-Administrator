@@ -78,11 +78,13 @@ You need to deploy a new Windows 11 virtual machine named SEA-WS4. You decide to
 
 6. On the **Destination** page, accept the default destination directory name and then select **Next**.
 
-7. On the **Command Details** page, under **Command line** enter **XmlNotepadSetup.msi /q** and then select **Next**.
+7. On the Command Details page, locate the **Command line** field.
 
-8. On the **Summary** page, review the information and then select **Next**. 
+8. Type **XmlNotepadSetup.msi /q** into the field, then click **Next** to continue.
 
-9. On the **Confirmation** page, ensure that the process completed successfully and then select **Finish**.
+9. On the **Summary** page, review the information and then select **Next**. 
+
+10. On the **Confirmation** page, ensure that the process completed successfully and then select **Finish**.
 
 ### Task 4: Create an MDT Task Sequence
 
