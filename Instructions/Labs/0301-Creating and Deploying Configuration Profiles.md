@@ -249,8 +249,6 @@ There was an exception to Contoso's policy that specifies that members of the De
     
 3. On the **SEA-WS1** blade, select **Sync** and when prompted select **Yes**. 
 
-    ![](../media/intune1.png)
-
    _Note: Intune will contact the device and tell it to synchronize all policies. This may take up to 5 minutes._
 
 4. Close Microsoft Edge.
