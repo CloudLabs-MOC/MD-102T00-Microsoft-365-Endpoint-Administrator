@@ -38,12 +38,11 @@ Settings will be verified by testing on an enrolled device, SEA-WS1 and a non-en
 
 5. From the navigation pane select **Endpoint security**, then select **Antivirus**.
 
-6. On the **Endpoint security |Antivirus** pane, select **Create Policy**.
+6. On the **Endpoint security | Antivirus** pane, select **Create Policy**.
 
-7. In the **Create a profile** pane, for **Platform**, select **Windows 10, Windows 11, and Windows Server**. 
+7. In the **Create a profile** pane, for **Platform**, select **Windows**. 
 
 8. In the **Profile** list, select **Windows Security experience**. Then select **Create**.
-
 
 9. On the Basics tab, in the **Name** field, enter **Windows Security Settings**. Select **Next**.
 
@@ -64,7 +63,7 @@ Settings will be verified by testing on an enrolled device, SEA-WS1 and a non-en
 
 14. On the **Scope tags** page, select **Next**.
 
-15. On the **Assignments** tab, under **Included groups** select **Add groups**. Choose the **Contoso Developer Devices** group, click **Select** and then select **Next**.
+15. On the **Assignments** tab, type **Contoso** in the search box and choose the **Contoso Developer Devices** group, and then select **Next**.
 
 16. On the **Review + create** tab, review the information and select **Save**.
 
@@ -72,7 +71,7 @@ Settings will be verified by testing on an enrolled device, SEA-WS1 and a non-en
 
 1. On the **Endpoint security |Antivirus** pane, select **Create Policy**.
 
-2. In the **Create a profile** pane, for **Platform**, select **Windows 10, Windows 11, and Windows Server**. 
+2. In the **Create a profile** pane, for **Platform**, select **Windows**. 
 
 3. In the **Profile** list, select **Microsoft Defender Antivirus**, then select **Create**.
 
@@ -83,15 +82,13 @@ Settings will be verified by testing on an enrolled device, SEA-WS1 and a non-en
    - Allow scanning of all downloaded files and attachments: **Allowed**
    - Allow Realtime Monitoring: **Allowed**
    - Check For Signatures Before Running Scan: **Enabled**
-   - Days to Retain Cleaned Malware: **Enable** and give the value **60**
-   - Schedule Quick Scan Time: **Enable** and give the value **60** (represents 1:00AM)
+   - Days to Retain Cleaned Malware: **60**
+   - Schedule Quick Scan Time: **60** (represents 1:00AM)
    - Submit samples consent: **Send safe samples automatically**
 
 6. On the **Configuration settings** tab, select **Next** twice.
 
-7. On the **Assignments** tab, under **Included groups** select **Add groups**. 
-
-8. Choose the **Contoso Developer Devices** group and then choose **Select** and then select **Next**.
+7. On the **Assignments** tab, type **Contoso** and then select the **Contoso Developer Devices** group, and then choose select **Next**.
 
 9. On the **Review + create** tab, review the information and select **Save**.
 
