@@ -124,9 +124,9 @@ The Help Desk has indicated that a large number of support tickets are related t
 
    >**Note** : If you are unable to sign in to SEA-CL1, then turnoff the **SEA-CL2** Hyper-V VM which is not being used in this lab from the HyperV-Manager which is available in the HOSTVM and then start the **SEA-CL1** VM.
 
-   ![](../media/md612.png)
+   ![](./media/md612.png)
 
-   ![](../media/md613.png)
+   ![](./media/md613.png)
 
    >**Note** : Before proceeding with the next step, ensure that you are in basic session mode and able to view Clipboard in the menu bar as shown in the below image. If not please change it to the basic session by selecting the icon which was highlighted in the tool bar in the below image.
 
