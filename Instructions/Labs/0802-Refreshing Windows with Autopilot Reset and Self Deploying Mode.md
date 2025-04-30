@@ -84,7 +84,7 @@ SEA-WS4 has been deployed by using Windows Autopilot. You need to test out anoth
 
    >**Note**: This process can take 30-45 minutes and will reboot several times during the process. 
 
-   >**Note**: If the resetting process not started even after restarting then please login and sync the device with intune and restart SEA-W10-CL3.
+   >**Note**: If the reset process does not begin after a restart, please sign in, manually sync the device with Intune, and then restart **SEA-W10-CL3**.
 
 ### Task 3: Verify Autopilot deployment
 
