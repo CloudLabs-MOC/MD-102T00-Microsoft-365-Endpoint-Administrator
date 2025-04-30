@@ -77,7 +77,7 @@ If a device meets these requirements, it will be marked as compliant. If the dev
 
 17. On the **Compliance policy settings** page, next to **Mark devices with no compliance policy assigned as**, select **Not Compliant** and then select **Save**. 
 
-    > This setting will ensure that any device that does not have a compliance policy assigned will be set to **Not compliant**.
+    > **Note**: This setting ensures that any device without an assigned compliance policy is marked as Not compliant. If Intune displays any errors while applying this setting, you may safely ignore them and proceed with the next tasks.
 
 **Results**: After completing this exercise, you will have successfully configured a compliance policy.
 
