@@ -92,6 +92,18 @@ It's been determined that all the information on SEA-WS1 should be encrypted. Yo
 
 6. On the **Are you ready to start encryption?** dialog, select the checkbox next to **I don't have any other disk encryption software installed, encrypt all my disks**, and select **Yes**.
 
+   >**Note** : If you encounter an error related to TPM when starting BitLocker, please follow the steps below, and then perform a policy **sync**
+
+    - **Open the Group Policy Editor**  
+       Press `Windows + R`, type `gpedit.msc`, and press **Enter**.
+
+    - **Navigate to the following path**  
+      `Computer Configuration > Administrative Templates > Windows Components > BitLocker Drive Encryption > Operating System Drives`
+
+   - **Configure the policy**  
+      - Double-click **Require additional authentication at startup**  
+      - Set the policy to **Enabled**  
+
 7. On the **Choose how to unlock your drive at startup?** page, select **Enter a PIN**
 
 8. On the **Enter a PIN** page, in the **PIN** and **Reenter PIN** boxes, enter **123456**, and then select **Set PIN**.
