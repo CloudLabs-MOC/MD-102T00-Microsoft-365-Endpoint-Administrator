@@ -50,7 +50,7 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 1. In the navigation pane, under **Protection**, select **Authentication methods**. 
 
-1. Ensure that **SMS** and **Email OTP** show **Yes**** in the **Enabled** \(third\) column. 
+1. Ensure that **SMS** and **Email OTP** show **Yes** in the **Enabled** \(third\) column. 
 
 1. In the Microsoft Entra admin center, in the navigation pane, under **Protection**, select **Password reset**.
 
