@@ -213,7 +213,7 @@ Some Contoso Windows devices are currently joined to the local Active Directory 
 
 8. Close **Active Directory Users and Computers**.
 
-### Task 2: Configure Entra hybrid join in Azure Active Directory Connect (Read Only)
+### Task 2: Configure Entra hybrid join in Azure Active Directory Connect 
 
 1. On **SEA-SVR1**, on the **Desktop**, double-click **Azure AD Connect**.
 
@@ -239,6 +239,8 @@ Some Contoso Windows devices are currently joined to the local Active Directory 
 
 12. In the **Ready to configure** page, select **Configure** to run the configuration.
 
+    >**Note** : If you encounter any directory synchronization errors, proceed with the upcoming labs as planned. You can return to this task and the following ones after completing the final lab. Please be aware that directory synchronization may take up to 24 hours to complete.
+
 13. When the configuration is complete, select **Exit**.
 
 14. Switch to **SEA-CL2**.
@@ -249,7 +251,7 @@ Some Contoso Windows devices are currently joined to the local Active Directory 
 
 16. After **SEA-CL2** has restarted, sign in as **Contoso\\Administrator** with the password of **Pa55w.rd**.
 
-### Task 3: Re-configure Azure AD Connect to sync the new OU (Read Only)
+### Task 3: Re-configure Azure AD Connect to sync the new OU
 
 1. On **SEA-SVR1**, on the **Desktop**, double-click **Azure AD Connect**.
 
@@ -273,11 +275,11 @@ Some Contoso Windows devices are currently joined to the local Active Directory 
 
     > **Note**: AAD Connect synchronizes automatically now when you modify the OUs being synced. You can use the **Synchronization Service** to monitor sync status.
 
-### Task 4: Verify the Entra hybrid join (Read Only)
+### Task 4: Verify the Entra hybrid join 
 
-1. Switch to **SEA-CL2**.
+1. Switch to **HOSTVM** and select **SEA-CL2** VM desktop shortcut and sign in as **Contoso\\Administrator** with the password of **Pa55w.rd**.
 
-2. Right-click **Start**, select **Shut down or sign out**, and then select **Restart**.
+2. Once logged in, Right-click **Start**, select **Shut down or sign out**, and then select **Restart**.
 
     _Note: The reboot will trigger the hybrid Azure AD join on SEA-CL2._
    
