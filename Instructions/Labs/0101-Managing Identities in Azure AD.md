@@ -141,15 +141,15 @@ Select **Save**.
 
 ### Task 3: Create users by using Powershell
 
-1. On **SEA-SVR1**, click into the **Windows Search** bar and then type **PWSH**. Right click on **PowerShell 7** and then select **Run as Administrator**.
+1. On **SEA-SVR1**, click On **Start*. Right click on **Windows Powershell** and then select **Run as Administrator**.
 
-2. In the **PowerShell 7** window, type the following command, and then press **Enter**. If prompted, enter **Y** at the NuGet and repository messages:
+2. In the **PowerShell** window, type the following command, and then press **Enter**. If prompted, enter **Y** and **A** at the NuGet and repository messages respectively:
 
     ```
     Install-Module Microsoft.Graph -Scope CurrentUser
     ```
 
-3. In the **PowerShell 7** window, type the following command, and then press **Enter**:
+3. In the **PowerShell** window, type the following command, and then press **Enter**:
 
     ```
     Connect-MgGraph -scopes "user.readwrite.all, group.readwrite.all"
@@ -162,7 +162,7 @@ Select **Save**.
 
 7. Close out of the **Authentication complete** tab and then minimize **Microsoft Edge**
 
-8. Back In the **PowerShell 7** window, type the following code to create a new profile object, and then press **enter**. Replace **Pa55-w.rd!** with a complex password of your choice:
+8. Back In the **PowerShell** window, type the following code to create a new profile object, and then press **enter**. Replace **Pa55-w.rd!** with a complex password of your choice:
 
    >**Note**: Copy paste the Commands on notepad before pasting it in the powershell to avoid mistakes.
 
@@ -219,7 +219,7 @@ Select **Save**.
         -Department "Support" -JobTitle "Support Executive"
     ```    
    
-10. To confirm that the users was created, In the **PowerShell 7** window, type the following command and then press **Enter**:
+10. To confirm that the users was created, In the **PowerShell** window, type the following command and then press **Enter**:
 
     ```
     Get-MgUser
@@ -339,13 +339,13 @@ You also been asked to modify the Company branding for the sign-in page.
 
 1. On SEA-SVR1, switch to Windows PowerShell.
 
-2. In the **PowerShell 7** window, type the following code to create a new group, and then press **Enter**:
+2. In the **PowerShell** window, type the following code to create a new group, and then press **Enter**:
 
     ```
     New-MgGroup -DisplayName “Contoso_Sales” -Description “Contoso_Sales_team_users” -MailEnabled:$false -Mailnickname "Contoso_Sales" -SecurityEnabled
     ```
 
-3. In the **PowerShell 7** window, type the following command, and then press **Enter**:
+3. In the **PowerShell** window, type the following command, and then press **Enter**:
 
     ```
     Get-MgGroup
@@ -353,25 +353,25 @@ You also been asked to modify the Company branding for the sign-in page.
 
 4. Verify that you get the list of groups in your tenant, including the Contoso_Sales group you just created.
 
-5. In the **PowerShell 7** window, type the following code to define a variable as the Contoso_Sales group, and then press **Enter**:
+5. In the **PowerShell** window, type the following code to define a variable as the Contoso_Sales group, and then press **Enter**:
 
     ```
     $group = Get-MgGroup | Where-Object {$_.DisplayName -eq "Contoso_Sales"}
     ```
 
-6. In the **PowerShell 7** window, type the following code to define another variable as the user, and then press **Enter**:
+6. In the **PowerShell** window, type the following code to define another variable as the user, and then press **Enter**:
 
     ```
     $user = Get-MgUser | Where-Object {$_.DisplayName -eq "Cody Godinez"}
     ```
 
-7. In the **PowerShell 7** window, type the following code to add Cody to Contoso_Sales using set variables, and then press **Enter**:
+7. In the **PowerShell** window, type the following code to add Cody to Contoso_Sales using set variables, and then press **Enter**:
 
     ```
     New-MgGroupMember -GroupId $group.Id -DirectoryObjectId $user.Id
     ```
 
-8. In the **PowerShell 7** window, type the following code, and then press **Enter**:
+8. In the **PowerShell** window, type the following code, and then press **Enter**:
 
     ```
     Get-MgGroupMember -GroupId $group.Id | FL
