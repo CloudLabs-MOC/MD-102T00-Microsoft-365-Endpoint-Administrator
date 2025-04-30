@@ -94,7 +94,7 @@ SEA-WS4 has been deployed by using Windows Autopilot. You need to test out anoth
 
 1. At the sign-in page, enter **`Aaron@yourtenant.onmicrosoft.com`** with the Password of **Pa55w.rd1234!**.
 
-  >**Note**: Replace **yourtenant** with the tenant name provided to you 
+    >**Note**: Replace **yourtenant** with the tenant name provided to you 
 
 2. At the **Use Windows Hello with your account**, select **OK**.
 
