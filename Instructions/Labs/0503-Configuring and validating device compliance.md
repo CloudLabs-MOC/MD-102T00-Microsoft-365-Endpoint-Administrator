@@ -71,11 +71,11 @@ If a device meets these requirements, it will be marked as compliant. If the dev
 
 14. On the **Review + create** tab, review the settings and then select **Create**.
 
-15. In the navigation menu, select **Devices** and then in the Devices navigation pane, select **Compliance policies**.
+15. In the navigation menu, select **Devices** and then in the Devices navigation pane, select **Compliance**.
 
-16. On the **Compliance policies** page, select **Compliance policy settings**.
+16. On the **Compliance** page, select **Compliance settings** blade.
 
-17. On the **Compliance policy settings** page, next to **Mark devices with no compliance policy assigned as**, select **Not Compliant** and then select **Save**. 
+17. On the **Compliance settings** page, next to **Mark devices with no compliance policy assigned as**, select Toggle to **Not Compliant** and then select **Save**. 
 
     > **Note**: This setting ensures that any device without an assigned compliance policy is marked as Not compliant. If Intune displays any errors while applying this setting, you may safely ignore them and proceed with the next tasks.
 
@@ -148,7 +148,7 @@ When a user uses a device that is marked as non-compliant, they should not be ab
 
 14. Verify that you can access Aaron's mailbox. 
 
-    > Note: This is because SEA-WS1 is a managed device and marked as compliant._
+    > Note: This is because SEA-WS1 is a managed device and marked as compliant. make sure Aaron has the licenses assigned.
 
 15. Close Microsoft Edge and sign out of SEA-WS1.
 
