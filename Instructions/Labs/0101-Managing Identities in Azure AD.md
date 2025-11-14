@@ -35,100 +35,126 @@ You've also been told that several more employees will be hired over the next co
 
 1. Switch to **SEA-SVR1**, sign in as **Contoso\\Administrator** with the password of **Pa55w.rd**.
 
+    ![](../media/p1t1s1.1.png)
+
+    ![](../media/p1t1s1.2.png)
+
 2. Close **Server Manager**.
 
 3. On the taskbar, select **Microsoft Edge**.
 
+    ![](../media/p1t1s2.png)
+
 4. In the address bar, enter **<https://entra.microsoft.com>**.
 
-5. At the Sign-in prompt, enter **<inject key="AzureAdUserEmail"></inject>** and then select **Next**.
+    ![](../media/p1t1s4.png)
 
-6. At the Enter password page, enter the password for the Admin account as **<inject key="AzureAdUserPassword"></inject>** and then select **Sign in**.
+1. On the Sign in tab, you will see the login screen. Enter the following **email/username (1)**, and click on **Next (2)**.
+
+   **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+
+    ![](../media/p1t1s5.png)
+
+1. Now enter the following password and click on **Sign in**.
+
+    **Password:** <inject key="AzureAdUserPassword"></inject>.
+
+    ![](../media/p1t1s6.png)
 
 7. At the Save password prompt, select **Save & Turn on**.
 
 8. At the Stay signed in prompt, select **No**. The Entra admin center opens.
 
+    ![](../media/p1t1s8.png)
+
    >**Note**: If the prompt asks for **Action Required** Select **Ask later**.
 
-9. In the Microsoft Entra admin center, in the left navigation pane, under **Identity** click on  **Users** and select **All users**.
+9. In the Microsoft Entra admin center, in the left navigation pane, under **Entra ID (1)** click on  **Users (2)** and select **All users (3)**. On the **Users | All users** page, select **+ New user (4)** then select **Create new user (5)**.
 
     > Take note of the users that already exist as members of the Azure AD domain. The **On-premises sync enabled** column states **No** for all current users. This indicates that each user was created directly in Azure AD and not synchronized from an on-premises directory service.
 
-10. On the **Users | All users** page, select **+ New user** then select **Create new user**.
-
 11. On the **Create new user** page, enter the following:
 
-    - User Principal Name: **`ereeve`**
-    - Display Name: **Edmund Reeve**
+    - User Principal Name: **`ereeve` (1)**
+    - Display Name: **Edmund Reeve (2)**
+    - Uncheck **Auto-generated password (3)**
+    - Next to **Password**, enter **Pa55-w.rd! (4)**
+    - Select **Next:Properties (5)** located at the bottom of the page.
+ 
+      ![](../media/p1t1s14.png)
 
-12. Uncheck **Auto-generated password**
+1. Under the **Properties** tab.
 
-13. Next to **Password**, enter **Pa55-w.rd!**
+    - First name : **Edmund (1)**
+    - Last name : **Reeve (2)**
+    - User type : **Member (3)**
+    - Job title : **HR Rep (4)**
+    - Department : **HR (5)**
 
-14. Select **Next:Properties** located at the bottom of the page.
+        ![](../media/p1t1s19.1.png)
 
-15. Next to **First name**, enter **Edmund**.
 
-16. Next to **Last name**, enter **Reeve**.
+      > Note: The **Member** user type is the default user type. This user type is used for most users in an organization.
 
-17. Next to **User type**, make note that **Member** is selected.
-    > Note: The **Member** user type is the default user type. This user type is used for most users in an organization.
+20. Scroll down under **Settings**, next to **Usage location**, select **United States (6)** and select **Next:Assignments (7)** located at the bottom of the page.
 
-18. Next to **Job title**, enter **HR Rep**.
+    ![](../media/p1t1s19.2.png)
 
-19. Next to **Department**, enter **HR**.
+22. On the **Assignments** page, note that no assignments are selected. Then select **Next:Review + create** located at the bottom of the page.
 
-20. Under **Settings**, next to **Usage location**, select **United States**.
+    ![](../media/p1t1s23.png)
 
-21. Select **Next:Assignments** located at the bottom of the page.
-
-22. On the **Assignments** page, note that no assignments are selected.
-    > by default no groups are assigned to the user. This is because the user is not a member of any groups until you assign them.
-
-23. Select **Next:Review + create** located at the bottom of the page.
-    > Review the information on this page to ensure that it is correct.
+    > by default no groups are assigned to the user. This is because the user is not a member of any groups until you assign them. 
 
 24. Select **Create**.
 
-25. On the **Users | All users** page, select **New user** then select **Create new user**.
+    ![](../media/p1t1s24.png)
+
+25. On the **Users | All users** page, select **New user (1)** then select **Create new user (2)**.
+
+    ![](../media/p1t1s25.png)
 
 26. On the **Create new user** page, enter the following:
 
-    - User Principal Name: **`msnider`**
-    - Display Name: **Miranda Snider**
+    - User Principal Name: **`msnider` (1)**
+    - Display Name: **Miranda Snider (2)**
+    - Uncheck **Auto-generated password (3)**
+    - Next to **Password**, enter **Pa55-w.rd! (4)**
+    - Select **Next:Properties (5)** located at the bottom of the page
+     
+        ![](../media/p1t1s29.png)
 
-27. Uncheck **Auto-generated password**
+1. Under the **Properties** tab.
 
-28. Next to **Password**, enter **Pa55-w.rd!**
+    - First name : **Miranda (1)**
+    - Last name : **Snider (2)**
+    - User type : **Member (3)**
+    - Job title : **Helpdesk Manager (4)**
+    - Department : **Operations (5)**
 
-29. Select **Next:Properties** located at the bottom of the page.
+        ![](../media/p1t1s34.png)
 
-30. Next to **First name**, enter **Miranda**.
+         > Note: The **Member** user type is the default user type. This user type is used for most users in an organization.
 
-31. Next to **Last name**, enter **Snider**.
+35. Scroll down next to **Usage location**, select **United States (6)** and select **Next:Assignments (7)** located at the bottom of the page.
 
-32. Next to **User type**, make note that **Member** is selected.
+    ![](../media/p1t1s36.png)
 
-33. Next to **Job title**, enter **Helpdesk Manager**.
+22. On the **Assignments** page, note that no assignments are selected. Then select **Next:Review + create** located at the bottom of the page.
 
-34. Next to **Department**, enter **Operations**.
+    ![](../media/p1t1s38.png)
 
-35. Next to **Usage location**, select **United States**.
-
-36. Select **Next:Assignments** located at the bottom of the page.
-
-37. On the **Assignments** page, note that no assignments are selected.
-
-38. Select **Next:Review + create** located at the bottom of the page.
+    > by default no groups are assigned to the user. This is because the user is not a member of any groups until you assign them.
 
 39. Select **Create**.
+
+    ![](../media/p1t1s39.png)
 
 40. Minimize the **Microsoft Edge** window.
 
 ### Task 2: Disable the security defaults (Only if it set to Enabled)
 
-1. Navigate to: **Identity > Overview > Properties** in the Microsoft entra admin center.
+1. Navigate to: **Entra ID > Overview > Properties** in the Microsoft entra admin center.
 
 2. Select: **Manage security defaults**.
 
@@ -137,17 +163,23 @@ You've also been told that several more employees will be hired over the next co
 4. From the drop-down list, select **My organization is using Conditional Access**.
 Select **Save**.
 
+    ![](../media/t2s5.png)
+
 5. A pop-up will appear to confirm disabling Security defaults. Select **Disable**.
 
 ### Task 3: Create users by using Powershell
 
-1. On **SEA-SVR1**, click On **Start**. Right click on **Windows Powershell** and then select **Run as Administrator**.
+1. On **SEA-SVR1**, On windows search bar search for **powershell (1)**. Right click on **Windows Powershell (2)** and then select **Run as Administrator (3)**.
+
+    ![](../media/p1t3s1.png)
 
 2. In the **Windows PowerShell** window, type the following command, and then press **Enter**. If prompted, enter **Y** and **A** at the NuGet and repository messages respectively:
 
     ```
     Install-Module Microsoft.Graph -Scope CurrentUser
     ```
+
+    ![](../media/p1t3s2.1.png)
 
 3. In the **Windows PowerShell** window, type the following command, and then press **Enter**:
 
@@ -156,9 +188,16 @@ Select **Save**.
     ```
 
 4. A new tab in **Microsoft Edge** will appear prompting you to sign in. In the **Sign in to your account** dialog box, sign in as **<inject key="AzureAdUserEmail"></inject>** with the tenant password, and then select **Sign in**.
+
+    ![](../media/p1t3s4.1.png)
+
+    ![](../media/p1t3s4.2.png)
+
    > **Note** - If the account already exists then click on it.
 
 6. On the **Permissions Requested** prompt that appears, check **Consent on behalf of your organization** and then select **Accept**.
+
+    ![](../media/p1t3s4.3.png)
 
 7. Close out of the **Authentication complete** tab and then minimize **Microsoft Edge**
 
@@ -186,6 +225,9 @@ Select **Save**.
         -Department "Sales" -JobTitle "Sales Rep"
     ```
 
+    ![](../media/p1t3s8.1.png)
+
+
     ```
     New-MgUser `
         -DisplayName "Allan Deyoung" `
@@ -196,6 +238,8 @@ Select **Save**.
         -PasswordProfile $PWProfile -AccountEnabled `
         -Department "Accounting" -JobTitle "Accountant"
     ```
+
+    ![](../media/p1t3s8.2.png)
 
     ```
     New-MgUser `
@@ -208,6 +252,8 @@ Select **Save**.
         -Department "Marketing" -JobTitle "Marketing head"
     ```
 
+    ![](../media/p1t3s8.3.png)
+
     ```
     New-MgUser `
         -DisplayName "Alex Wilber" `
@@ -219,11 +265,15 @@ Select **Save**.
         -Department "Support" -JobTitle "Support Executive"
     ```    
    
+   ![](../media/p1t3s8.4.png)
+
 10. To confirm that the users was created, In the **PowerShell** window, type the following command and then press **Enter**:
 
     ```
     Get-MgUser
     ```
+
+    ![](../media/p1t3s9.png)
 
 > Verify that the list of users from your tenant is displayed. Also take note of which users have a license assigned. Any user with the **isLicensed** value of **False** has not been assigned a license.
 
@@ -247,41 +297,39 @@ You have been provided a list of users should have administrative roles assigned
 
 1. On SEA-SVR1, switch to Microsoft Edge.
 
-2. In the **Microsoft Entra admin center**, in the Navigation pane, expand **Identity** click on Show more Select **Roles & admins**.
+2. In the **Microsoft Entra admin center**, in the Navigation pane, expand **Entra ID (1)** click on Show more Select **Roles & admins (2)**. In **All roles (3)** tab, using the search box, search for **Global administrator**. Select **Global administrator (4)** (select the name, not the checkbox).
 
-3. In all roles tab, using the search box, search for **Global administrator**.
+    ![](../media/p1t4s4.png)
 
-4. Select **Global administrator** (select the name, not the checkbox).
+6. In the **Assignments** pane, select **Add assignments** and select **Allan Deyoung (1)** and select **Add (2)**. go back to the role assignment section by clicking on the cancel **X** on top right side.
 
-6. In the **Assignments** pane, select **Add assignments** and select **Allan Deyoung**
+    ![](../media/p1t4s5.1.png)
 
-7. Select **Add**. go back to the role assignment section by clicking on the cancel **X** on top right side.
+8. In **Roles and administrators|All roles** using the search box, search for **User administrator**. Select **User administrator**
 
-8. Using the search box, search for **User administrator**.
-
-9. to the role assignment section by clicking on the cancel **X** on top right side.
-
-10. Using the search box, search for **User administrator**.
-
-11. Select **User administrator**.
+    ![](../media/p1t4s10.png)
 
 12. In the **User administrator** pane, select **Add assignments**.
 
-13. In the **Add assignments** pane, search for and select **Edmund Reeve**.
+    ![](../media/p1t4s11.png)
 
-14. Select **Add**.
+13. In the **Add assignments** pane, search for and select **Edmund Reeve** and select **Add**.
+
+    ![](../media/p1t4s13.png)
 
 15. In the navigation breadcrumbs, select **Roles & administrators | All roles**.
 
-16. Using the search box, search for **Helpdesk administrator**.
+16. Using the search box, search for **Helpdesk administrator (1)** and select **Helpdesk administrator (2)**.
 
-17. Select **Helpdesk administrator**.
+    ![](../media/p1t4s16.png)
 
 18. In the **Helpdesk administrator** pane, select **Add assignments**.
 
-19. In the **Add assignments** pane, search for and select **Miranda Snider**.
+    ![](../media/p1t4s17.png)
 
-20. Select **Add**.
+19. In the **Add assignments** pane, search for and select **Miranda Snider** and select **Add**
+
+    ![](../media/p1t4s19.png)
 
 21. In the navigation pane, select **Home**.
 
@@ -305,35 +353,47 @@ You also been asked to modify the Company branding for the sign-in page.
 
 ### Task 1: Create groups by using the Microsoft Entra admin center
 
-1. On **SEA-SVR1**, in the Microsoft Entra admin center, in the navigation pane, select **Identity > Groups** > **All groups**.
+1. On **SEA-SVR1**, in the Microsoft Entra admin center, in the navigation pane, select **Entra ID > Groups** > **All groups**. and select **New group**
 
-2. Select **New group**.
-
-3. On the **New Group** page, enter the following:
-
-    - Group type: **Security**
-    - Group name: **Contoso_Managers**
-    - Membership type: **Assigned**
-
-4. Under Members, select **No members selected**.
-
-5. In the Add members page add **Edmund Reeve**, **Miranda Snider**, and then click **Select**.
-
-6. Select **Create**.
-
-1. Back in **Groups|All groups** tab, select **New group**.
+    ![](../media/p1t5s2.png)
 
 3. On the **New Group** page, enter the following:
 
-    - Group type: **Security**
-    - Group name: **Contoso_Admins**
-    - Membership type: **Assigned**
+    - Group type: **Security (1)**
+    - Group name: **Contoso_Managers (2)**
+    - Membership type: **Assigned (3)**
+    - Members : click on **No members selected (4)**
 
-4. Under Members, select **No members selected**.
+      ![](../media/p1t5s4.png)
 
-5. In the Add members page add **Allan Deyoung**, **Alex Wilber**, and then click **Select**.
+5. In the Add members page add **Edmund Reeve and** **Miranda Snider** **(5)**, and then click **Select (6)**.
+
+    ![](../media/p1t5s5.png)
 
 6. Select **Create**.
+
+    ![](../media/p1t5s6.png)
+
+1. Back in **Groups|All groups (1)** tab, select **New group (2)**.
+
+    ![](../media/p1t5s7.png)
+
+3. On the **New Group** page, enter the following:
+
+    - Group type: **Security (1)**
+    - Group name: **Contoso_Admins (2)**
+    - Membership type: **Assigned (3)**
+    - Members : click on **No members selected (4)**
+
+      ![](../media/p1t5s9.png)
+
+5. In the Add members page add **Allan Deyoung and** **Alex Wilber**, and then click **Select**.
+
+    ![](../media/p1t5s10.png)
+
+6. Select **Create**.
+
+    ![](../media/p1t5s11.png)
 
 ### Task 2: Create groups by using PowerShell
 
@@ -345,11 +405,15 @@ You also been asked to modify the Company branding for the sign-in page.
     New-MgGroup -DisplayName “Contoso_Sales” -Description “Contoso_Sales_team_users” -MailEnabled:$false -Mailnickname "Contoso_Sales" -SecurityEnabled
     ```
 
+    ![](../media/p1t6s2.png)
+
 3. In the **Windows PowerShell** window, type the following command, and then press **Enter**:
 
     ```
     Get-MgGroup
     ```
+
+    ![](../media/p1t6s3.png)
 
 4. Verify that you get the list of groups in your tenant, including the Contoso_Sales group you just created.
 
@@ -377,73 +441,73 @@ You also been asked to modify the Company branding for the sign-in page.
     Get-MgGroupMember -GroupId $group.Id | FL
     ```
 
+    ![](../media/p1t6s8.png)
+
 9. Verify that you see **Cody Godinez** as value in **AdditionalProperties**.
 
 10. Close PowerShell.
 
 ### Task 3: Review licenses
 
-1. In the Microsoft Entra admin center, in the navigation pane, select **Identity > Billing** > **Licenses**.
+1. In the Microsoft Entra admin center, in the navigation pane, select **Billing (1)** > **Licenses (2)**.
 
-2. On the **Licenses|Overview** page, under **Manage**, select **All products**.
+    ![](../media/p1t7s1.png)
 
-   > Take note of the current licenses available and assigned for **Enterprise Mobility + Security E5** and **Office 365 E5**.
+2. On the **Licenses|Overview** page, under **Manage**, select **All products (1)**.Take note of the current licenses available and assigned for **Enterprise Mobility + Security E5** and **Office 365 E5** **(2)**.
 
-3. In the Microsoft Entra admin center, in the Navigation pane, select **Identity > User experiences** > **Company branding**.
+    ![](../media/p1t7s2.png)
 
-4. On the **Company Branding** page, under **Default sign-in experience**, select **Customize**.
+3. In the Microsoft Entra admin center, in the Navigation pane, select **Entra ID** and click on **Company branding (1)**. On the **Company Branding** page, under **Default sign-in experience (2)**, select **Customize (3)**
+
+    ![](../media/p1t7s4.png)
 
 5. On the **Customize default sign-in experience** page, navigate to the **Sign-in form** tab and configure the following settings:
 
-   - Sign-in page text: **Contoso Corp. Sign-in Page**
+    ![](../media/p1t75s5.1.png)
 
-6. Select **Review + Create**, review the settings and then select **Create**.
+   - Sign-in page text: **Contoso Corp. Sign-in Page (1)**
 
-7. In the Microsoft Entra admin center, in the Navigation pane, select **Identity > Users** > **All users**.
+    ![](../media/p1t75s5.2.png)
+
+6. Select **Review + Create (2)**, review the settings and then select **Create**.
+
+7. In the Microsoft Entra admin center, in the Navigation pane, select **Entra ID > Users** > **All users**.
+
+    ![](../media/p1t75s8.png)
 
 8. In the user list, select **Cody Godinez**.
 
 9. In the Cody Godinez Profile page, under Manage, select **Licenses**.
 
-   > Notice that Cody does not have any current license assignments.
-
-10. Select **Assignments**.
-
-11. In the Update license assignments page, select the check box next to **Enterprise Mobility + Security E5** and **Office 365 E5**.
-
-12. Select **Save**.
-
-13.  In the Microsoft Entra admin center, in the Navigation pane, select **Groups** > **All groups**.
-
-15. On the Groups|All groups page, select **Contoso_Admins**.
-
-16. On the Contoso_Admins page, select **Licenses**.
-
-   > Notice that Cody does not have any current license assignments. And that licensing must now be performed in the 365 Admin center.
+   >**Note:**Notice that Cody does not have any current license assignments. And that licensing must now be performed in the 365 Admin center.
 
 1. Open a new tab in **Microsoft Edge**, in the address bar, enter **https://admin.microsoft.com**.
 
-1. In the navigation pane on the left, select **Users** > **Active users**.
+    ![](../media/LC1.png)
 
-1. In the user list, select **Cody Godinez** (select the name, not the checkbox).
+1. In the navigation pane on the left, select **Users** > **Active users**. In the user list, select **Cody Godinez** (select the name, not the checkbox).
 
-1. Select the **Licenses and apps** tab.
+    ![](../media/LC2.png)
 
-1. Select the check boxes next to **Enterprise Mobility + Security E5** and **Office 365 E5 (no Teams)**.
+1. Select the **Licenses and apps (1)** tab. Select the check boxes next to **Enterprise Mobility + Security E5** and **Office 365 E5 (no Teams) (2)** and click on **Save changes (3)**.
 
-1. Select **Save changes**.
+    ![](../media/LC3.png)
 
 1. Once the changes have been saved, select the **X** in the upper-right corner to close the **Cody Godinez** pane. 
 
-1. In the Microsoft 365 admin center, in the Navigation pane, select **Billing** > **Licenses**.
+1. In the Microsoft 365 admin center, in the Navigation pane, select **Billing (1)** > **Licenses (2)**. In the **Subscriptions** list, select **Enterprise Mobility + Security E5 (3)**.
 
-1. In the **Subscriptions** list, select **Enterprise Mobility + Security E5**.
+    ![](../media/LC4.png)
 
 1. Select the **Groups** tab, and then select **+ Assign licenses**.
+
+    ![](../media/LC5.png)
 
 1. Navigate into the **Enter a group name** textbox, and select the **Contoso_Managers** and **Contoso_Admins** group.
 
 1. Select **Assign**.
+
+    ![](../media/LC6.png)
 
 1. On the **You assigned licenses to 2 groups** pane, select the **X** in the upper-right corner to close it.
 
@@ -451,13 +515,21 @@ You also been asked to modify the Company branding for the sign-in page.
 
 1. In the **Subscriptions** list, select **Office 365 E5 (no Teams)**.
 
-1. Select the **Groups** tab, and then select **+ Assign licenses**.
+    ![](../media/LC7.png)
+
+1. Select the **Groups (1)** tab, and then select **+ Assign licenses (2)**.
+
+    ![](../media/LC8.png)
 
 1. Navigate into the **Enter a group name** textbox, and select the **Contoso_Managers** and **Contoso_Admins** group.
 
 1. Select **Assign**.
 
+    ![](../media/LC9.png)
+
 1. On the **You assigned licenses to 2 groups** pane, select the **X** in the upper-right corner to close it.
+
+    ![](../media/LC10.png)
 
 1. In the Microsoft 365 admin center, in the Navigation pane, select **Billing** > **Licenses**.
 

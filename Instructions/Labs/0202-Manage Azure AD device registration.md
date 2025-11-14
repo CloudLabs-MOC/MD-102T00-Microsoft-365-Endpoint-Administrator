@@ -20,13 +20,13 @@ Several users have asked to use their personal iOS, Android, and Windows devices
 
    > The Microsoft Entra admin center opens.
 
-4. In the Microsoft Entra admin center, in the navigation pane, expand **Identity**.
+4. In the Microsoft Entra admin center, in the navigation pane, expand **Entra ID (1)** then select **Devices (2)** and click on **All devices (3)**.
 
-5. Select **Devices** > **All devices**. 
+   ![](../media/p4t1s5.png)
 
-6. On the **Devices | All devices** page, select **Device settings**.
+6. On the **Devices | All devices** page, select **Device settings (1)**. On the **Devices|Device settings** page, in the details pane, verify that **Users may register their devices with Entra** is set to **All (2)** and is greyed out.
 
-7. On the **Devices|Device settings** page, in the details pane, verify that **Users may register their devices with Entra** is set to **All** and is greyed out.
+   ![](../media/p4t1s7.png)
 
    > This option is greyed out and set to **All** by default when Microsoft Intune is enable in the tenant. This ensures that all users are able to register Windows 10 or newer personal, iOS, Android, and macOS devices with Azure AD.
 
@@ -34,27 +34,41 @@ Several users have asked to use their personal iOS, Android, and Windows devices
 
 1. Switch to **HOSTVM** and sign in to **SEA-WS1** VM through desktop shortcut as **Admin** with the password of **Pa55w.rd**.
 
-2. On the taskbar, select **Start** and then select **Settings**.
+2. On the taskbar, select **Start (1)** and then select **Settings (2)**.
 
-3. In the **Settings** window, select **Accounts**.
+   ![](../media/p4t2s2.png)
 
-4. On the Accounts page, select **Access work or school**.
+3. In the **Settings** window, select **Accounts (1)**. On the Accounts page, select **Access work or school (2)**.
+
+   ![](../media/p4t2s4.png)
 
 5. In the **Access work or school** page, select **Connect**.
 
+   ![](../media/p4t2s5.png)
+
 6. In the **Microsoft account** window, in the Email address box, enter **`JoniS@yourtenant.onmicrosoft.com`** and then select **Next**.
+
+   ![](../media/p4t2s6.png)
 
 7. On the **Enter password** page, enter the tenant password provided by your instructor **Pa55-w.rd!** and then select **Sign in**.
 
-8. On the **You're all set!** page, select **Done**.
+   ![](../media/p4t2s7.png)
+
+8. On the **Account added to this device** page, select **Done**.
 
 9. On the **Access work or school** page, verify that Joni's Work or school account is displayed.
+
+   ![](../media/p4t2s9.png)
 
 10. Close the **Settings** page.
 
 ### Task 3: Validate Entra registration
 
-1. On SEA-WS1, right-click **Start**, and then select **Windows Terminal (Admin)**. At the User Account Control, select **Yes**.
+1. On SEA-WS1, right-click **Start (1)**, and then select **Windows Terminal (Admin) (2)**. At the User Account Control, select **Yes**.
+
+   ![](../media/p4t3s1.png)
+
+   ![](../media/p4t3s1.1.png)
 
 2. In the PowerShell console, type the following and press **Enter**: 
 
@@ -64,15 +78,15 @@ Several users have asked to use their personal iOS, Android, and Windows devices
 
 3. In the output under **User State**, verify that **WorkplaceJoined : YES** is displayed. This indicates that the user has performed a device registration in Microsoft Entra.
 
+   ![](../media/p4t3s3.png)
+
 4. Close PowerShell and then sign out of SEA-WS1.
 
 5. Switch to **SEA-SVR1**.
 
-6. In Microsoft Edge, in the Microsoft Entra admin center, expand **Identity**.
+6. In Microsoft Edge, in the Microsoft Entra admin center, expand **Entra ID (1)**. Select **Devices (2)**, then select **All devices**. In the Devices pane, notice that **SEA-WS1 (3)** is listed. Verify that the **Join Type** is listed as **Microsoft Entra registered (4)** and that the owner is **Joni Sherman**.  
 
-7. Select **Devices**, then select **All devices**. In the Devices pane, notice that SEA-WS1 is listed. 
-
-8. Verify that the **Join Type** is listed as **Microsoft Entra registered** and that the owner is **Joni Sherman**. 
+    ![](../media/p4t3s8.png)
 
    Notice that the device is Microsoft Entra registered, NOT Microsoft Entra joined. Entra registered devices are typically devices that cannot be Entra joined, or devices that are personally owned by the user. Registering a device will provide access to Cloud based resources.
 
@@ -86,15 +100,21 @@ Several users have asked to use their personal iOS, Android, and Windows devices
 
 2. On SEA-WS1, sign in as **Admin** with the password of **Pa55w.rd**. 
 
-3. Select **Start** and then select **Settings**.
+   ![](../media/p4t4s2.png)
 
-4. In the **Settings** window, select **Accounts**.
+3. Select **Start (1)** and then select **Settings (2)**.
 
-5. On the Accounts page, select **Access work or school**.
+   ![](../media/p4t4s3.png)
 
-6. In the **Access work or school** page, select the **JoniS** Work or School account.
+4. In the **Settings** window, select **Accounts (1)**. In the **Access work or school (2)** page, select the **JoniS** Work or School account.
+
+   ![](../media/p4t4s5.png)
 
 7. Next to Disconnect this account, select **Disconnect** and then select **Yes**.
+
+   ![](../media/p4t4s7.png)
+
+   ![](../media/p4t4s7.1.png)
 
    > Notice that you do not have to restart to disconnect a registered device from Microsoft Entra.
 

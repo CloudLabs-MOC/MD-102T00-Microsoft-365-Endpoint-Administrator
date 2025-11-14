@@ -26,23 +26,23 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
 3. Sign in as user **<inject key="AzureAdUserEmail"></inject>**, and use the tenant Admin password **<inject key="AzureAdUserPassword"></inject>**, If the **Stay signed in?** prompt appears, select **No**. 
 
+   ![](../media/p5t1s3.1.png)
+
+   ![](../media/p5t1s3.2.png)
+
    > The Microsoft 365 admin center opens.
 
-4. In the Microsoft 365 admin center, in the Navigation pane, select **Billing** > **Your products**.
+4. In the Microsoft 365 admin center, in the Navigation pane, select **Billing (1)** and select **Your products (2)**. On the **Your products** page, take note of the licenses that are available in the tenant.
 
-5. On the **Your products** page, take note of the licenses that are available in the tenant. 
+   ![](../media/p5t1s5.png)
 
-6. In the Microsoft 365 admin center navigation pane, select **Users** > **Active users**.
+6. In the Microsoft 365 admin center navigation pane, select **Active users (2)** under **Users (1)**. Select **Aaron Nicholls (3)** (select the name, not the checkbox).
 
-7. Select **Aaron Nicholls** (select the name, not the checkbox).
+   ![](../media/p5t1s7.png)
 
-8. Select the **Licenses and apps** tab.
+8. Select the **Licenses and apps (1)** tab if the **Select location** field is not populated, select the a location from the drop-down list and select the check boxes next to **Enterprise Mobility + Security E5** and **Office 365 E5 (no Teams)** then select the check boxes next to **Enterprise Mobility + Security E5** and **Office 365 E5 (no Teams) (2)**. Select **Save Changes (3)**.
 
-9. If the **Select location** field is not populated, select the a location from the drop-down list.
-
-10. Select the check boxes next to **Enterprise Mobility + Security E5** and **Office 365 E5 (no Teams)**.
-
-11. Select **Save Changes**.
+   ![](../media/p5t1s10.png)
 
 12. Once the changes have been saved, close the **Microsoft 365 admin center** tab in Edge. 
 
@@ -50,86 +50,108 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
 1. In **SEA-SVR1**, open a new tab in **Microsoft Edge**, and then in the address bar type **https://intune.microsoft.com**, and then press **Enter**. 
 
+   ![](../media/p5t2s1.png)
+
    > The Microsoft Intune admin center opens.
 
-2. In the Microsoft Intune admin center, select **Devices**.
+2. In the Microsoft Intune admin center, select **Devices (1)** select **Enrollment (2)** under Device onboarding ensure **Windows (3)** is selected. In the **Enrollment options** section, select **Automatic Enrollment (4)**.
 
-3. On the Devices pane, under the **Device onboarding** section, select **Enrollment**.
+   ![](../media/p5t2s5.png)
 
-4. In the Enroll devices pane, ensure **Windows** is selected.
+6. On the **MDM user scope** row, select **All (1)** and then select **Save (2)**.
 
-5. In the **Enrollment options** section, select **Automatic Enrollment**.
+   ![](../media/p5t2s6.png)
 
-6. On the **MDM user scope** row, select **All** and then select **Save**.
-
-   _**Note**: By performing this step, you enabled automatic enrollment into Intune for any User that performs an Entra join or Entra registration from a Windows device._
+   >**Note**: By performing this step, you enabled automatic enrollment into Intune for any User that performs an Entra join or Entra registration from a Windows device.
 
 ### Task 3: Configure Enrollment Restrictions
 
-1. In the Microsoft Intune admin center, select **Devices**.
+1. In the Microsoft Intune admin center, select **Devices (1)** on the Devices pane, under the **Device onboarding** section, select **Enrollment (2)** on the **Devices | Enrollment** page, in the **Enrollment options** section, note that you can create enrollment device limit and platform restrictions select **Device platform restriction (3)**
 
-2. On the Devices pane, under the **Device onboarding** section, select **Enrollment**.
+   ![](../media/p5t3s4.png)
 
-3. On the **Devices | Enrollment** page, in the **Enrollment options** section, note that you can create enrollment device limit and platform restrictions. 
-
-4. Select **Device platform restriction**. 
+   ![](../media/p5t3s4.1.png)
 
    > Notice that there is a Default device type restriction that is assigned to **All Users**. This default restriction allows all device types.
 
 5. In the details pane, select the **Android restrictions** tab, and then select **Create restriction**.
 
-6. On the Create restriction page, in the Name box enter **Android Personal Device Restriction**. Select **Next**.
+   ![](../media/p5t3s5.png)
 
-7. On the Platform settings page, under **Personally owned**, select **Block** for the following device types:
+6. On the Create restriction page, in the Name box enter **Android Personal Device Restriction (1)**. Select **Next (2)**.
+
+   ![](../media/p5t3s6.png)
+
+7. On the Platform settings page, under **Personally owned**, select **Block (1)** for the following device types and select **Next (2)**
 
    - Android Enterprise (work profile)
    - Android device administrator
 
-8. On the Platform settings page, select **Next**.
+     ![](../media/p5t3s7.png)
 
 9. On the Scope tags page, select **Next**.
 
 10. On the Assignments page, under Included groups, select **Add groups**.
 
+    ![](../media/p5t3s10.png)
+
 11. Search for and Select **Sales** and then click **Select** and then click **Next**.
+
+    ![](../media/p5t3s11.1.png)
+
+    ![](../media/p5t3s11.2.png)
 
 12. On the Review + create page, select **Create**.
 
+    ![](../media/p5t3s12.png)
+
     > Notice the Android Personal Device Restriction assigned with a priority of 1.
 
-13. On the **Enrollment** pane, select **Device limit restrictions**. 
+13. On the **Enrollment (1)** pane, select **Device limit restrictions (2)**. 
+
+      ![](../media/p5t3s13.png)
 
     > Notice that there is a Default device limit restriction that is assigned to **All Users**. This default restriction sets a device enrollment limit to 5 devices per user.
 
 14. In the details pane, select **Create restriction**.
 
-15. On the Create restriction page, in the Name box enter **Sales Device Enrollment Limit**. Select **Next**.
+    ![](../media/p5t3s14.png)
 
-16. On the Device limit page, select **10** and then select **Next**.
+15. On the Create restriction page, in the Name box enter **Sales Device Enrollment Limit (1)**. Select **Next (2)**.
+
+    ![](../media/p5t3s15.png)
+
+16. On the Device limit page, select **10 (1)** and then select **Next (2)**.
+
+    ![](../media/p5t3s16.png)
 
 17. On the Scope tags page, select **Next**.
 
 18. On the Assignments page, under Included groups, select **Add groups**.
 
-19. Search for and Select **Sales** and then click **Select** and then click **Next**.
+     ![](../media/p5t3s18.1.png)
+
+19. Search for and Select **Sales (1)** and then click **Select (2)** and then click **Next**.
+
+     ![](../media/p5t3s19.png)
 
 20. On the Review + create page, select **Create**.
+
+    ![](../media/p5t3s20.png)
 
     > Notice the Sales Device Enrollment Limit, configured with a Device limit of 10 and assigned with a priority of 1.
 
 ### Task 4: Configure a Device enrollment manager
 
-1. In the Microsoft Intune admin center, select **Devices**.
+1. In the Microsoft Intune admin center, select **Devices** onn the Devices pane, select **Enrollment** on the **Enroll devices** pane, select **Device enrollment managers** select **+ Add**.
 
-2. On the Devices pane, select **Enrollment**.
-
-3. On the **Enroll devices** pane, select **Device enrollment managers**. 
-
+   ![](../media/p5t4s4.png)
+   
    > Notice that, by default, there are no Device enrollment managers configured.
 
-4. On the **Devices|Device enrollment managers** page, select **+ Add**.
-
 5. In the **Add user** page, under User name, enter `AllanD@yourtenant.onmicrosoft.com` and then select **Add**.
+
+   ![](../media/p5t4s5.png)
 
    > Allan is now allowed to enroll up to 1000 devices.
 
