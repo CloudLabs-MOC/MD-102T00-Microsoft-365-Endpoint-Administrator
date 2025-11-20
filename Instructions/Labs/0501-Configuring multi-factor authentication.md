@@ -16,6 +16,8 @@ To provide additional security for user sign on events, you need to configure an
 
 ### Task 1: Validate sign-in before enabling MFA
 
+In this task you will sign in as Alex Wilber to confirm that he can access Outlook using only his password before MFA is enabled.
+
 1. Switch to **SEA-WS3** and sign in as **Admin** with the password **Pa55w.rd**. 
 
 2. On the taskbar, select **Microsoft Edge**.
@@ -47,6 +49,8 @@ To provide additional security for user sign on events, you need to configure an
 8. Close Microsoft Edge.
 
 ### Task 2: Enable MFA for a user
+
+In this task you will enable per-user MFA for Alex Wilber and configure the service settings required for MFA.
 
 1. Switch to **SEA-SVR1**.
 
@@ -93,6 +97,8 @@ To provide additional security for user sign on events, you need to configure an
 14. Close Microsoft Edge.
 
 ### Task 3: Register and Validate MFA
+
+In this task you will sign in again as Alex Wilber to register MFA using your phone number and verify that MFA works correctly.
 
 1. Switch to **SEA-WS3** and sign in as **Admin** with the password **Pa55w.rd**. 
 
@@ -144,7 +150,9 @@ To provide additional security for user sign on events, you need to configure an
 
 13. Close Microsoft Edge.
 
-### Task 3: Remove per-user MFA
+### Task 4: Remove per-user MFA
+
+In this task you will disable per-user MFA for Alex Wilber to reset the account back to its original state.
 
 1. Switch to **SEA-SVR1** and sign in with the password **Pa55w.rd**. 
 
@@ -184,6 +192,8 @@ To provide additional security for user sign on events, you need to configure an
 
 ### Task 1: Validate sign-in before enabling conditional access with MFA
 
+In this task you will test Alex Wilber’s normal sign-in to verify that MFA is not yet required before applying conditional access.
+
 1. Sign in to **SEA-WS3** as **Admin** with the password **Pa55w.rd**. 
 
 2. On the taskbar, select **Microsoft Edge**.
@@ -212,6 +222,8 @@ To provide additional security for user sign on events, you need to configure an
 8. Close Microsoft Edge.
 
 ### Task 2: Configure conditional access with MFA
+
+In this task you will create a conditional access policy that requires Alex Wilber to use MFA when accessing Office 365.
 
 1. Switch to **SEA-SVR1** and sign in with the password **Pa55w.rd**. 
 
@@ -271,6 +283,8 @@ To provide additional security for user sign on events, you need to configure an
 
 ### Task 3: Validate conditional access MFA
 
+In this task you will validate that the conditional access policy works by signing in as Alex and completing MFA.
+
 1. Switch to **SEA-WS3** as **Admin** with the password **Pa55w.rd**. 
 
 2. On the taskbar, select **Microsoft Edge**.
@@ -308,6 +322,8 @@ To provide additional security for user sign on events, you need to configure an
 11. Close Microsoft Edge.
 
 ### Task 4: Remove conditional access MFA
+
+In this task you will remove the conditional access policy to return the environment to its default configuration.
 
 1. Switch to **SEA-SVR1** and sign in with the password **Pa55w.rd**. 
 

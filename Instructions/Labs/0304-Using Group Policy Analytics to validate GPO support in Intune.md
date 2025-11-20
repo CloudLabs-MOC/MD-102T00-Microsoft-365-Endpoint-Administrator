@@ -10,6 +10,8 @@ Contoso has traditionally used Active Directory GPOs to deploy computer and user
 
 ### Task 1: Export the Windows Client Policy GPO to an XML file
 
+In this task you will export the Windows Client Policy GPO from Active Directory to an XML file so it can be analyzed in Intune.
+
 1. Switch to **SEA-SVR1** and, if necessary, sign in as **Contoso\Administrator** with the password of **Pa55w.rd**. 
 
 2. If necessary, open **Server Manager**.
@@ -41,6 +43,8 @@ Contoso has traditionally used Active Directory GPOs to deploy computer and user
 9. Close Server Manager.
 
 ### Task 2: Analyze the Windows Client GPO using Group Policy Analytics
+
+In this task you will import the exported GPO into Group Policy Analytics and review which settings are supported for migration to Intune.
 
 1. On **SEA-SVR1**, on the taskbar, select **Microsoft Edge**.
 
@@ -83,6 +87,8 @@ Contoso has traditionally used Active Directory GPOs to deploy computer and user
     > Notice each **Setting Name**, **MDM Support**, **CSP Name**, and the **CSP Mapping** for each supported setting. Take note of which settings do not have an equivalent CSP mapping.
 
 ### Task 3: Review the Group Policy Analytics Summary Report
+
+In this task you will review the Group Policy Analytics summary reports to understand overall migration readiness and CSP support for the GPO settings.
 
 1. In the **Microsoft Intune admin center**, in the navigation pane select **Reports**, then on the **Reports** page in the **Device management** section select **Group Policy analytics**, and in the details pane under **Summary** select **Refresh**.
 

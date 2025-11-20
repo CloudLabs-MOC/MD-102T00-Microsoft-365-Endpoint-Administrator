@@ -20,6 +20,8 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
 ### Task 1: Review and assign licenses for device management
 
+In this task you will review the available licenses in the Microsoft 365 admin center and assign the required Intune-related licenses to a user.
+
 1. On **SEA-SVR1**, if necessary, sign in as **Contoso\\Administrator** with the password of **Pa55w.rd** and close **Server Manager**.
 
 2. On the taskbar select **Microsoft Edge**, in the address bar type **https://admin.microsoft.com**, and then press **Enter**.
@@ -48,6 +50,8 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
 ### Task 2: Enable Windows Automatic Enrollment into Microsoft Intune
 
+In this task you will enable automatic Intune enrollment for all users so that Windows devices join or register into Entra ID automatically enroll into Intune.
+
 1. In **SEA-SVR1**, open a new tab in **Microsoft Edge**, and then in the address bar type **https://intune.microsoft.com**, and then press **Enter**. 
 
    ![](../media/p5t2s1.png)
@@ -65,6 +69,8 @@ You need to prepare for device management using Microsoft Intune. First of all, 
    >**Note**: By performing this step, you enabled automatic enrollment into Intune for any User that performs an Entra join or Entra registration from a Windows device.
 
 ### Task 3: Configure Enrollment Restrictions
+
+In this task you will create enrollment restrictions that block Sales users from enrolling personal Android devices and increase their device enrollment limit to ten devices.
 
 1. In the Microsoft Intune admin center, select **Devices (1)** on the Devices pane, under the **Device onboarding** section, select **Enrollment (2)** on the **Devices | Enrollment** page, in the **Enrollment options** section, note that you can create enrollment device limit and platform restrictions select **Device platform restriction (3)**
 
@@ -142,6 +148,8 @@ You need to prepare for device management using Microsoft Intune. First of all, 
     > Notice the Sales Device Enrollment Limit, configured with a Device limit of 10 and assigned with a priority of 1.
 
 ### Task 4: Configure a Device enrollment manager
+
+In this task you will configure a device enrollment manager by allowing Allan Deyoung to enroll up to 1000 devices into Intune.
 
 1. In the Microsoft Intune admin center, select **Devices** onn the Devices pane, select **Enrollment** on the **Enroll devices** pane, select **Device enrollment managers** select **+ Add**.
 

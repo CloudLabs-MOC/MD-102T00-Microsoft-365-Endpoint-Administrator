@@ -26,6 +26,8 @@ You use Microsoft Intune to manage desktops and apps for Contoso Corporation. Th
 
 ### Task 1: Add Microsoft Remote Desktop to Intune
 
+In this task you will add the Microsoft Remote Desktop (Windows App) to Intune so that Research users can install it from the Company Portal.
+
 1. On **SEA-SVR1**, if necessary, sign in as **Contoso\\Administrator** with the password **Pa55w.rd** and close **Server Manager**.
 
 2. On the taskbar, select **Microsoft Edge**.
@@ -64,6 +66,8 @@ You use Microsoft Intune to manage desktops and apps for Contoso Corporation. Th
 
 ### Task 2: Assign a Group to the App
 
+In this task you will assign the Research group to the app so members can see and install it from the Company Portal.
+
 1. On the **Windows App** page select **Properties (1)**, then in the details pane scroll down to the **Assignments (2)** section and select **Edit (3)**.
 
    ![](../media/196.png)
@@ -84,6 +88,8 @@ You use Microsoft Intune to manage desktops and apps for Contoso Corporation. Th
 
 ### Task 3: Force policy synchronization from the Intune console
 
+In this task you will force a policy sync on SEA-WS1 to ensure the assigned app and policies update immediately.
+
 1. In the **Microsoft Intune admin center**, select **Devices (1)** and then select **All devices (2)**. In the details pane, select **SEA-WS1 (3)**.
 
     ![](../media/201.png)
@@ -95,6 +101,8 @@ You use Microsoft Intune to manage desktops and apps for Contoso Corporation. Th
    > Intune will contact the device and tell it to synchronize all policies. This may take up to 5 minutes.
 
 ### Task 4: Install an app from the Company Portal Website
+
+In this task you will sign in as Aaron Nicholls and install the Windows App from the Company Portal website.
 
    > **Note**: It can take several minutes for the app to appear in the Company Portal Website. If the app does not appear, wait a few minutes and then refresh the page. If the app still does not appear, verify that you have assigned the app to the correct group and that the device is a member of the group. (This could take up to 30 minutes.)
 
@@ -165,6 +173,8 @@ All the users of the Research department at Contoso require Microsoft 365 Apps. 
 
 ### Task 1: Verify installed apps on SEA-WS1
 
+In this task you will verify which apps are installed on SEA-WS1 before deploying Microsoft 365 Apps.
+
 1. On **SEA-WS1**, on the taskbar, select **Start (1)** and then select the **Settings (2)** app.
 
     ![](../media/214.png)
@@ -178,6 +188,8 @@ All the users of the Research department at Contoso require Microsoft 365 Apps. 
 3. Close all open windows.
 
 ### Task 2: Add Microsoft 365 apps to Intune
+
+In this task you will add Microsoft 365 Apps (Excel, Outlook, PowerPoint, and Word) to Intune and assign them to the Research group.
 
 1. On **SEA-SVR1**, in the **Microsoft Intune admin center** select **Apps (1)**, then in the **Apps | Overview** blade select **All Apps (2)**, and in the details pane select **Create (3)**.
 
@@ -239,6 +251,8 @@ All the users of the Research department at Contoso require Microsoft 365 Apps. 
 
 ### Task 3: Force policy synchronization from the Intune console
 
+In this task you will sync SEA-WS1 again so the Microsoft 365 Apps installation begins quickly.
+
 1. In the **Microsoft Intune admin center**, select **Devices (1)** and then select **All devices (2)**. In the details pane, select **SEA-WS1 (3)**.
 
     ![](../media/225.png)
@@ -251,6 +265,8 @@ All the users of the Research department at Contoso require Microsoft 365 Apps. 
 
 
 ### Task 4: Verify Microsoft 365 apps are installed
+
+n this task you will verify that Microsoft 365 Apps have been successfully installed on SEA-WS1.
 
 1. Switch to **HOSTVM** and sign in to **SEA-WS1** and wait approximately 10-15 minutes for the Microsoft 365 Suite to install on the device.
 
@@ -281,6 +297,8 @@ All the users of the Research department at Contoso require Microsoft 365 Apps. 
 8. Sign out of SEA-WS1.
 
 ### Task 5: Monitor app installation status in Intune
+
+In this task you will monitor app installation status in Intune to confirm deployment for users and devices.
 
 1. Switch to **SEA-SVR1**.
 

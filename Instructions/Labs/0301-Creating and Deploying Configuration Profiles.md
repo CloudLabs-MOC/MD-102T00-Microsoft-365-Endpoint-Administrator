@@ -33,6 +33,8 @@ You need to use Entra and Intune to manage members of the Developers department 
 
 ### Task 1: Verify device settings
 
+In this task you will check the current settings on the SEA-WS1 device to understand what needs to be changed through the Intune configuration profile.
+
 1. Switch to **HOSTVM** and Sign in to **SEA-WS1** VM from the desktop shortcut as **Aaron Nicholls** with the PIN **102938**
 
    >**Note** : Ensure that you are in basic session mode and able to view Clipboard in the menu bar as shown in the below image. If not please change it to the basic session by selecting the icon which was highlighted in the tool bar in the below image and then sign in with PIN.
@@ -84,6 +86,8 @@ You need to use Entra and Intune to manage members of the Developers department 
 14. Close the **Settings** window.
 
 ### Task 2: Create a Configuration profile based on scenario requirements
+
+In this task you will create a new Intune configuration profile that applies the required restrictions and Defender exclusions for Contoso developers.
 
 1. Switch to **SEA-SVR1** and enter **Pa55w.rd** at the Password section.
 
@@ -147,6 +151,8 @@ You need to use Entra and Intune to manage members of the Developers department 
 
 ### Task 3: Create the Contoso Developer device group
 
+In this task you will create a device group in Entra ID to target the configuration profile to specific developer devices.
+
 1. In the **Microsoft Intune admin center**, in the navigation pane select **Groups (1)**, and on the **Groups | All groups (2)** blade select **New group (3)**.
 
    ![](../media/61.png)
@@ -174,6 +180,8 @@ You need to use Entra and Intune to manage members of the Developers department 
    ![](../media/65.png)
 
 ### Task 4: Create a dynamic Entra device group
+
+In this task you will create a dynamic device group that automatically includes all Windows devices based on their operating system.
 
 1. On the **Groups | All Groups (1) (2)** blade, on the details pane, select **New group (3)**.
 
@@ -211,6 +219,8 @@ You need to use Entra and Intune to manage members of the Developers department 
 
 ### Task 5: Assign a Configuration profile to Windows devices
 
+In this task you will assign the configuration profile to the developer device group so the settings apply to SEA-WS1.
+
 1. In the **Microsoft Intune admin center**, in the navigation pane select **Devices (1)**, then on the **Devices | Overview** blade select **Configuration (2)**, and on the **Devices | Configuration** blade in the details pane select the **Contoso Developer – standard (3)** profile.
 
    ![](../media/72.png)
@@ -236,6 +246,8 @@ You need to use Entra and Intune to manage members of the Developers department 
 8. In the Microsoft Intune admin center, select **Devices** in the breadcrumb navigation menu.
 
 ### Task 6: Verify that the Configuration profile is applied
+
+In this task you will verify on SEA-WS1 that Intune has applied the configuration profile and that all required changes are in effect.
 
 1. Switch to **HOSTVM** and sign in to **SEA-WS1** VM from the desktop shortcut.
 
@@ -305,6 +317,8 @@ There was an exception to Contoso's policy that specifies that members of the De
 
 ### Task 1: Change settings in an assigned Configuration profile
 
+In this task you will modify the existing configuration profile by removing the Privacy restriction from the device settings.
+
 1. Switch to **SEA-SVR1** and use password **Pa55w.rd** to login.
 
 2. On **SEA-SVR1**, in the **Microsoft Intune admin center** select **Devices (1)** and then **Configuration**, and on the **Devices | Configuration (2)** blade in the details pane select **Contoso Developer – standard (3)**.
@@ -329,6 +343,8 @@ There was an exception to Contoso's policy that specifies that members of the De
 
 ### Task 2: Force device synchronization from Intune Manager admin center
 
+In this task you will force a policy sync from the Intune admin center so the updated configuration applies to the device quickly.
+
 1. On **SEA-SVR1**, in the Microsoft Intune admin center, select **Devices (1)** in the navigation pane and then select **All devices (2)**. In the details pane, select **SEA-WS1 (3)**.
     
     ![](../media/95.png)
@@ -342,6 +358,8 @@ There was an exception to Contoso's policy that specifies that members of the De
 4. Close Microsoft Edge.
 
 ### Task 3: Verify changes on SEA-WS1
+
+In this task you will confirm on SEA-WS1 that the updated configuration has taken effect and that the Privacy settings are visible again.
 
 1. Switch to **HOSTVM** and sign in to **SEA-WS1** VM from desktop shortcurt.
 

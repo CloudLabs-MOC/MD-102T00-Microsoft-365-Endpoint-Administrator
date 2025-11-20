@@ -18,6 +18,8 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 ### Task 1: Configure password writeback
 
+In this task you will enable password writeback in Azure AD Connect so that password resets made in Azure AD can update the on-premises AD DS password.
+
 1. Sign in to **SEA-SVR1** as **Contoso\\Administrator** with the password **Pa55w.rd** and close **Server Manager**.
 
 2. On the desktop, double-click **Azure AD Connect**.
@@ -61,6 +63,8 @@ The Help Desk has indicated that a large number of support tickets are related t
     ![](../media/311.png)
 
 ### Task 2: Enable self-service password reset
+
+In this task you will enable self-service password reset for all users and configure authentication methods and security questions in the Entra admin center.
 
 1. On **SEA-SVR1**, on the taskbar select **Microsoft Edge**, in the address bar type **https://entra.microsoft.com/**, and then press **Enter**.
 
@@ -111,6 +115,8 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 ### Task 3: Validate self-service password reset
 
+In this task you will sign in as a user and verify that they can successfully change their password using the self-service password reset options.
+
 1. Switch to **SEA-WS3**.
 
 2. If necessary, sign in as **Admin** with the password of **Pa55w.rd**.
@@ -150,6 +156,8 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 ### Task 4: Run AD Sync
 
+In this task you will manually trigger an Azure AD Connect sync cycle to ensure password changes are fully synchronized in the lab environment.
+
 *Note that this step is normally not necessary for password writeback, but is recommended to address issues inherent in lab environments and ensure AD DS is synchronized with Azure AD.*
 
 1. Switch to **SEA-SVR1**.
@@ -168,6 +176,8 @@ The Help Desk has indicated that a large number of support tickets are related t
 4. Close Windows PowerShell, and then wait for approximately 3-4 minutes.
 
 ### Task 5: Verify password writeback
+
+In this task you will verify password writeback by signing in to an on-premises computer using the newly updated password.
 
 1. Switch to **HOSTVM** and sign in to **SEA-CL1**.
 

@@ -22,6 +22,8 @@ You have assigned Aaron Nicholls appropriate licenses and will now test the proc
 
 ### Task 1: Automatically enroll a Windows device to Microsoft Intune
 
+In this task you will join the SEA-WS1 Windows device to Entra ID using Aaron’s account and trigger an automatic Intune enrollment.
+
 1. Switch to **HOSTVM** and Sign in to **SEA-WS1** VM from the desktop shortcut as **Admin** with the password of **Pa55w.rd**.
 
 2. Select **Start** and then select **Settings**.
@@ -73,6 +75,8 @@ You have assigned Aaron Nicholls appropriate licenses and will now test the proc
 
 ### Task 2: Validate device enrollment into Entra And Intune
 
+In this task you will verify that the device is both Entra joined and Intune enrolled by checking certificates and device registration details.
+
 1. On the **SEA-WS1** taskbar, select **Start (1)**, type **cert (2)**, and select **Manage computer certificates (3)**. Click on **Yes** in the following pop-up dialog box.
 
     ![](../media/012.png)
@@ -121,6 +125,8 @@ You have assigned Aaron Nicholls appropriate licenses and will now test the proc
     > Note: These entries indicate that the device is enrolled in Intune.
 
 ### Task 3: Sign in as an Entra user
+
+In this task you will sign in to the Windows device as Aaron and complete the Windows Hello and phone verification setup.
 
 1. Sign out of **SEA-WS1**. (Close the VM once signed out)
 
@@ -173,6 +179,8 @@ You have assigned Aaron Nicholls appropriate licenses and will now test the proc
     ![](../media/07.png)
 
 ### Task 4: Verifying device enrollment in the Intune console
+
+In this task you will check the Intune admin center to confirm that SEA-WS1 appears as an Intune-managed, Microsoft Entra joined device.
 
 1. Switch to **SEA-SVR1** as **Contoso\Administrator** with the password of **Pa55w.rd**. 
 

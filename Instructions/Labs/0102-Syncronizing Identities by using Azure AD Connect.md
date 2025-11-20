@@ -10,9 +10,11 @@ Contoso Corporation is currently managing users in both AD DS and Entra ID as se
 
 #### Task 1: Configure directory synchronization with Microsoft Entra Connect
 
-1. On **SEA-SVR1**, if necessary, sign in as **Contoso\\Administrator** with the password of **Pa55w.rd** and close **Server Manager**.
+In this task, you will install and configure Microsoft Entra Connect on the server to synchronize your on-premises Active Directory users and groups with Microsoft Entra ID.
 
-    ![](../media/p2t1s1.1.png)
+1. On **SEA-SVR1** from top left dropdown, if necessary, sign in as **Contoso\\Administrator** with the password of **Pa55w.rd** and close **Server Manager**.
+
+    ![](../media/H2.png)
 
     ![](../media/p2t1s1.2.png)
 
@@ -113,6 +115,8 @@ Contoso Corporation is currently managing users in both AD DS and Entra ID as se
 23. Close all open windows.
 
 #### Task 2: Verify synchronization in Entra ID
+
+In this task, you will verify that the synchronization worked by checking the synced users and groups in the Entra admin center.
 
 1. On the taskbar, select **Microsoft Edge**.
 

@@ -12,7 +12,13 @@ Several users have asked to use their personal iOS, Android, and Windows devices
 
 ### Task 1: Configure Microsoft Entra device registration
 
+In this task you will review the device registration settings in Entra ID to ensure all users are allowed to register their personal devices.
+
 1. On **SEA-SVR1**, if necessary, sign in as **Contoso\\Administrator** with the password of **Pa55w.rd** and close **Server Manager**.
+
+    ![](../media/H2.png)
+
+    ![](../media/p1t1s1.2.png)
 
 2. On the taskbar select **Microsoft Edge**, in the address bar type **https://entra.microsoft.com**, and then press **Enter**.
 
@@ -31,6 +37,8 @@ Several users have asked to use their personal iOS, Android, and Windows devices
    > This option is greyed out and set to **All** by default when Microsoft Intune is enable in the tenant. This ensures that all users are able to register Windows 10 or newer personal, iOS, Android, and macOS devices with Azure AD.
 
 ### Task 2: Perform Entra registration
+
+In this task you will register the SEA-WS1 Windows device with Entra by adding Joni Sherman’s work account.
 
 1. Switch to **HOSTVM** and sign in to **SEA-WS1** VM through desktop shortcut as **Admin** with the password of **Pa55w.rd**.
 
@@ -64,6 +72,8 @@ Several users have asked to use their personal iOS, Android, and Windows devices
 
 ### Task 3: Validate Entra registration
 
+In this task you will verify that the device registration was successful by checking the Workplace Join status and confirming the device appears as Entra registered.
+
 1. On SEA-WS1, right-click **Start (1)**, and then select **Windows Terminal (Admin) (2)**. At the User Account Control, select **Yes**.
 
    ![](../media/p4t3s1.png)
@@ -93,6 +103,8 @@ Several users have asked to use their personal iOS, Android, and Windows devices
 9. Close Microsoft Edge.
 
 ### Task 4: Sign in to Windows and disconnect from the organization
+
+In this task you will test sign-in behavior on an Entra registered device and then disconnect the device from Entra.
 
 1. Switch to **HOSTVM** and attempt to sign in to **SEA-WS1** as **`JoniS@yourtenant.onmicrosoft.com`**.
 

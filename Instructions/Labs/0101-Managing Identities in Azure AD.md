@@ -33,9 +33,11 @@ You've also been told that several more employees will be hired over the next co
 
 ### Task 1: Create users by using the Microsoft Entra admin center
 
-1. Switch to **SEA-SVR1**, sign in as **Contoso\\Administrator** with the password of **Pa55w.rd**.
+In this task you will sign in to the SEA-SVR1 server using the Contoso administrator account and prepare the system by closing Server Manager.
 
-    ![](../media/p1t1s1.1.png)
+1. Switch to **SEA-SVR1** from top left dropdown, sign in as **Contoso\\Administrator** with the password of **Pa55w.rd**.
+
+    ![](../media/H2.png)
 
     ![](../media/p1t1s1.2.png)
 
@@ -169,6 +171,8 @@ Select **Save**.
 
 ### Task 3: Create users by using Powershell
 
+In this task, you will disable the security defaults in the Entra admin center by accessing the security settings and turning off the default security configuration.
+
 1. On **SEA-SVR1**, On windows search bar search for **powershell (1)**. Right click on **Windows Powershell (2)** and then select **Run as Administrator (3)**.
 
     ![](../media/p1t3s1.png)
@@ -295,6 +299,8 @@ You have been provided a list of users should have administrative roles assigned
 
 ### Task 1: Review and Assign Administrative Roles
 
+In this task, you will review different administrative roles in Entra ID and assign the correct roles to specific users, such as Global Administrator, User Administrator, and Helpdesk Administrator.
+
 1. On SEA-SVR1, switch to Microsoft Edge.
 
 2. In the **Microsoft Entra admin center**, in the Navigation pane, expand **Entra ID (1)** click on Show more Select **Roles & admins (2)**. In **All roles (3)** tab, using the search box, search for **Global administrator**. Select **Global administrator (4)** (select the name, not the checkbox).
@@ -353,6 +359,8 @@ You also been asked to modify the Company branding for the sign-in page.
 
 ### Task 1: Create groups by using the Microsoft Entra admin center
 
+In this task, you will create security groups in the Entra admin center and add the appropriate users to each group.
+
 1. On **SEA-SVR1**, in the Microsoft Entra admin center, in the navigation pane, select **Entra ID > Groups** > **All groups**. and select **New group**
 
     ![](../media/p1t5s2.png)
@@ -396,6 +404,8 @@ You also been asked to modify the Company branding for the sign-in page.
     ![](../media/p1t5s11.png)
 
 ### Task 2: Create groups by using PowerShell
+
+In this task you will use PowerShell to create a new security group, find it, and add a user to the group by running Microsoft Graph PowerShell commands.
 
 1. On SEA-SVR1, switch to Windows PowerShell.
 
@@ -448,6 +458,8 @@ You also been asked to modify the Company branding for the sign-in page.
 10. Close PowerShell.
 
 ### Task 3: Review licenses
+
+In this task you will review available licenses, customize the sign-in page branding, and assign Microsoft 365 and EMS E5 licenses to users and groups using both the Entra admin center and the Microsoft 365 admin center.
 
 1. In the Microsoft Entra admin center, in the navigation pane, select **Billing (1)** > **Licenses (2)**.
 

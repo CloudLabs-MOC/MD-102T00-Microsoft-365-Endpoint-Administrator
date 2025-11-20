@@ -15,6 +15,10 @@ All of the developers at Contoso have iPhones and iPads running the latest iOS/i
 
 ### Task 1: Create an App protection policy for iOS/iPadOS devices
 
+In this task you will create an App Protection Policy for iOS/iPadOS that restricts data movement from Outlook, blocks backups, controls copy/paste behavior, and requires users to sign in with their work or school account.
+
+If you want, I can also
+
 1. On **SEA-SVR1**, if necessary, sign in as **Contoso\\Administrator** with the password **Pa55w.rd** and close **Server Manager**.
     
 2. On the taskbar, select **Microsoft Edge**.

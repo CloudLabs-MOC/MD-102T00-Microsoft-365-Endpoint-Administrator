@@ -26,6 +26,8 @@ You have been asked to configure SEA-WS2 as a Windows 11 kiosk to allow Contoso 
 
 ### Task 1: Enroll SEA-WS2 to Microsoft Intune
 
+In this task you will enroll the SEA-WS2 device into Entra ID and trigger an Intune sync so it can receive kiosk configuration policies.
+
 1. Switch to **HOSTVM** and sign in to **SEA-WS2** VM through desktop shortcut as **Admin** with the password of **Pa55w.rd**.
 
 2. Select **Start (1)** and then select **Settings (2)**.
@@ -74,6 +76,8 @@ You have been asked to configure SEA-WS2 as a Windows 11 kiosk to allow Contoso 
 
 ### Task 2: Create the Contoso Kiosk device group
 
+In this task you will create a device group in Intune to target kiosk settings specifically to the SEA-WS2 device.
+
 1. Switch to **SEA-SVR1** and sign in as **Contoso\Administrator** with the password of **Pa55w.rd**. Close Server Manager.
 
 2. On **SEA-SVR1**, on the taskbar, select **Microsoft Edge**.
@@ -108,6 +112,8 @@ You have been asked to configure SEA-WS2 as a Windows 11 kiosk to allow Contoso 
 11. On the **Groups | All groups** blade, verify that the **Contoso Kiosk Devices** group is displayed. You may need to select the Refresh button for the new group to become visible.
 
 ### Task 3: Create a Configuration profile based on scenario requirements
+
+In this task you will create a new Intune configuration profile that configures SEA-WS2 as a single-app, full-screen kiosk using Microsoft Edge in Public Browsing mode.
 
 1. In the Microsoft Intune admin center, select **Devices (1)** from the navigation bar. On the **Devices | Overview** page, select **Configuration (2)** On the **Devices | Configuration** blade, in the details pane, click on **Create (3)** and select **+ New policy (4)**.
 
@@ -160,6 +166,8 @@ You have been asked to configure SEA-WS2 as a Windows 11 kiosk to allow Contoso 
 11. Close Microsoft Edge.
 
 ### Task 4: Verify that the Configuration profile is applied
+
+In this task you will verify that the kiosk configuration has been applied by syncing the device and confirming it automatically signs in and launches Edge in kiosk mode.
 
 1. Switch to **HOSTVM** and sign in to **SEA-WS2** as **Admin** with the password of **Pa55w.rd**.
   

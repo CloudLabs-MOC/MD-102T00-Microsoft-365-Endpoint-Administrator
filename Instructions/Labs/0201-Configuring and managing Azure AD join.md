@@ -20,7 +20,13 @@ You need to configure Entra ID device settings to ensure that all users are allo
 
 ### Task 1: Configure Entra join Device settings
 
+In this task you will configure device settings in Entra ID, allow users to join devices, set the device limit, add a device administrator, and enable SMS authentication.
+
 1. On **SEA-SVR1**, if necessary, sign in as **Contoso\\Administrator** with the password of **Pa55w.rd** and close Server Manager.
+
+    ![](../media/H2.png)
+
+    ![](../media/p1t1s1.2.png)
 
 2. On the taskbar select **Microsoft Edge**, in the address bar type **https://entra.microsoft.com**, and then press **Enter**.
 
@@ -72,6 +78,8 @@ You need to configure Entra ID device settings to ensure that all users are allo
 
 ### Task 2: Perform an Entra Join
 
+In this task you will join the SEA-WS1 computer to Entra ID using a user account.
+
 1. Switch to **HOSTVM** and sign in to **SEA-WS1** VM through desktop shortcut as **Admin** with the password of **Pa55w.rd**.
 
    ![](../media/dsk.png)
@@ -117,6 +125,8 @@ You need to configure Entra ID device settings to ensure that all users are allo
 13. Close the **Settings** page.
 
 ### Task 3: Validate Entra Join
+
+In this task you will confirm that SEA-WS1 is successfully Entra joined by checking device status and local administrator membership.
 
 1. On SEA-WS1, right-click **Start**, and then select **Windows Terminal (Admin)**. At the User Account Control, select **Yes**.
 
@@ -170,6 +180,8 @@ You need to configure Entra ID device settings to ensure that all users are allo
     > Also note that the MDM column shows None. This indicates that this device is not yet managed by Microsoft Intune.
 
 ### Task 4: Sign in to Windows as an Entra User
+
+In this task you will sign in to Windows using an Entra user account and complete required authentication setup.
 
 1. Switch to **HOSTVM** and Sign out from **SEA-WS1** VM, if you are already signed in to admin and sign in with Other user.
 
@@ -225,6 +237,8 @@ You need to configure Entra ID device settings to ensure that all users are allo
 
 ### Task 5: Remove a Windows device from Entra
 
+In this task you will disconnect the SEA-WS1 computer from Entra ID and remove the device association.
+
 1. On SEA-WS1, signed in as **azuread\jonisherman**, select **Start (1)** and then select **Settings (2)**.
 
     ![](../media/p3t5s1.png)
@@ -264,6 +278,8 @@ Some Contoso Windows devices are currently joined to the local Active Directory 
 
 ### Task 1: Prepare the environment
 
+In this task you will prepare your on-premises environment for hybrid join by creating an organizational unit and moving the SEA-CL2 device into it.
+
 1. Switch to **SEA-SVR1**.
 
 2. Select **Start (1)**, expand **Windows Administrative Tools (2)**, and then select **Active Directory Users and Computers (3)**.
@@ -289,6 +305,8 @@ Some Contoso Windows devices are currently joined to the local Active Directory 
 8. Close **Active Directory Users and Computers**.
 
 ### Task 2: Configure Entra hybrid join in Azure Active Directory Connect 
+
+In this task you will configure Entra hybrid join using Microsoft Entra Connect to enable domain-joined devices to register with Entra ID.
 
 1. On **SEA-SVR1**, on the **Desktop**, double-click **Azure AD Connect**.
 
@@ -356,6 +374,8 @@ Some Contoso Windows devices are currently joined to the local Active Directory 
 
 ### Task 3: Re-configure Azure AD Connect to sync the new OU
 
+In this task you will update Azure AD Connect sync settings to include the new OU created for hybrid join devices.
+
 1. On **SEA-SVR1**, on the **Desktop**, double-click **Azure AD Connect**.
 
 2. In the **Microsoft Azure Active Directory Connect** window select **Configure**.
@@ -391,6 +411,8 @@ Some Contoso Windows devices are currently joined to the local Active Directory 
     > **Note**: AAD Connect synchronizes automatically now when you modify the OUs being synced. You can use the **Synchronization Service** to monitor sync status.
 
 ### Task 4: Verify the Entra hybrid join 
+
+In this task you will verify that SEA-CL2 has successfully completed Entra hybrid join by checking device status locally and in the Entra admin center.
 
 1. Switch to **HOSTVM** and select **SEA-CL2** VM desktop shortcut and sign in as **Contoso\\Administrator** with the password of **Pa55w.rd**.
 

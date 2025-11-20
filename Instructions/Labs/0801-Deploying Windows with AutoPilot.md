@@ -23,38 +23,43 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
 ### Task 1: Create group in Entra ID
 
+In this task you will create a dynamic device group in Entra ID that will automatically contain all devices registered with Windows Autopilot.
+
 1. Sign in to **SEA-SVR1** as **Contoso\\Administrator** with the password **Pa55w.rd** and close **Server Manager**.
 
 2. On the taskbar, select **Microsoft Edge**.
 
 3. In Microsoft Edge, in the address bar, type **https://entra.microsoft.com**, and then press **Enter**. If prompted, sign in with your **<inject key="AzureAdUserEmail"></inject>**, and use the tenant Admin password **<inject key="AzureAdUserPassword"></inject>**
 
-4. In the navigation pane, Expand **Identity**.
+4. In the navigation pane expand **Entra ID (1)**, then under **Groups (2)** select **All groups (3)**, and in the **Groups | All groups** blade select **New group (4)**.
 
-5. Under **Groups**, select **All groups**.
+    ![](../media/600.png)
 
-6. In the **Groups | All groups** blade, select **New group**.
+7. In the **New Group** blade, in the **Group type** list select **Security (1)**, then in the **Group name** box type **IT Devices (2)**, in the **Group description** box type **IT Department Devices (3)**, in the **Membership type** list select **Dynamic Device (4)**, and select **Add dynamic query (5)**.
 
-7. In the **New Group** blade, in the **Group type** list, select **Security**.
-
-8. In the **Group name** box, type **IT Devices**.
-
-9. In the **Group description** box, type **IT Department Devices**.
-
-10. In the **Membership type** list, select **Dynamic Device**.
-
-11. Select **Add dynamic query**.
+    ![](../media/601.png)
 
 12. On the **Dynamic membership rules** blade select **Edit** above the **Rule syntax** box.
+
+    ![](../media/602.png)
 
 13. In the Edit rule syntax text box, add the following simple membership rule and select **OK**.
 
     ```
     (device.devicePhysicalIDs -any (_ -contains "[ZTDId]"))
     ```
+
+     ![](../media/603.png)
+
 14. Select **Save** to close **Dynamic membership rules**, and then select **Create** to create the group.
 
+    ![](../media/604.png)
+
+    ![](../media/605.png)
+
 ### Task 2: Create a virtual machine using Hyper-V
+
+In this task you will create a new Windows 10 virtual machine in Hyper-V that will be used to simulate an Autopilot device.
 
 1. Switch to **HOSTVM**, Click on Hyper-V manager available on the Task bar
 
@@ -94,6 +99,8 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
 ## Task 03: Configure Domain for the created virtual machine
 
+In this task you will complete the Windows 10 setup on the VM and join it to the Contoso domain so it can be prepared for Autopilot.
+
 1. Once the **SEA-W10-CL3** VM is created, right click and select **start**.
 
 1. Once it is in the Running state, right click and select **Connect**.
@@ -103,6 +110,8 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 1. You can see the Windows setup wizard.
 
 1. Click on **Next**
+
+    ![](../media/606.png)
 
 1. Click on **Install now**
 
@@ -114,6 +123,8 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
 1. On the *Which type of installation do you want* page, choose **Custom:Install Windows Only (advanced)** option
 
+    ![](../media/607.png)
+
 1. On the *Which type of installation do you want* page, select the **Drive 0 unallocated space(1)** and click on **Next(2)** to begin the installation process.
 
    ![](media/010.png)
@@ -121,6 +132,8 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
    >**Note**: Installation might roughly take upto 15-20 mins. Do Not Press any key until the Windows Logo appears.
 
 1. Once the installation is completed it will ask you to select Region. Select The default one (United States) and select **Yes**
+
+    ![](../media/608.png)
 
 1. Select the Keyboard layout **US**
 
@@ -136,7 +149,11 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
 1. On *Who is going to use this PC* page, enter **Admin** at the Name text box and click on **Next**.
 
+    ![](../media/609.png)
+
 1. For password and Confirm password, enter **Pa55w.rd** and Select **Next**.
+
+    ![](../media/610.png)
 
 1. On create security questions for this account page, Select any three question of your choice and fill in the answers, then click on next.
 
@@ -157,6 +174,8 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 1. Once Rebooted it asks for username and password. Enter **Admin** for username and **Pa55w.rd** for password.
 
 1. Once logged in to **SEA-W10-CL3** and search and select **Run** from Start menu to open Run command.
+
+    ![](../media/611.png)
 
 1. Type **sysdm.cpl** and press enter which opens System properties.
 
@@ -180,9 +199,13 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
    
 ### Task 4: Generate a device-specific comma-separated value (CSV) file
 
+In this task you will collect the Autopilot hardware information from the VM into a CSV file using PowerShell.
+
 1. In the **SEA-W10-CL3** VM, sign in with **Admin** enter **Pa55w.rd** for password.
 
-2. Right-click **Start**, select **Windows PowerShell (Admin)**, and then select **Yes** at the **User Account Control** prompt.
+2. Right-click **Start (1)**, select **Windows PowerShell (Admin) (2)**, and then select **Yes** at the **User Account Control** prompt.
+
+    ![](../media/612.png)
 
 3. At the Windows PowerShell command-line prompt, type the following cmdlet, and then press **Enter**:
 
@@ -192,6 +215,8 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
 4. You will receive three prompts. Each time, type **Y**, and then press **Enter**.
 
+    ![](../media/613.png)
+
 5. At the Windows PowerShell command-line prompt, type the following cmdlet, and then press **Enter**:
 
     ```
@@ -199,6 +224,8 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
     ```
 
 6. When prompted, type **Y**, and then press Enter.
+
+    ![](../media/614.png)
 
 7. At the Windows PowerShell command-line prompt, type the following cmdlet, and then press **Enter**:
 
@@ -216,22 +243,25 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
 ### Task 5: Work with a Windows Autopilot deployment profile
 
+In this task you will import the device’s Autopilot CSV into Intune and create a Windows Autopilot deployment profile in user-driven mode, assigning it to the IT Devices group.
+
 1. On **SEA-W10-CL3**, in the windows taskbar, select **Microsoft Edge**.
 
 2. In **Microsoft Edge**, navigate to **https://intune.microsoft.com**. Sign in with your  **<inject key="AzureAdUserEmail"></inject>** account.
 
     >Note: If prompted to register for MFA. Follow the same procedures you used earlier in the course to add your phone number.
 
-4. In the **Microsoft Intune admin center**, select **Devices**.
+4. In the **Microsoft Intune admin center** select **Devices (1)**, then in the **Device onboarding** section select **Enrollment (2)**, and in the **Windows** tab scroll down to **Windows Autopilot (3)** and select **Devices (4)**.
 
-4. In the **Device onboarding** section, select **Enrollment**. 
+    ![](../media/615.png)
 
-5. In the **Windows** tab, scroll down to **Windows Autopilot**, and then select **Devices**.
+6. In the **Windows Autopilot devices** blade on the menu bar, select **Import**, select the **folder icon (1)** and then browse to **C:\\ (2)**, select **Computer.csv (3)**, select **Open (4)**, and then select **Import**. 
 
-6. In the **Windows Autopilot devices** blade on the menu bar, select **Import**, select the **folder icon** and then browse to **C:\\**, select **Computer.csv**, select **Open**, and then select **Import**. 
+    ![](../media/616.png)
 
+    ![](../media/617.png)
 
-6. In the **Windows Autopilot devices** blade on the menu bar, select **Import**, select the **folder icon** and then browse to **C:\\**, select **Computer.csv**, select **Open**, and then select **Import**. 
+    ![](../media/618.png)
 
    _Note: The import process can take up to 15 minutes, but normally takes around 5 minutes._  
 
@@ -239,53 +269,73 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
 7. Select **X** to close the **Windows Autopilot devices** blade. 
 
-8. On the Windows enrollment blade, in the details pane, select **Deployment Profiles**.
+8. On the Windows **Enrollment (1)** blade, in the details pane, select **Deployment Profiles (2)**.
 
-9. On the **Windows AutoPilot deployment profiles** blade, select **Create profile** and then select **Windows PC**.
+    ![](../media/619.png)
 
-10. In the **Basics** tab, in the **Name** text box, type **Contoso profile1**.
+9. On the **Windows AutoPilot deployment profiles** blade, select **Create profile (1)** and then select **Windows PC (2)**.
 
-11. For **Convert all targeted devices to Autopilot** select **No**, and then select **Next**.
+    ![](../media/620.png)
 
-12. On the **Out-of-box experience (OOBE)** tab, ensure that the **Deployment mode** is set to **User-Driven**.
+10. In the **Basics** tab, in the **Name** text box, type **Contoso profile1**. For **Convert all targeted devices to Autopilot** select **No**, and then select **Next**.
 
-13. Ensure that **Join to Microsoft Entra ID as** is set to **Microsoft Entra Joined**.
+    ![](../media/621.png)
+
+12. On the **Out-of-box experience (OOBE)** tab, ensure that the **Deployment mode** is set to **User-Driven (1)**.
+
+13. Ensure that **Join to Microsoft Entra ID as** is set to **Microsoft Entra Joined (2)**.
 
 14. Ensure that the following options are set:
 
-    - Microsoft Software License Terms: **Hide**
+    - Microsoft Software License Terms: **Hide (3)**
 
-    - Privacy Settings: **Hide**
+    - Privacy Settings: **Hide (4)**
 
-    - Hide change account options: **Hide**
+    - Hide change account options: **Hide (5)**
 
-    - User account type: **Administrator**.
+    - User account type: **Administrator (6)**.
 
-    - Allow pre-provisioned deployment: **No**
+    - Allow pre-provisioned deployment: **No (7)**
 
-    - Language (Region): **Operating system default**
+    - Language (Region): **Operating system default (8)**
 
-    - Automatically configure keyboard: **Yes**
+    - Automatically configure keyboard: **Yes (9)**
 
-    - Apply device name template: **No**
+    - Apply device name template: **No (10)**
 
-15. Select **Next**.
+    - Select **Next (11)**
+
+         ![](../media/622.png)
 
 16. On the **Assignments** tab, under **Included groups** select **Add groups**.
 
-17. Select the **IT Devices** group and click **Select**. Select **Next**.
+    ![](../media/623.png)
+
+17. Select the **IT Devices (1)** group and click **Select (2)**. Select **Next**.
+
+    ![](../media/624.png)
 
 18. On the **Review + create** blade, review the information and then select **Create**.
+
+    ![](../media/625.png)
 
 19. Close out of **Microsoft Edge**
 
 ### Task 6: Reset the PC
 
+In this task you will reset the Windows 10 VM to simulate a brand-new device and trigger the Autopilot out-of-box experience.
+
 1. On **SEA-W10-CL3**, select **Start**, type **reset** and select **Reset this PC**.
+
+    ![](../media/626.png)
 
 2. In the **Reset this PC** section, select **Get started**.
 
+    ![](../media/627.png)
+
 3. Select **Remove everything**, and then select **Local reinstall**.
+
+   ![](../media/628.png)
 
 4. Select **Next** and then select **Reset**.
 
@@ -295,23 +345,37 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
 ### Task 7: Verify Autopilot deployment
 
+In this task you will sign in to the reset device as Aaron, complete the Autopilot setup, verify the device is Entra joined and managed, and confirm its Autopilot status in the Entra admin center.
+
 >**Note** : Before proceeding with the next step, ensure that you are in basic session mode and able to view Clipboard in the menu bar as shown in the below image. If not please change it to the basic session by selecting the icon which was highlighted in the tool bar in the below image.
 
    ![](../media/passwordwriteback1.png)
 
-1. At the **Contoso Corp. Sign-in Page**, enter **`Aaron@yourtenant.onmicrosoft.com`** and select **Next**.
+1. At the **Contoso Corp. Sign-in Page**, enter **`Aaron@yourtenant.onmicrosoft.com` (1)** and select **Next (2)**.
+
+   ![](../media/629.png)
 
    >**Note**: Replace **yourtenant** with the tenant name provided to you.
 
 2. At the Password page, enter **Pa55w.rd1234!** and select **Next**.
 
+    ![](../media/630.png)
+
 3. At the **Use Windows Hello with your account**, select **OK**.
+
+    ![](../media/631.png)
 
 4. At the **Verify your identity** page, select the Text verification method.
 
+    ![](../media/632.png)
+
 5. At the **Enter code** page, enter the code that has been texted to your mobile device and then select **Verify**.
 
-6. On the **Setup up a PIN** dialog box, in the **New PIN** and **Confirm PIN** fields, enter **102938**, and then select **OK**.
+    ![](../media/633.png)
+
+6. On the **Setup up a PIN** dialog box, in the **New PIN (1)** and **Confirm PIN (2)** fields, enter **102938**, and then select **OK (3)**.
+
+    ![](../media/634.png)
 
 7. On the **All set!** page, select **OK**.
 
@@ -319,9 +383,15 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
 9. Select **Accounts**, and then select **Access work or school**. Verify the device is connected to Contoso's Azure AD.
 
+    ![](../media/635.png)
+
 10. Select **Connected to Contoso's Azure AD** and select **Info**.
 
+    ![](../media/636.png)
+
 11. On the **Managed by Contoso** page, scroll down and then select **Sync**.
+
+    ![](../media/637.png)
 
 12. On **SEA-W10-CL3**, close the **Settings** window.
 
@@ -329,15 +399,23 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
 14. In the Microsoft Entra admin center, select **Identity**, select **Devices** and then select **All devices**. 
 
+    ![](../media/638.png)
+
     > Note that the new device displays with an icon that indicates an Autopilot device. Also note that the Join Type is **Microsoft Entra joined** with Aaron Nicholls as the owner.
 
 15. Select the Autopilot device and then select **Manage**. 
+
+    ![](../media/639.png)
 
 16. Again select the Autopilot device to review the management page. 
 
 17. Notice that you can Retire, Wipe, Sync, and Restart the device.
 
+    ![](../media/640.png)
+
 18. Select the ellipsis at the end of the menu bar and take notice of the additional management capabilities.
+
+    ![](../media/641.png)
 
     > **Note**: Additional capabilities include Fresh Start, Autopilot Reset, Quick scan, Full scan, as well as others.
 

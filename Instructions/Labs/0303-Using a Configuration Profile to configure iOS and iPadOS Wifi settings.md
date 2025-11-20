@@ -19,6 +19,8 @@ You have been asked to create a Configuration profile to be used to automaticall
 
 ### Task 1: Create the iOS_iPadOS device group
 
+In this task you will create a new Intune security group named iOS_iPadOS Devices to hold the Apple devices that will receive the Wi-Fi configuration profile.
+
 1. Switch to **SEA-SVR1** and sign in as **Contoso\Administrator** with the password of **Pa55w.rd**. Close Server Manager.
 
 2. On **SEA-SVR1**, on the taskbar, select **Microsoft Edge**.
@@ -46,6 +48,8 @@ You have been asked to create a Configuration profile to be used to automaticall
     ![](../media/132.png)
 
 ### Task 2: Create a Configuration profile based on scenario requirements
+
+In this task you will create and assign an Intune configuration profile that automatically configures Wi-Fi settings for iOS and iPadOS devices.
 
 1. In the Microsoft Intune admin center, select **Devices** from the navigation bar.
 

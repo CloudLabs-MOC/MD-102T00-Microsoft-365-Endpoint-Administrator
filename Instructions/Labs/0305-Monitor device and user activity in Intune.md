@@ -26,6 +26,8 @@ You need to review Aaron Nicholls sign-in activity and general information provi
 
 ### Task 1: Monitor user activity
 
+In this task you will review Aaron Nicholls’ sign-in activity and check the audit logs to see recent administrative actions.
+
 1. On **SEA-SVR1**, on the taskbar, select **Microsoft Edge**.
 
 2. In Microsoft Edge, type **https://intune.microsoft.com** in the address bar, and then press **Enter**.
@@ -53,6 +55,8 @@ You need to review Aaron Nicholls sign-in activity and general information provi
 10. In the details pane, audit information is displayed about administrative changes to users. Examine the information by selecting the various entries.
 
 ### Task 2: Monitor device activity
+
+In this task you will examine device activity in Intune, including hardware details, discovered apps, and the configuration profiles applied to SEA-WS1.
 
 1. In the Microsoft Intune admin center, from the navigation pane, select **Devices**.
 
