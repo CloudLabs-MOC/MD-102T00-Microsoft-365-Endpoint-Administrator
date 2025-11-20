@@ -34,49 +34,63 @@ You use Microsoft Intune to manage desktops and apps for Contoso Corporation. Th
 
 4. Sign in as user **<inject key="AzureAdUserEmail"></inject>**, and use the tenant Admin password **<inject key="AzureAdUserPassword"></inject>**
 
-5. On the **Microsoft Intune admin center** page, select **Apps**.
+5. On the **Microsoft Intune admin center** page select **Apps (1)**, then on the **Apps** page in the navigation pane select **All apps (2)**, and in the details pane select **+ Create (3)**.
 
-6. On the **Apps** page, in the navigation pane, select **All apps**.
+   ![](../media/190.png)
 
-7. In the details pane, select **+ Create**.
+8. On the **Select app type** page, click the drop-down menu and then Choose **Microsoft store app (new) (1)**. Click **Select (2)**.
 
-8. On the **Select app type** page, click the drop-down menu and then Choose **Microsoft store app (new)**. Click **Select**.
+   ![](../media/191.png)
 
-9. On the **Add App** page, click **Search the  Microsoft Store app (new)**, search for and select **Microsoft Remote Desktop**. Click **Select**.
+9. On the **Add App** page, click **Search the  Microsoft Store app (new)**, search for and select **Windows App**. Click **Select**.
+
+   ![](../media/192.png)
 
 10. On the **App information** page, verify the following information and then select **Next(5)**:
-    - Name: **Microsoft Remote Desktop(1)**
+    - Name: **Windows App(1)**
     - Publisher: **Microsoft Corporation(2)**
     - Category: **Business(3)**
     - Show this as a featured app in the Company Portal: **Yes(4)**
  
-    ![](../media/13-1.png) 
+      ![](../media/194.png) 
 
 11. Select **Next** twice and then select **Create**.
 
-12. The Microsoft Remote Desktop page opens.
+    ![](../media/195.png)
+
+12. The Windows App page opens.
 
     > Take note of the Properties, Device install status, and User install status nodes.
 
 ### Task 2: Assign a Group to the App
 
-1. In the Microsoft Remote Desktop page, select **Properties**.
+1. On the **Windows App** page select **Properties (1)**, then in the details pane scroll down to the **Assignments (2)** section and select **Edit (3)**.
 
-2. In the details pane, scroll down to the **Assignments** section and then select **Edit**.
+   ![](../media/196.png)
 
 3. On the **Assignments** page, select **Add group** in the **Available for enrolled devices**.
 
+    ![](../media/197.png)
+
 4. On the **Select groups** page, search and select the **Research** group and then click **Select**.
+
+    ![](../media/198.png)
 
 5. Select **Review + save** and then select **Save**.
 
+    ![](../media/199.png)
+
+    ![](../media/200.png)
+
 ### Task 3: Force policy synchronization from the Intune console
 
-1. In the **Microsoft Intune admin center**, select **Devices** and then select **All devices**.
+1. In the **Microsoft Intune admin center**, select **Devices (1)** and then select **All devices (2)**. In the details pane, select **SEA-WS1 (3)**.
 
-2. In the details pane, select **SEA-WS1**.
+    ![](../media/201.png)
 
-3. On the **SEA-WS1** blade, select **Sync** and when prompted select **Yes**.
+3. On the **SEA-WS1** blade, select **Sync (1)** and when prompted select **Yes (2)**.
+
+    ![](../media/202.png)
 
    > Intune will contact the device and tell it to synchronize all policies. This may take up to 5 minutes.
 
@@ -98,27 +112,48 @@ You use Microsoft Intune to manage desktops and apps for Contoso Corporation. Th
 
 7. On the Contoso web portal, select **Devices**.
 
+    ![](../media/203.png)
+
+    ![](../media/204.png)
+
 8. On the Devices page, select **Tap here to tell us which device you're using or add a new device**.
+
+    ![](../media/205.png)
 
 9. On the **Which device are you using** dialog box, select the option next to **SEA-WS1**, and then select **Select**.
 
+   ![](../media/206.png)
+
    > Notice that the message now changes to Apps will be installed onto: SEA-WS1
 
-10. At the top-left corner, select the navigation button and then select **Apps**.
+   ![](../media/207.png)
+
+10. **At the top-left corner (1)**, select the navigation button and then select **Apps (2)**.
+
+    ![](../media/208.png)
 
     > Take note of the Microsoft Remote Desktop app listed on the Apps page. It might take a few minutes for the app to appear.
 
-11. Select **Microsoft Remote Desktop**.
+11. Select **Windows App**.
 
-12. On the Microsoft Remote Desktop page, select **Install**.
+    ![](../media/209.png)
 
-13. On the **Install Microsoft Remote Desktop** dialog box, select **Always allow portal.manage.microsoft.com to open links of this type in the associated app** and then select **Open**.
+12. On the Windows App page, select **Install**.
+
+    ![](../media/210.png)
+
+13. On the **Install Microsoft Remote Desktop** dialog box, select **Always allow portal.manage.microsoft.com to open links of this type in the associated app (1)** and then select **Open (2)**.
+
+   ![](../media/211.png)
 
    >It may take a few minutes for the app to install.
 
+   ![](../media/212.png)
+
 14. After the app is installed close all open windows.
 
-15. Select **Start** and verify that **Remote Desktop** is displayed on the Start menu.
+15. Select **Start** and verify that **Windows App** is displayed on the Start menu.
+
 
 **Results**: After completing this exercise, you will have successfully added and installed a Microsoft Store App from Intune.
 
@@ -130,9 +165,13 @@ All the users of the Research department at Contoso require Microsoft 365 Apps. 
 
 ### Task 1: Verify installed apps on SEA-WS1
 
-1. On **SEA-WS1**, on the taskbar, select **Start** and then select the **Settings** app.
+1. On **SEA-WS1**, on the taskbar, select **Start (1)** and then select the **Settings (2)** app.
 
-2. In the **Settings** app, select **Apps** and on the **Apps & features** page.
+    ![](../media/214.png)
+
+2. In the **Settings** app, select **Apps (1)** and on the **Apps & features (2)** page.
+
+   ![](../media/215.png)
 
    > Verify that **Microsoft 365 Apps for enterprise - en-us** is not listed.
 
@@ -140,17 +179,21 @@ All the users of the Research department at Contoso require Microsoft 365 Apps. 
 
 ### Task 2: Add Microsoft 365 apps to Intune
 
-1. On **SEA-SVR1**, in the **Microsoft Intune admin center**, select **Apps**.
+1. On **SEA-SVR1**, in the **Microsoft Intune admin center** select **Apps (1)**, then in the **Apps | Overview** blade select **All Apps (2)**, and in the details pane select **Create (3)**.
 
-2. In the **Apps | Overview** blade, select **All Apps**. In the details pane, select **Add**.
+   ![](../media/216.png)
 
-3. In the **Select app type** blade, under **Microsoft 365 Apps**, select **Windows 10 and later** , and then click **Select**.
+3. In the **Select app type** blade, under **Microsoft 365 Apps (1)**, select **Windows 10 and later** , and then click **Select (2)**.
 
-4. On the **Add Microsoft 365 Apps** blade, configure the following options and select **Next**:
+    ![](../media/217.png)
 
-    - Suite Name: **Microsoft 365 Apps (Research)**
+4. On the **Add Microsoft 365 Apps** blade, configure the following options and select **Next (3)**:
 
-    - Description: Microsoft 365 Apps for the Research dept at Contoso
+    - Suite Name: **Microsoft 365 Apps (Research) (1)**
+
+    - Description: **Microsoft 365 Apps for the Research dept at Contoso (2)**
+
+      ![](../media/218.png)
 
 5. On the **Configure app suite** tab, expand the **Select Office apps** dropdown, and ensure that only the following apps are selected:
 
@@ -162,37 +205,50 @@ All the users of the Research department at Contoso require Microsoft 365 Apps. 
 
     - Word
 
+      ![](../media/219.png)
+
 6. On the **App suite information** section, configure the following options:
 
-     - Architecture: **64-bit**
+     - Architecture: **64-bit (1)**
 
-     - Default file format: **Office Open XML Format**
+     - Default file format: **Office Open XML Format (2)**
 
-     - Update channel: **Monthly Enterprise Channel**
+     - Update channel: **Monthly Enterprise Channel (3)**
 
-7. On the **properties** section, configure the following options and select **Next**:
+7. On the **properties** section, configure the following options and select **Next (5)**:
 
-     - Accept the Microsoft Software License Terms on behalf of users: **Yes**
+     - Accept the Microsoft Software License Terms on behalf of users: **Yes (4)**
+
+       ![](../media/220.png)
      
 8. On the **Assignments** tab, in the **Required** section, select **Add group.**
 
-9. On the **Select groups** blade, select **Research**, and then choose **Select**.
+    ![](../media/221.png)
+
+9. On the **Select groups** blade, on search bar serach for **Release (1)** select **Research (2)**, and then choose **Select (3)**.
+
+    ![](../media/222.png)
 
 10. Select **Next**. On the **Review + Create** tab, select **Create**.
 
-11. On the **Microsoft 365 Apps (Research)** page, select **Properties**.
+    ![](../media/223.png)
 
-12. In the details pane verify that **Research** is listed under **Required** in the **Assignments** section.
+11. On the **Microsoft 365 Apps (Research)** page, select **Properties (1)**. In the details pane verify that **Research (2)** is listed under **Required** in the **Assignments** section.
+
+    ![](../media/224.png)
 
 ### Task 3: Force policy synchronization from the Intune console
 
-1. In the **Microsoft Intune admin center**, select **Devices** and then select **All devices**.
+1. In the **Microsoft Intune admin center**, select **Devices (1)** and then select **All devices (2)**. In the details pane, select **SEA-WS1 (3)**.
 
-2. In the details pane, select **SEA-WS1**.
+    ![](../media/225.png)
 
-3. On the **SEA-WS1** blade, select **Sync** and when prompted select **Yes**.
+3. On the **SEA-WS1** blade, select **Sync (1)** and when prompted select **Yes (2)**.
+
+   ![](../media/226.png)
 
    > Intune will contact the device and tell it to synchronize all policies. This may take up to 5 minutes.
+
 
 ### Task 4: Verify Microsoft 365 apps are installed
 
@@ -202,13 +258,23 @@ All the users of the Research department at Contoso require Microsoft 365 Apps. 
 
 3. On **SEA-WS1**, on the taskbar, select **Start** and then select the **Settings** app.
 
+    ![](../media/227.png)
+
 4. In the **Settings** app, select **Apps** and on the **Apps & features** page, scroll down and verify that **Microsoft 365 Apps for enterprise - en-us** is listed.
+
+   ![](../media/228.png)
+
+   ![](../media/229.png)
   
    >**Note**: If the above said app is not listed, restart the SEA-WS1 and sign in back with PIN **102938**
 
 5. Close the **Settings** app and select the **Start** button.
 
 6. In the app list, select **Word** and verify that the app opens.
+
+    ![](../media/230.png)
+
+    ![](../media/231.png)
 
 7. Close all open windows.
 
@@ -218,13 +284,17 @@ All the users of the Research department at Contoso require Microsoft 365 Apps. 
 
 1. Switch to **SEA-SVR1**.
 
-2. In the **Microsoft Intune admin center**, select **Apps**.
+2. In the **Microsoft Intune admin center**, select **Apps (1)**. On the **Apps | Overview** blade, select **Monitor (2)** and then select **App install status (3)**.
 
-3. On the **Apps | Overview** blade, select **Monitor** and then select **App install status**.
+    ![](../media/232.png)
 
 4. In the details pane, select **Microsoft 365 Apps \(Research\)**.
 
+   ![](../media/233.png)
+
 5. In the details pane, under **Monitor** and under **User install status**, verify that **1** is displayed under Installed.
+
+    ![](../media/234.png)
 
    _Note: that it may take some time for the information to display._
    
@@ -232,17 +302,21 @@ All the users of the Research department at Contoso require Microsoft 365 Apps. 
 
 6. Select **Device install status**.
 
+   ![](../media/235.png)
+
    > In the details pane, you can see the devices that the app is installed on, and also the name of the user. The **Device Name** column should list **SEA-WS1** and the **Status** column should say **Installed**. This means that the app is installed on SEA-WS1.
 
    _Note: that it may take some time for the information to display._
 
-7. In the **Microsoft Intune admin center**, select **Devices**.
+7. In the **Microsoft Intune admin center**, select **Devices (1)**. On the **Devices | Overview** blade, select **All devices (2)** and then in the details pane, select **SEA-WS1 (3)**.
 
-8. On the **Devices | Overview** blade, select **All devices** and then in the details pane, select **SEA-WS1**.
+    ![](../media/236.png)
 
-9. On the **SEA-WS1** blade, select **Managed Apps**.
+9. On the **SEA-WS1** blade select **Managed Apps (1)**, then on the **SEA-WS1 | Managed Apps** blade in the details pane select **Microsoft 365 Apps (Research) (2)**.
 
-10. On the **SEA-WS1 | Managed Apps** blade, in the details pane, select **Microsoft 365 Apps (Research)**.
+   ![](../media/237.png)
+
+   ![](../media/238.png)
 
    > On the **Microsoft 365 Apps (Research) - Installation details** window, you can see the entire lifecycle of the application, that is - when it was created, assigned, installation time and status and the last time the device checked in (synced with Intune).
 

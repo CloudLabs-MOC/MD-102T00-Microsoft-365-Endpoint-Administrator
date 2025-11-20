@@ -39,11 +39,19 @@ You need to use Entra and Intune to manage members of the Developers department 
 
    ![](../media/passwordwriteback1.png)
 
-3. On the taskbar, select **Start** and then select **Settings**.
+3. On the taskbar, select **Start (1)** and then select **Settings (2)**.
+
+   ![](../media/41.png)
 
 4. On the **Settings** navigation list, verify that you can see the **Gaming** setting.
 
-5. Select the **Personalization** setting and then on the Personalization page, select **Start**. Ensure that **Show recently added apps** and **Show most used apps** are both set to **On**.
+   ![](../media/42.png)
+
+5. Select the **Personalization (1)** setting and then on the Personalization page, select **Start (2)**. Ensure that **Show recently added apps** and **Show most used apps** are both set to **On**.
+
+   ![](../media/43.png)
+
+   ![](../media/44.png)
 
 6. In the **Settings** app, select **Privacy & security**.
 
@@ -51,13 +59,25 @@ You need to use Entra and Intune to manage members of the Developers department 
 
 8. On the **Privacy & security** page, select **Windows Security** and then select **Open Windows Security**.
 
+   ![](../media/45.png)
+
 9. On the **Windows Security** page, select **Virus & threat protection**.
+
+   ![](../media/46.png)
 
 10. On the **Virus & threat protection** page, under **Virus & threat protection settings**, select **Manage settings** . 
 
+    ![](../media/47.png)
+
 11. Scroll down to **Exclusions** and select **Add or remove exclusions**. At the User Account Control, select **Yes**.
 
+    ![](../media/48.png)
+
+    ![](../media/49.png)
+
 12. On the **Exclusions** page, verify that no exclusions have been configured.
+
+      ![](../media/50.png)
 
 13. Close the **Windows Security** window.
 
@@ -73,109 +93,145 @@ You need to use Entra and Intune to manage members of the Developers department 
 
 4. Sign in as user **<inject key="AzureAdUserEmail"></inject>**, and use the tenant Admin password **<inject key="AzureAdUserPassword"></inject>** 
 
-5. In the Microsoft Intune admin center, select **Devices** from the navigation bar.
+1. In the **Microsoft Intune admin center**, select **Devices (1)** from the navigation bar, then on the **Devices | Overview** page select **Configuration (2)**, and on the **Devices | Configuration** blade in the details pane select **+ Create (3)** and then select **+ New policy (4)**.
 
-6. On the **Devices | Overview** page, select **Configuration**.
-
-7. On the **Devices | Configuration** blade, in the details pane, select **+ Create**, and then select **+ New policy**.
-
-   ![](../media/intune21.png)
+   ![](../media/52.png)
 
 8. In the **Create a profile** blade, select the following options, and then select **Create**:
 
-   - Platform: **Windows 10 and later**
-   - Profile type: **Templates**
-   - Template name: **Device restrictions**
+   - Platform: **Windows 10 and later (1)**
+   - Profile type: **Templates (2)**
+   - Template name: **Device restrictions (3)**
 
-9. In the **Basics** blade, enter the following information, and then select **Next**:
+      ![](../media/53.png)
 
-- Name: **Contoso Developer - standard**
-- Description: **Basic restrictions and configuration for Contoso Developers.**
+9. In the **Basics** blade, enter the following information, and then select **Next (3)**:
+
+   - Name: **Contoso Developer - standard (1)**
+   - Description: **Basic restrictions and configuration for Contoso Developers. (2)**
+
+     ![](../media/54.png)
 
 10. On the **Configurations settings** blade, expand **Control Panel and Settings**. 
 
 11. Select **Block** next to the **Gaming** and **Privacy** options.
 
+     ![](../media/55.png)
+
 12. On the **Device restrictions** blade, expand **Start**. 
+
+    ![](../media/56.png)
 
 13. Scroll down and select **Block** next to **Most used apps**, **Recently added apps** and **Recently opened items in Jump Lists**.
 
+    ![](../media/57.png)
+
 14. On the **Device restrictions** blade, scroll down and expand **Microsoft Defender Antivirus**. 
 
-15. Under **Microsoft Defender Antivirus,** scroll down and expand **Microsoft Defender Antivirus Exclusions**.
+    ![](../media/58.png)
+
+15. Under **Microsoft Defender Antivirus,** scroll down and expand **Microsoft Defender Antivirus Exclusions (1)**.
 
 16. Under **Microsoft Defender Antivirus Exclusions** in the **Files and folders** box, type the following:
 
-    **C:\\DevProjects**.
+    **C:\\DevProjects (3)**.
 
 17. In the **Processes** box, type the following:
-    **DevBuild.exe**. 
+    **DevBuild.exe (4)**. 
+
+      ![](../media/59.png)
+
 18. Select **Next** three times until you reach the **Review + create** blade. Select **Create**.
+
+      ![](../media/60.png)
 
 ### Task 3: Create the Contoso Developer device group
 
-1. In the Microsoft Intune admin center, in the navigation pane, select **Groups**.
+1. In the **Microsoft Intune admin center**, in the navigation pane select **Groups (1)**, and on the **Groups | All groups (2)** blade select **New group (3)**.
 
-2. On the **Groups | All groups** blade, select **New group**.
+   ![](../media/61.png)
 
 3. On the **New Group** blade, enter the following information:
 
-- Group type: **Security**
-- Group name: **Contoso Developer devices**
-- Group description: **All Windows devices in Contoso Developer department**
-- Membership type: **Assigned**
+   - Group type: **Security (1)**
+   - Group name: **Contoso Developer devices (2)**
+   - Group description: **All Windows devices in Contoso Developer department (3)**
+   - Membership type: **Assigned (4)**
+   - Under **Members**, select **No members selected (5)**. 
 
-4. Under **Members**, select **No members selected**. 
+     ![](../media/62.png)
 
-5. On the **Add members** blade, in the **Search** box type **Sea**. Select **SEA-WS1** and then choose **Select**.
+5. On the **Add members** blade, in the **Search** box type **Sea (1)**. Select **SEA-WS1 (2)** and then choose **Select (3)**.
+
+   ![](../media/63.png)
 
 6. On the **New Group** blade, select **Create**. 
 
+   ![](../media/64.png)
+
 7. On the **Groups | All groups** blade, verify that the **Contoso developer devices** group is displayed.
+
+   ![](../media/65.png)
 
 ### Task 4: Create a dynamic Entra device group
 
-1. On the **Groups | All Groups** blade, on the details pane, select **New group**.
+1. On the **Groups | All Groups (1) (2)** blade, on the details pane, select **New group (3)**.
+
+   ![](../media/66.png)
 
 2. On the **Group** blade, provide the following values:
 
-   - Group type: **Security**
-   - Group name: **Windows Devices**
-   - Membership type: **Dynamic Device**
+   - Group type: **Security (1)**
+   - Group name: **Windows Devices (2)**
+   - Membership type: **Dynamic Device (3)**
+   - Under the **Dynamic Device Members** section, select **Add dynamic query (4)**. 
 
-3. Under the **Dynamic Device Members** section, select **Add dynamic query**. 
+     ![](../media/67.png)
 
 4. On the **Dynamic membership rules** blade, in the **Rule syntax** section, select **Edit**. 
+
+   ![](../media/68.png)
     
-5. In the **Edit rule syntax** text box, add the following simple membership rule and select **OK**.
+5. In the **Edit rule syntax (1)** text box, add the following simple membership rule and select **OK (2)**.
 
     ```
     (device.deviceOSType -contains "Windows")
     ```
 
+
+      ![](../media/69.png)
+
 6. On the **Dynamic membership rules** blade, select **Save**.
 
-   ![](../media/02.png)
+   ![](../media/70.png)
 
 7. On the **New Group** page, select **Create**.
 
+   ![](../media/71.png)
+
 ### Task 5: Assign a Configuration profile to Windows devices
 
-1. In the Microsoft Intune admin center, in the navigation pane, select **Devices**. 
+1. In the **Microsoft Intune admin center**, in the navigation pane select **Devices (1)**, then on the **Devices | Overview** blade select **Configuration (2)**, and on the **Devices | Configuration** blade in the details pane select the **Contoso Developer – standard (3)** profile.
 
-2. On the **Devices | Overview** blade, select **Configuration**.
-
-3. On the **Devices | Configuration** blade, in the details pane, select the **Contoso Developer – standard** profile.
+   ![](../media/72.png)
 
 4. On the **Contoso Developer – standard** blade, scroll down to the **Assignments** section, and select **Edit**.
 
-   ![](../media/01.png)
+   ![](../media/73.png)
 
 5. On the Assignments page, under **Included groups** select **Add groups**.
 
-6. On the **Select groups to include** blade, in the **Search** box, select **Contoso Developer devices** and then select **Select**.
+   ![](../media/74.png)
+
+6. On the **Select groups to include** blade, in the **Search (1)** box, select **Contoso Developer devices (2)** and then select **Select (3)**.
+
+   ![](../media/75.png)
 
 7. Back on the **Device restrictions** blade, select **Review + save**, then select **Save**.
+
+   ![](../media/76.png)
+
+   ![](../media/77.png)
 
 8. In the Microsoft Intune admin center, select **Devices** in the breadcrumb navigation menu.
 
@@ -185,11 +241,19 @@ You need to use Entra and Intune to manage members of the Developers department 
 
 2. On **SEA-WS1**, on the taskbar, select **Start** and then select **Settings**.
 
-3. In **Settings**, select **Accounts** and then select **Access work or school**.
+   ![](../media/78.png)
+
+3. In **Settings**, select **Accounts (1)** and then select **Access work or school (2)**.
+
+   ![](../media/79.png)
 
 4. In the **Access work or school** section, select the **Connected to Contoso's Azure AD** link and then select **Info**.
 
-5. In the **Managed by Contoso** page, scroll down and then under Device sync status, select **Sync**. Wait for the synchronization to complete. 
+   ![](../media/80.png)
+
+5. In the **Managed by Contoso** page, scroll down and then under Device sync status, select **Sync**. Wait for the synchronization to complete.
+
+   ![](../media/81.png)
 
 6. Close the **Settings** app.
 
@@ -197,23 +261,37 @@ You need to use Entra and Intune to manage members of the Developers department 
 
 7. On **SEA-WS1**, select **Start** and then select **Settings**. Verify that the **Gaming** setting has been removed.
 
+   ![](../media/82.png)
+
 8. Select **Privacy & security** and notice that many of the privacy settings are now hidden. 
 
 9. Select the **Personalization** setting and then select **Start**. Verify that **Show recently added apps** and **Show most used apps** are set to **Off**. 
 
-10. In the **Settings** app, select **Privacy and Security**.
+   ![](../media/83.png)
 
-11. On the **Privacy & Security** page, select **Windows Security** and then select **Open Windows Security**.
+10. In the **Settings** app, select **Privacy and Security**. On the **Privacy & Security** page, select **Windows Security** and then select **Open Windows Security**.
+
+    ![](../media/84.png)
 
     ![](../media/04.png)
 
 12. On the **Windows Security** page, select **Virus & threat protection**.
 
+    ![](../media/85.png)
+
 13. On the **Virus & threat protection** page, select **Manage settings** under **Virus & threat protection settings**. 
+
+      ![](../media/86.png)
 
 14. Scroll down to **Exclusions** and select **Add or remove exclusions**. Select **Yes** at the User Account Control message.
 
+    ![](../media/87.png)
+
+    ![](../media/88.png)
+
 15. On the **Exclusions** page, verify that **C:\\DevProjects** and **DevBuild.exe** are displayed.
+
+    ![](../media/89.png)
 
 16. Close the **Windows Security** page and then close the **Settings** app.
 
@@ -229,27 +307,37 @@ There was an exception to Contoso's policy that specifies that members of the De
 
 1. Switch to **SEA-SVR1** and use password **Pa55w.rd** to login.
 
-2. On **SEA-SVR1**, in the Microsoft Intune admin center, select **Devices** and then select **Configuration**. 
+2. On **SEA-SVR1**, in the **Microsoft Intune admin center** select **Devices (1)** and then **Configuration**, and on the **Devices | Configuration (2)** blade in the details pane select **Contoso Developer – standard (3)**.
 
-3. On the **Devices | Configuration** blade, in the details pane select **Contoso Developer -  standard**.
+   ![](../media/90.png)
 
 4. On the **Contoso Developer - standard** blade, scroll down to the **Configuration settings** section, and then select **Edit**.
 
+   ![](../media/91.png)
+
 5. On the **Device restrictions** page, expand **Control Panel and Settings**. 
+
+   ![](../media/92.png)
 
 6. Next to **Privacy**, select **Not configured**. 
 
+   ![](../media/93.png)
+
 7. Select **Review + save**, and then select **Save**.
+
+   ![](../media/94.png)
 
 ### Task 2: Force device synchronization from Intune Manager admin center
 
-1. On **SEA-SVR1**, in the Microsoft Intune admin center, select **Devices** in the navigation pane and then select **All devices**.
+1. On **SEA-SVR1**, in the Microsoft Intune admin center, select **Devices (1)** in the navigation pane and then select **All devices (2)**. In the details pane, select **SEA-WS1 (3)**.
     
-2. In the details pane, select **SEA-WS1**. 
+    ![](../media/95.png)
     
-3. On the **SEA-WS1** blade, select **Sync** and when prompted select **Yes**. 
+3. On the **SEA-WS1** blade, select **Sync (1)** and when prompted select **Yes (2)**. 
 
-   _Note: Intune will contact the device and tell it to synchronize all policies. This may take up to 5 minutes._
+   ![](../media/97.png)
+
+   >**Note:** Intune will contact the device and tell it to synchronize all policies. This may take up to 5 minutes._
 
 4. Close Microsoft Edge.
 
@@ -258,6 +346,8 @@ There was an exception to Contoso's policy that specifies that members of the De
 1. Switch to **HOSTVM** and sign in to **SEA-WS1** VM from desktop shortcurt.
 
 2. On **SEA-WS1** and on the taskbar, select **Start** and then select the **Settings** app.
+
+   ![](../media/98.png)
 
 3. In the **Settings** app, select **Privacy & security** and verify that all of the customization options are back.
 

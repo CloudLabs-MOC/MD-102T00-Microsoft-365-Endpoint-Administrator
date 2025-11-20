@@ -22,55 +22,90 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 2. On the desktop, double-click **Azure AD Connect**.
 
+    ![](../media/301.png)
+
 3. On the **Welcome to Microsoft Entra Connect Sync** page, select **Configure**.
 
-4. On the **Additional tasks** page, select **Customize synchronization options**, and then select **Next**.
+    ![](../media/302.png)
 
-5. On the **Connect to Microsoft Entra ID** page, if needed type **<inject key="AzureAdUserEmail"></inject>** in the **USERNAME** text box, then select **Next**.
+4. On the **Additional tasks** page, select **Customize synchronization options (1)**, and then select **Next (2)**.
+
+    ![](../media/303.png)
+
+5. On the **Connect to Microsoft Entra ID** page, if needed type **<inject key="AzureAdUserEmail"></inject>** in the **USERNAME (1)** text box, then select **Next (2)**.
+
+    ![](../media/304.png)
 
 6. On the **Sign in to your account** dialog, select your **<inject key="AzureAdUserEmail"></inject>** account and enter your Admin tenant password **<inject key="AzureAdUserPassword"></inject>**, and then select **Sign in**.
 
+    ![](../media/305.png)
+
 6. On the **Connect your directories** page, select **Next**.
+
+    ![](../media/306.png)
 
 7. On the **Domain and OU filtering** page, select **Next**.
 
-8. On the **Optional features** page, select **Password writeback**, and then select **Next**.
+    ![](../media/307.png)
+
+8. On the **Optional features** page, select **Password writeback (1)**, and then select **Next (2)**.
+
+    ![](../media/308.png)
 
 9. On the **Ready to configure** page, select **Configure**.
 
+    ![](../media/310.png)
+
 10. On the **Configuration complete** page, select **Exit**.
+
+    ![](../media/311.png)
 
 ### Task 2: Enable self-service password reset
 
 1. On **SEA-SVR1**, on the taskbar select **Microsoft Edge**, in the address bar type **https://entra.microsoft.com/**, and then press **Enter**.
 
+    ![](../media/312.png)
+
 2. Sign in as  **<inject key="AzureAdUserEmail"></inject>**, and use the tenant Admin password **<inject key="AzureAdUserPassword"></inject>**, If the **Stay signed in?** prompt appears, select **No**.  
 
    > The Microsoft Entra admin center opens.
 
-1. In the navigation pane, under **Protection**, select **Authentication methods**. 
+1. In the navigation pane, under **Entra ID (1)**, select **Authentication methods (2)**. 
 
-1. Ensure that **SMS** and **Email OTP** show **Yes** in the **Enabled** \(third\) column. 
+    ![](../media/313.png)
 
-1. In the Microsoft Entra admin center, in the navigation pane, under **Protection**, select **Password reset**.
+1. Ensure that **SMS (1)** and **Email OTP (2)** show **Yes** in the **Enabled** \(third\) column. 
 
-1. In the **Password reset | Properties** window, select **All** to enable self-service password reset to all users. Select **Save**.
+    ![](../media/314.png)
 
-1. In the **Password reset | Properties** window, select **Authentication methods** and then select **Security questions**.
+1. In the Microsoft Entra admin center, in the navigation pane, under **Entra ID**, select **Password reset (1)**. In the **Password reset | Properties (2)** window, select **All (3)** to enable self-service password reset to all users. Select **Save (4)**.
 
-1. For the **Number of questions required to register**, select **3**.
+    ![](../media/315.png)
 
-1. For the **Number of questions required to reset**, select **3**.
+1. In the **Password reset | Properties** window select **Authentication methods (1)** and then **Security questions (2)**, then for the **Number of questions required to register (3)** select **3**, for the **Number of questions required to reset (4)** select **3**, and in the **Select security questions** section select **No security questions configured (5)**, then select **Predefined**, choose any three questions, and select **OK**.
 
-1. In the **Select security questions** section, select **No security questions configured**, then select **Predefined**. Select three questions of your choice, and then select **Ok**.
+    ![](../media/316.png)
+
+    ![](../media/317.png)
+
+    ![](../media/318.png)
+
+    ![](../media/319.png)
+
 
 1. Select **Save**.
 
-1. Select **Registration** Select **No** for **Require users to register when signing in**, and then select **Save**.
+    ![](../media/320.png)
+
+1. Select **Registration** Select **No (1)** for **Require users to register when signing in**, and then select **Save (2)**.
+
+    ![](../media/315.png)
 
 1. In the navigation pane, select **On-premises integration**.
 
 1. Verify that your on-premises writeback client is running.
+
+    ![](../media/322.png)
 
 1. Close Microsoft Edge.
 
@@ -80,15 +115,25 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 2. If necessary, sign in as **Admin** with the password of **Pa55w.rd**.
 
+    ![](../media/323.png)
+
 3. On the taskbar, select **Microsoft Edge**.
 
 4. Browse to **https://myaccount.microsoft.com**. 
 
+    ![](../media/324.png)
+
 5. On the **Pick an account** page, select **Use another account**.
+
+    ![](../media/325.png)
 
 6. On the **Sign in** page, enter **`Aaron@yourtenant.onmicrosoft.com`** and then select **Next**.
 
+    ![](../media/326.png)
+
 7. On the **Enter password** page, enter **Pa55w.rd** and then select **Sign in**. If the Microsoft Edge prompts to save the password, select **Save**.
+
+    ![](../media/327.png)
 
 8. On the **My Account** page, in the navigation pane, select **Password**.
 
@@ -96,6 +141,8 @@ The Help Desk has indicated that a large number of support tickets are related t
 
      - New password: **Pa55w.rd1234!**
      - Confirm new password: **Pa55w.rd1234!**
+
+       ![](../media/330.png)
 
 10. If Microsoft Edge prompts to save the password, select **Save**.
 
@@ -107,7 +154,9 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 1. Switch to **SEA-SVR1**.
 
-2. Right-click **Start** and then select **Windows PowerShell (Admin)**.
+2. Right-click **Start (1)** and then select **Windows PowerShell (Admin) (2)**.
+
+    ![](../media/332.png)
 
 3. At the **Windows PowerShell** command prompt, type the following command, and
     then press **Enter**:
@@ -134,7 +183,13 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 2. On **SEA-CL1**, select **Other user**, and then attempt to sign in as **Contoso\\Aaron** with the password of **Pa55w.rd**.
 
+    ![](../media/333.png)
+
+    ![](../media/334.png)
+
 3. Ensure that you get the message that the user name or password is incorrect.
+
+    ![](../media/335.png)
 
 4. Sign in to **SEA-CL1** as **Contoso\Aaron** with the password **Pa55w.rd1234!**. 
 

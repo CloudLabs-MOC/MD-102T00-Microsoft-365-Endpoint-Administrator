@@ -23,33 +23,45 @@ All of the developers at Contoso have iPhones and iPads running the latest iOS/i
 
 4. Sign in as user **<inject key="AzureAdUserEmail"></inject>**, and use the tenant Admin password **<inject key="AzureAdUserPassword"></inject>**
 
-5. On the **Microsoft Intune admin center** page, select **Apps**.
+5. On the **Microsoft Intune admin center** page select **Apps (1)**, then on the **Apps | Overview** blade under **Manage apps** select **Protection (2)**, and in the details pane select **+ Create policy (3)** and then **iOS/iPadOS (4)**.
 
-6. On the **Apps | Overview** blade, under **Manage apps**, select **Protection**. 
+    ![](../media/240.png)
 
-7. In the details pane, select **+ Create policy** and then select **iOS/iPadOS**.
+8. On the **Basics** tab, configure the following options and select **Next (3)**:
 
-8. On the **Basics** tab, configure the following options and select **Next**:
+    - Name: **Outlook – Developers (1)**
+    - Description: **Policy to prevent cut/copy and paste from Outlook (2)**
 
-- Name: **Outlook – Developers**
-- Description: **Policy to prevent cut/copy and paste from Outlook**
+      ![](../media/241.png)
 
 9. On the **Apps** tab, click **+ Select public apps**.
 
-10. On the **Select apps to target** blade, in the text box, type **Outlook**. Select **Microsoft Outlook** and then select **Select**, and then select **Next**.
+    ![](../media/242.png)
+
+10. On the **Select apps to target** blade, in the text box, type **Outlook (1)**. Select **Microsoft Outlook (2)** and then select **Select (3)**, and then select **Next**.
+
+    ![](../media/243.png)
+
+    ![](../media/244.png)
 
 11. On the **Data protection** tab, configure the following options and select **Next**:
 
-    - Backup Org data to ITunes and iCloud backups: **Block**
-    - Send Org data to other apps: **Policy managed apps**
-    - Receive data from other apps: **Policy managed apps**
-    - Restrict cut, copy, and paste between other apps: **Policy managed apps**
+    - Backup Org data to ITunes and iCloud backups: **Block (1)**
+    - Send Org data to other apps: **Policy managed apps (2)**
+    - Receive data from other apps: **Policy managed apps (3)**
+    - Restrict cut, copy, and paste between other apps: **Policy managed apps (4)**
     - Save all other settings at default
+
+        ![](../media/245.png)
+
+        ![](../media/246.png)
 
 12. On the **Access requirements** tab, configure the following options and select **Next**:
 
-    - PIN for access: **Not required**
-    - Work or school account credentials for access: **Require**
+    - PIN for access: **Not required (1)**
+    - Work or school account credentials for access: **Require (2)**
+
+        ![](../media/247.png)
 
 13. On the **Conditional launch** tab, review the settings. Select **Next**.
 
@@ -59,7 +71,11 @@ All of the developers at Contoso have iPhones and iPads running the latest iOS/i
 
 15. On the **Review + create** tab, review the settings and select **Create**. 
 
+    ![](../media/248.png)
+
 17. On the **Apps | App protection policies** blade, in the details pane, verify that **Outlook - Developers** is listed.
+
+    ![](../media/249.png)
 
 18. Close Microsoft Edge.
 

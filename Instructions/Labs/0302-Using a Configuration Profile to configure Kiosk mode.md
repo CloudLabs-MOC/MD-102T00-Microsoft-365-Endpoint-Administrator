@@ -28,29 +28,47 @@ You have been asked to configure SEA-WS2 as a Windows 11 kiosk to allow Contoso 
 
 1. Switch to **HOSTVM** and sign in to **SEA-WS2** VM through desktop shortcut as **Admin** with the password of **Pa55w.rd**.
 
-2. Select **Start** and then select **Settings**.
+2. Select **Start (1)** and then select **Settings (2)**.
 
-3. In **Settings**, select **Accounts**.
+   ![](../media/100.png)
 
-4. On the Accounts page, select **Access work or school**.
+3. In **Settings**, select **Accounts (1)**. On the Accounts page, select **Access work or school (2)**.
+
+   ![](../media/101.png)
 
 5. In the **Access work or school** page, select **Connect**.
 
+   ![](../media/102.png)
+
 6. In the **Microsoft account** window, select **Join this device to Microsoft Entra ID**.
 
-7. On the **Sign in** page, type **`AllanD@yourtenant.onmicrosoft.com`** and then select **Next**.
+   ![](../media/103.png)
 
-8. Enter **Pa55-w.rd!** on enter password page, and then select **Sign in**.
+7. On the **Sign in** page, type **`AllanD@yourtenant.onmicrosoft.com` (1)** and then select **Next (2)**.
+
+   ![](../media/104.png)
+
+8. Enter **Pa55-w.rd! (1)** on enter password page, and then select **Sign in (2)**.
+
+   ![](../media/105.png)
 
 9. On the **Make sure this is your organization** dialog box, select **Join**.
 
+   ![](../media/106.png)
+
 10. On the **You're all set!** page, read the information and then select **Done**.
+
+     ![](../media/107.png)
 
 11. In the **Access work or school** section, verify that **Connected to Contoso's Azure AD** displays.
 
-12. Select **Connected to Contoso's Azure AD** and then select **Info**.
+12. Select **Connected to Contoso's Azure AD (1)** and then select **Info (2)**.
+
+     ![](../media/108.png)
 
 13. Scroll down, and then select **Sync**. This will force a Device sync with Intune.
+
+      ![](../media/109.png)
 
 14. Close the **Settings** window.
 
@@ -63,32 +81,37 @@ You have been asked to configure SEA-WS2 as a Windows 11 kiosk to allow Contoso 
 3. In Microsoft Edge, type **https://intune.microsoft.com** in the address bar, and then press **Enter**. 
 
 4. Sign in as user **<inject key="AzureAdUserEmail"></inject>**, and use the tenant Admin password **<inject key="AzureAdUserPassword"></inject>**
-5. In the Microsoft Intune admin center, in the navigation pane, select **Groups**.
+5. In the Microsoft Intune admin center, in the navigation pane, select **Groups (1)**.
 
-6. On the **Groups | All groups** blade, select **New group**.
+6. On the **Groups | All groups (2)** blade, select **New group (3)**.
+
+      ![](../media/110.png)
 
 7. On the **New Group** blade, enter the following information:
 
-   - Group type: **Security**
-   - Group name: **Contoso Kiosk Devices**
-   - Group description: **All Windows devices configured as a Kiosk**
-   - Membership type: **Assigned**
+   - Group type: **Security (1)**
+   - Group name: **Contoso Kiosk Devices (2)**
+   - Group description: **All Windows devices configured as a Kiosk (3)**
+   - Membership type: **Assigned (4)**
+   - Under **Members**, select **No members selected (5)**. 
 
-8. Under **Members**, select **No members selected**. 
+     ![](../media/000111.png)
 
-9. On the **Add members** blade, in the **Search** box type **Sea**. Select **SEA-WS2** and then choose **Select**.
+9. On the **Add members** blade, in the **Search** box type **Sea (1)**. Select **SEA-WS2 (2)** and then choose **Select (3)**.
 
-10. On the **New Group** blade, select **Create**. 
+   ![](../media/000112.png)
+
+10. On the **New Group** blade, select **Create**.
+
+      ![](../media/113.png)
 
 11. On the **Groups | All groups** blade, verify that the **Contoso Kiosk Devices** group is displayed. You may need to select the Refresh button for the new group to become visible.
 
 ### Task 3: Create a Configuration profile based on scenario requirements
 
-1. In the Microsoft Intune admin center, select **Devices** from the navigation bar.
+1. In the Microsoft Intune admin center, select **Devices (1)** from the navigation bar. On the **Devices | Overview** page, select **Configuration (2)** On the **Devices | Configuration** blade, in the details pane, click on **Create (3)** and select **+ New policy (4)**.
 
-2. On the **Devices | Overview** page, select **Configuration**.
-
-3. On the **Devices | Configuration** blade, in the details pane, click on **Create** and select **+ New policy**.
+      ![](../media/114.png)
 
 4. In the **Create a profile** blade, select the following options, and then select **Create**:
 
@@ -96,10 +119,16 @@ You have been asked to configure SEA-WS2 as a Windows 11 kiosk to allow Contoso 
    - Profile type: **Templates**
    - Template name: **Kiosk**
 
-5. In the **Basics** blade, enter the following information, and then select **Next**:
+      ![](../media/115.png)
 
-   - Name: **Contoso Kiosk Policy**
-   - Description: **Basic settings for Contoso Kiosk Devices.**
+      ![](../media/116.png)
+
+5. In the **Basics** blade, enter the following information, and then select **Next (3)**:
+
+   - Name: **Contoso Kiosk Policy (1)**
+   - Description: **Basic settings for Contoso Kiosk Devices. (2)**
+
+      ![](../media/117.png)
 
 6. On the **Configuration settings** blade, next to **Select a kiosk mode**, select **Single app, full-screen kiosk**. 
 
@@ -114,11 +143,19 @@ You have been asked to configure SEA-WS2 as a Windows 11 kiosk to allow Contoso 
      - Refresh browser after idle time: **5**
    - Specify Maintenance Window for App Restarts: **Not configured**
 
+      ![](../media/118.png)
+
 8. On the **Assignments** blade, under **Included groups**, select **Add groups**.
 
-9. In the **Select groups to include** window, select **Contoso Kiosk Devices**, and then click **Select**.
+      ![](../media/119.png)
+
+9. In the **Select groups to include** window, select **Contoso Kiosk Devices (1)**, and then click **Select (2)**.
+
+      ![](../media/120.png)
 
 10. Select **Next** two times until you reach the **Review + create** blade. Select **Create**.
+
+      ![](../media/121.png)
 
 11. Close Microsoft Edge.
 
@@ -130,13 +167,19 @@ You have been asked to configure SEA-WS2 as a Windows 11 kiosk to allow Contoso 
 
    ![](../media/passwordwriteback1.png)
 
-2. On **SEA-WS2**, on the taskbar, select **Start** and then select **Settings**.
+2. On **SEA-WS2**, on the taskbar, select **Start (1)** and then select **Settings (2)**.
 
-3. In **Settings**, select **Accounts** and then select **Access work or school**.
+      ![](../media/122.png)
+
+3. In **Settings**, select **Accounts (1)** and then select **Access work or school (2)**.
+
+      ![](../media/123.png)
 
 4. In the **Access work or school** section, select the **Connected to Contoso's Azure AD** link and then select **Info**.
 
 5. In the **Managed by Contoso** page, scroll down and then under Device sync status, select **Sync**. Wait for the synchronization to complete. 
+
+      ![](../media/124.png)
 
 6. Close the **Settings** app.
 
