@@ -26,27 +26,37 @@ You need to review Aaron Nicholls sign-in activity and general information provi
 
 ### Task 1: Monitor user activity
 
+In this task you will review Aaron Nicholls’ sign-in activity and check the audit logs to see recent administrative actions.
+
 1. On **SEA-SVR1**, on the taskbar, select **Microsoft Edge**.
 
 2. In Microsoft Edge, type **https://intune.microsoft.com** in the address bar, and then press **Enter**.
 
 3. Sign in as user **<inject key="AzureAdUserEmail"></inject>**, and use the tenant Admin password **<inject key="AzureAdUserPassword"></inject>**
 
-4. On the **Microsoft Intune admin center** page, select **Users**.
+4. On the **Microsoft Intune admin center** page select **Users (1)**, and on the **Users | All users** pane select **Sign-ins logs (2)**.
 
-5. On the **Users|All users** pane, select **Sign-ins logs**.
+   ![](../media/170.png)
 
 6. In the Details pane, user sign-ins are listed. Select the first entry where the **User** column displays **Aaron Nicholls**.
 
+   ![](../media/171.png)
+
 7. In the **Details** pane, Aaron Nicholls´sign-in details are displayed.
+
+   ![](../media/172.png)
 
 8. Select each of the main pages, including **Basic info**, **Location**, **Device info**, **Authentication Details**, and **Conditional Access**. Scroll to examine information on each page and then select **X** in the top right hand corner to close out of the **Activity Details** page.
 
 9. In the Users navigation pane, select **Audit logs**.
 
+   ![](../media/173.png)
+
 10. In the details pane, audit information is displayed about administrative changes to users. Examine the information by selecting the various entries.
 
 ### Task 2: Monitor device activity
+
+In this task you will examine device activity in Intune, including hardware details, discovered apps, and the configuration profiles applied to SEA-WS1.
 
 1. In the Microsoft Intune admin center, from the navigation pane, select **Devices**.
 
@@ -56,15 +66,27 @@ You need to review Aaron Nicholls sign-in activity and general information provi
 
 4. Select **All devices**, and in the details pane, select **SEA-WS1**. Information about the device such as name, Primary user, and operating system is displayed.
 
+   ![](../media/174.png)
+
+   ![](../media/175.png)
+
 5. In the SEA-WS1 navigation pane, select **Hardware** and examine the hardware inventory.
+
+   ![](../media/176.png)
 
 6. In the SEA-WS1 navigation pane, select **Discovered apps** and examine the app inventory.
 
+   ![](../media/178.png)
+
 7. In the SEA-WS1 navigation pane, select **Device configuration** and in the details pane take note of the Device configuration profiles assigned to the device. The **State** column should display **Succeeded**, which means that the profiles were applied successfully to the device.
+
+   ![](../media/179.png)
 
 8. In the details pane, select **Contoso Developer – standard**.
 
 9. On the **Contoso Developer – standard** blade, take note of each setting you configured in the profile.
+
+   ![](../media/180.png)
 
    > The **State** should display **Succeeded** next to all of them.
 

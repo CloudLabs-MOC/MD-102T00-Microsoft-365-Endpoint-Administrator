@@ -22,27 +22,46 @@ You have assigned Aaron Nicholls appropriate licenses and will now test the proc
 
 ### Task 1: Automatically enroll a Windows device to Microsoft Intune
 
+In this task you will join the SEA-WS1 Windows device to Entra ID using Aaron’s account and trigger an automatic Intune enrollment.
+
 1. Switch to **HOSTVM** and Sign in to **SEA-WS1** VM from the desktop shortcut as **Admin** with the password of **Pa55w.rd**.
 
 2. Select **Start** and then select **Settings**.
 
-3. In **Settings**, select **Accounts**.
+3. In **Settings (1)**, select **Accounts (2)**.
 
-4. On the Accounts page, select **Access work or school**.
+    ![](../media/003.png)
+
+4. On the **Accounts (1)** page, select **Access work or school (2)**.
+
+    ![](../media/004.png)
 
 5. In the **Access work or school** page, select **Connect**.
 
+    ![](../media/005.png)
+
 6. In the **Microsoft account** window, select **Join this device to Microsoft Entra ID**.
 
-7. On the **Sign in** page, type **`Aaron@yourtenant.onmicrosoft.com`** and then select **Next**.
+    ![](../media/006.png)
 
-8. On the **Enter password** page, enter **Pa55w.rd** and then select **Sign in**.
+7. On the **Sign in** page, type **`Aaron@yourtenant.onmicrosoft.com` (1)** and then select **Next (2)**.
+
+    ![](../media/007.png)
+
+8. On the **Enter password (1)** page, enter **Pa55w.rd** and then select **Sign in (2)**.
+
+    ![](../media/008.png)
 
 9. On the **Make sure this is your organization** dialog box, select **Join**.
 
+    ![](../media/009.png)
+
 10. On the **You're all set!** page, read the information and then select **Done**.
 
+    ![](../media/010.png)
+
 11. In the **Access work or school** section, verify that **Connected to Contoso's Azure AD** displays.
+
 
 12. Select **Connected to Contoso's Azure AD** and then select **Info**.
 
@@ -50,27 +69,38 @@ You have assigned Aaron Nicholls appropriate licenses and will now test the proc
 
 13. Take note of the information regarding the areas managed by Contoso, scroll down, and then select **Sync**. This will force a Device sync with Intune.
 
+    ![](../media/011.png)
+
 14. Close the **Settings** window.
 
 ### Task 2: Validate device enrollment into Entra And Intune
 
-1. On the **SEA-WS1** taskbar, select **Start**, type **cert**, and select **Manage computer certificates**. Click on **Yes** in the following pop-up dialog box.
+In this task you will verify that the device is both Entra joined and Intune enrolled by checking certificates and device registration details.
+
+1. On the **SEA-WS1** taskbar, select **Start (1)**, type **cert (2)**, and select **Manage computer certificates (3)**. Click on **Yes** in the following pop-up dialog box.
+
+    ![](../media/012.png)
+
+    ![](../media/013.png)
     
 2. In the **Certificates** console, in the navigation pane, expand **Personal** and select the **Certificate** node. Verify that the following certificates are listed in the details pane:
 
--   Microsoft Intune MDM Device CA
--   MS-Organization-Access
--   MS-Organization-P2P-Access \[2023\]
+    -  Microsoft Intune MDM Device CA
+    -  MS-Organization-Access
+    -  MS-Organization-P2P-Access \[2023\]
 
     This indicates that the device is enrolled in Entra and Intune.
 
-    ![](../media/08.png)
+    ![](../media/014.png)
 
-    >**Note**: Wait for 5-10 mins to get certificates.
+     >**Note**: Wait for 5-10 mins to get certificates.
 
 3. Close the Certificates window.
 
-4. Right-click **Start**, and then select **Windows Terminal (Admin)**. When prompted select **Yes**.
+4. Right-click **Start (1)**, and then select **Windows Terminal (Admin) (2)**. When prompted select **Yes**.
+
+    ![](../media/015.png)
+
 
 5. In the PowerShell console, type the following and press **Enter**: 
 
@@ -80,6 +110,8 @@ You have assigned Aaron Nicholls appropriate licenses and will now test the proc
 
 6. In the output under **Device State**, verify that **AzureAdJoined : YES** is displayed. This indicates that the device is Entra joined.
 
+    ![](../media/016.png)
+
 7. In the output under **Tenant Details**, verify that the following three entries exist:
 
     ```
@@ -88,11 +120,17 @@ You have assigned Aaron Nicholls appropriate licenses and will now test the proc
     mdmComplianceUrl:https://portal.manage.microsoft.com/?portalAction=Compliance
     ```
 
-> Note: These entries indicate that the device is enrolled in Intune.
+    ![](../media/17.png)
+
+    > Note: These entries indicate that the device is enrolled in Intune.
 
 ### Task 3: Sign in as an Entra user
 
+In this task you will sign in to the Windows device as Aaron and complete the Windows Hello and phone verification setup.
+
 1. Sign out of **SEA-WS1**. (Close the VM once signed out)
+
+    ![](../media/18.png)
 
    >**Note** : Before proceeding with the next step, ensure that you are in basic session mode and able to view Clipboard in the menu bar as shown in the below image. If not please change it to the basic session by selecting the icon which was highlighted in the tool bar in the below image.
 
@@ -100,23 +138,41 @@ You have assigned Aaron Nicholls appropriate licenses and will now test the proc
 
 2. Open the VM **SEA-WS1** in log in screen Select **Other user**, and sign in as **`Aaron@yourtenant.onmicrosoft.com`** with the password **Pa55w.rd**. Wait for the profile to be created.
 
-3. At the **Use Windows Hello with your account** page, select **OK**.
+    ![](../media/19.png)
 
-4. On the **More information required** page, select **Next**.
+4. At the **Use Windows Hello with your account** page, select **OK**.
 
-5. On the** Keep your account secure** page, select **I want to set up a different method**.
+    ![](../media/p3t4s4.png)
 
-6. In the **Choose a different method** dialog box, select **Phone** and then select **Confirm**.
+6. On the **Keep your account secure** page, select **Next**.
 
-7. On the **Phone** page, in the **Enter phone number** field, enter your mobile phone number which is able to receive text messages. Select **Next**.
+    ![](../media/p3t4s5.1.png)
 
-8. When you receive the verification code, enter the code on the Phone page and then select **Next**.
+7. In the **Install Microsoft Authenticator page** select **Set up a different way to sign in**.
 
-9. On the verification page, select **Next** and then select **Done**.
+    ![](../media/p3t4s5.2.png)
 
-10. On the **Set up a PIN** page, in the **New PIN** and **Confirm PIN** boxes, type **102938** and then select **OK**.
+8. On the **Add a sign-in method** page, select **Phone.**
 
-11. On the **All set!** page, select **OK.**
+    ![](../media/p3t4s5.3.png)
+
+1. In **Add your phone number** page fill your mobile number details and click **Next.**
+
+    ![](../media/p3t4s5.4.png)
+
+9. When you receive the verification code, enter the code on the Phone page and then select **Next**.
+
+    ![](../media/p3t4s5.5.png)
+
+10. On the verification page, select **Next** and then select **Done**.
+
+11. On the **Set up a PIN** page, in the **New PIN** and **Confirm PIN** boxes, type **102938** and then select **OK**.
+
+    ![](../media/p3t4s5.6.png)
+
+12. On the **All set!** page, select **OK**.
+
+    ![](../media/p3t4s5.7.png)
 
 12. Sign out of **SEA-WS1**.
 
@@ -124,19 +180,25 @@ You have assigned Aaron Nicholls appropriate licenses and will now test the proc
 
 ### Task 4: Verifying device enrollment in the Intune console
 
+In this task you will check the Intune admin center to confirm that SEA-WS1 appears as an Intune-managed, Microsoft Entra joined device.
+
 1. Switch to **SEA-SVR1** as **Contoso\Administrator** with the password of **Pa55w.rd**. 
 
 2. In Microsoft Edge, type **https://intune.microsoft.com** in the address bar, and then press **Enter**. Sign in with your Tenant administrator account.
 
-3. In the navigation pane, select **Devices**.
+3. In the navigation pane, select **Devices (1)**.
 
-4. On the **Devices | Overview** blade under **Manage devices by platform**, verify that **1** is displayed next to **Windows**. It may take a while to display.
+4. On the **Devices | Overview (2)** blade under **Manage devices by platform**, verify that **1** is displayed next to **Windows (3)**. It may take a while to display.
 
-    ![](../media/win12.png)
+    ![](../media/29.png)
 
 6. On the **Devices** blade, select **All devices** and verify that **SEA-WS1** is listed.
 
+    
+
 7. Note that for SEA-WS1, the **Managed by** column displays **Intune** and the **Ownership** column displays **Corporate**. 
+
+    ![](../media/30.png)
 
    _Note: This view lists devices that are joined to Azure AD. Remember that you configured automatic enrollment between Azure AD and Intune, and because of that, any device that is joined to Azure AD is automatically enrolled in Intune. Any devices joined prior to setting up enrollment are only joined to Azure AD, but not enrolled in Intune._
 
@@ -146,7 +208,9 @@ You have assigned Aaron Nicholls appropriate licenses and will now test the proc
 
 10. Select **Devices**, then select **All devices**. 
 
-   > Take note of SEA-WS1. Notice that the Join Type column displays **Microsoft Entra joined** and the MDM column displays **Microsoft Intune**.
+    ![](../media/31.png)
+
+    > Take note of SEA-WS1. Notice that the Join Type column displays **Microsoft Entra joined** and the MDM column displays **Microsoft Intune**.
 
 11. Close all open Windows.
 
