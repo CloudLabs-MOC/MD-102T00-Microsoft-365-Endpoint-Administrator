@@ -93,10 +93,9 @@ In this task you will sign in to the SEA-SVR1 server using the Contoso administr
     - Job title : **HR Rep (4)**
     - Department : **HR (5)**
 
-        ![](../media/p1t1s19.1.png)
+      ![](../media/p1t1s19.1.png)
 
-
-      > **Note:** The **Member** user type is the default user type. This user type is used for most users in an organization.
+      >**Note:** The **Member** user type is the default user type. This user type is used for most users in an organization.
 
 20. Scroll down under **Settings**, next to **Usage location**, select **United States (6)** and select **Next:Assignments (7)** located at the bottom of the page.
 
@@ -124,7 +123,7 @@ In this task you will sign in to the SEA-SVR1 server using the Contoso administr
     - Next to **Password**, enter **Pa55-w.rd! (4)**
     - Select **Next:Properties (5)** located at the bottom of the page
      
-        ![](../media/p1t1s29.png)
+      ![](../media/p1t1s29.png)
 
 1. Under the **Properties** tab.
 
@@ -264,10 +263,15 @@ In this task, you will disable the security defaults in the Entra admin center b
 
 
 
+    
+    
     ![](../media/p1t3s8.3.png)
 
 
 
+    
+    
+    
     ```
     New-MgUser `
         -DisplayName "Alex Wilber" `
