@@ -114,13 +114,11 @@ In this task, you will install and configure Microsoft Entra Connect on the serv
 
 23. Close all open windows.
 
-#### Task 2: Verify synchronization in Entra ID
+### Task 2: Verify synchronization in Entra ID
 
 In this task, you will verify that the synchronization worked by checking the synced users and groups in the Entra admin center.
 
-1. On the taskbar, select **Microsoft Edge**.
-
-2. In the address bar, enter **https://entra.microsoft.com**.
+1. On the taskbar, select **Microsoft Edge** in the address bar, enter **https://entra.microsoft.com**.
 
 3. At the Sign-in prompt, enter **<inject key="AzureAdUserEmail"></inject>** and then select **Next**.
 

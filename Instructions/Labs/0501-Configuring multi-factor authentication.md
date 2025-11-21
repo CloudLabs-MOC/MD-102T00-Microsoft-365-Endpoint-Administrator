@@ -88,11 +88,11 @@ In this task you will enable per-user MFA for Alex Wilber and configure the serv
 
 12. On the Enable multifactor authentication message, select **Enable**.
 
-   ![](../media/262.png)
+     ![](../media/262.png)
 
 13. Once Enabled, refresh the page. Take note that the Status for Alex Wilber is now **Enabled**.
 
-   ![](../media/263.png)
+     ![](../media/263.png)
 
 14. Close Microsoft Edge.
 
@@ -100,7 +100,9 @@ In this task you will enable per-user MFA for Alex Wilber and configure the serv
 
 In this task you will sign in again as Alex Wilber to register MFA using your phone number and verify that MFA works correctly.
 
-1. Switch to **SEA-WS3** and sign in as **Admin** with the password **Pa55w.rd**. 
+1. Switch to **SEA-WS3** and sign in from desktop as **Admin** with the password **Pa55w.rd**. 
+
+    ![](../media/H6.png)
 
 2. On the taskbar, select **Microsoft Edge**.
 
@@ -136,7 +138,7 @@ In this task you will sign in again as Alex Wilber to register MFA using your ph
 
 10. On the **Keep your account secure** page, you will receive a message "Great job! You have successfully set up your security info. Choose **Done** to continue signing in." Select **Done**.
 
-   ![](../media/271.png)
+    ![](../media/271.png)
 
 11. At the Stay signed in message, select **No**. 
 

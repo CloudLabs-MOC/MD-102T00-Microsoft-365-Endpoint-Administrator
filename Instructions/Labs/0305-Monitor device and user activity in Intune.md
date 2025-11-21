@@ -30,6 +30,8 @@ In this task you will review Aaron Nicholls’ sign-in activity and check the au
 
 1. On **SEA-SVR1**, on the taskbar, select **Microsoft Edge**.
 
+    ![](../media/H2.png)
+
 2. In Microsoft Edge, type **https://intune.microsoft.com** in the address bar, and then press **Enter**.
 
 3. Sign in as user **<inject key="AzureAdUserEmail"></inject>**, and use the tenant Admin password **<inject key="AzureAdUserPassword"></inject>**

@@ -27,6 +27,10 @@ In this task you will create a dynamic device group in Entra ID that will automa
 
 1. Sign in to **SEA-SVR1** as **Contoso\\Administrator** with the password **Pa55w.rd** and close **Server Manager**.
 
+     ![](../media/H2.png)
+
+    ![](../media/p1t1s1.2.png)
+
 2. On the taskbar, select **Microsoft Edge**.
 
 3. In Microsoft Edge, in the address bar, type **https://entra.microsoft.com**, and then press **Enter**. If prompted, sign in with your **<inject key="AzureAdUserEmail"></inject>**, and use the tenant Admin password **<inject key="AzureAdUserPassword"></inject>**

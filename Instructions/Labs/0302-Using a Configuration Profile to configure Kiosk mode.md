@@ -30,6 +30,8 @@ In this task you will enroll the SEA-WS2 device into Entra ID and trigger an Int
 
 1. Switch to **HOSTVM** and sign in to **SEA-WS2** VM through desktop shortcut as **Admin** with the password of **Pa55w.rd**.
 
+    ![](../media/H5.png)
+
 2. Select **Start (1)** and then select **Settings (2)**.
 
    ![](../media/100.png)
@@ -79,6 +81,10 @@ In this task you will enroll the SEA-WS2 device into Entra ID and trigger an Int
 In this task you will create a device group in Intune to target kiosk settings specifically to the SEA-WS2 device.
 
 1. Switch to **SEA-SVR1** and sign in as **Contoso\Administrator** with the password of **Pa55w.rd**. Close Server Manager.
+
+    ![](../media/H2.png)
+
+    ![](../media/p1t1s1.2.png)
 
 2. On **SEA-SVR1**, on the taskbar, select **Microsoft Edge**.
 
@@ -169,7 +175,9 @@ In this task you will create a new Intune configuration profile that configures 
 
 In this task you will verify that the kiosk configuration has been applied by syncing the device and confirming it automatically signs in and launches Edge in kiosk mode.
 
-1. Switch to **HOSTVM** and sign in to **SEA-WS2** as **Admin** with the password of **Pa55w.rd**.
+1. Switch to **HOSTVM** and sign in from desktop to **SEA-WS2** as **Admin** with the password of **Pa55w.rd**.
+
+    ![](../media/H5.png)
   
     >**Note** : Ensure that you are in basic session mode and able to view Clipboard in the menu bar as shown in the below image. If not please change it to the basic session by selecting the icon which was highlighted in the tool bar in the below image.
 

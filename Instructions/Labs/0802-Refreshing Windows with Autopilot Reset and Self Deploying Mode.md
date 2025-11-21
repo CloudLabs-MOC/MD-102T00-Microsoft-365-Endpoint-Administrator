@@ -27,6 +27,10 @@ In this task you will create a new Autopilot deployment profile configured for S
 
 1. Switch to **SEA-SVR1**.
 
+     ![](../media/H2.png)
+
+    ![](../media/p1t1s1.2.png)
+
 2. In **Microsoft Edge**, open a new tab and navigate to **https://intune.microsoft.com**. If prompted, sign in with your **<inject key="AzureAdUserEmail"></inject>**.
 
 3. In the **Microsoft Intune admin center** select **Devices (1)**, then in the **Device onboarding** section select **Enrollment (2)**, and on the **Windows enrollment** tab scroll down to **Windows Autopilot** in the details pane and select **Deployment Profiles (3)**.
@@ -102,9 +106,11 @@ In this task you will remotely trigger an Autopilot Reset on the Autopilot-regis
 
     ![](../media/657.png)
 
-6. Switch to **HOSTVM** and sign in to **SEA-W10-CL3**.
+6. Switch to **HOSTVM** and sign in to **SEA-W10-CL3** through desktop.
 
-   > Note: SEA-W10-CL3 should still be running from the previous lab.
+    ![](../media/H7.png)
+
+    > Note: SEA-W10-CL3 should still be running from the previous lab.
 
 7. Restart **SEA-W10-CL3**.
 

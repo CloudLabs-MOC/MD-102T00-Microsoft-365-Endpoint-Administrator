@@ -14,6 +14,10 @@ In this task you will export the Windows Client Policy GPO from Active Directory
 
 1. Switch to **SEA-SVR1** and, if necessary, sign in as **Contoso\Administrator** with the password of **Pa55w.rd**. 
 
+    ![](../media/H2.png)
+
+    ![](../media/p1t1s1.2.png)
+
 2. If necessary, open **Server Manager**.
 
    ![](../media/151.png)
@@ -47,6 +51,8 @@ In this task you will export the Windows Client Policy GPO from Active Directory
 In this task you will import the exported GPO into Group Policy Analytics and review which settings are supported for migration to Intune.
 
 1. On **SEA-SVR1**, on the taskbar, select **Microsoft Edge**.
+
+    ![](../media/H2.png)
 
 2. In Microsoft Edge, type **https://intune.microsoft.com** in the address bar, and then press **Enter**. 
 
