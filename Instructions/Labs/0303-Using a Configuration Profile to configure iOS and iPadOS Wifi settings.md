@@ -23,6 +23,10 @@ In this task you will create a new Intune security group named iOS_iPadOS Device
 
 1. Switch to **SEA-SVR1** and sign in as **Contoso\Administrator** with the password of **Pa55w.rd**. Close Server Manager.
 
+    ![](../media/H2.png)
+
+    ![](../media/p1t1s1.2.png)
+
 2. On **SEA-SVR1**, on the taskbar, select **Microsoft Edge**.
 
 3. In Microsoft Edge, type **https://intune.microsoft.com** in the address bar, and then press **Enter**. 

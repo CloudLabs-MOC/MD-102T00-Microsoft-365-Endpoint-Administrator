@@ -20,6 +20,10 @@ In this task you will create an App Protection Policy for iOS/iPadOS that restri
 If you want, I can also
 
 1. On **SEA-SVR1**, if necessary, sign in as **Contoso\\Administrator** with the password **Pa55w.rd** and close **Server Manager**.
+
+     ![](../media/H2.png)
+
+    ![](../media/p1t1s1.2.png)
     
 2. On the taskbar, select **Microsoft Edge**.
 

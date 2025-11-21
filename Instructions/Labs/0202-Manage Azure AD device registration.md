@@ -108,6 +108,8 @@ In this task you will test sign-in behavior on an Entra registered device and th
 
 1. Switch to **HOSTVM** and attempt to sign in to **SEA-WS1** as **`JoniS@yourtenant.onmicrosoft.com`**.
 
+   ![](../media/dsk.png)
+
    >**Note**: Notice that unlike Entra Joined devices, an Entra registered device does not allow a user to sign in to the device with an Entra credential
 
 2. On SEA-WS1, sign in as **Admin** with the password of **Pa55w.rd**. 

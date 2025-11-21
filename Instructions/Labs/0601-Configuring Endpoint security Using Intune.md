@@ -32,6 +32,10 @@ In this task you will create a Windows Security Experience policy in Intune to c
 
 1. Sign in to **SEA-SVR1** as **Contoso\\Administrator** with the password **Pa55w.rd**. 
 
+     ![](../media/H2.png)
+
+    ![](../media/p1t1s1.2.png)
+
 2. On the taskbar, select **Microsoft Edge**.
 
 3. In Microsoft Edge, type **https://intune.microsoft.com** in the  address bar, and then press **Enter**. 
@@ -160,6 +164,8 @@ In this task you will verify that the security policies are enforced on an enrol
 4. Close **Windows Security** and sign out of SEA-CL1.
 
 5. Switch to **SEA-WS1** VM through desktop shortcut inside HOSTVM and signout if necessary, and sign in as as **Aaron Nicholls** with the PIN: **102938**
+
+     ![](../media/dsk.png)
   
    >**Note** : Ensure that you are in basic session mode and able to view Clipboard in the menu bar as shown in the below image. If not please change it to the basic session by selecting the icon which was highlighted in the tool bar in the below image.
 

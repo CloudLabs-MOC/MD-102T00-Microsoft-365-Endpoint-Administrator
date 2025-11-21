@@ -37,6 +37,8 @@ In this task you will check the current settings on the SEA-WS1 device to unders
 
 1. Switch to **HOSTVM** and Sign in to **SEA-WS1** VM from the desktop shortcut as **Aaron Nicholls** with the PIN **102938**
 
+    ![](../media/dsk.png)
+
    >**Note** : Ensure that you are in basic session mode and able to view Clipboard in the menu bar as shown in the below image. If not please change it to the basic session by selecting the icon which was highlighted in the tool bar in the below image and then sign in with PIN.
 
    ![](../media/passwordwriteback1.png)
@@ -207,7 +209,9 @@ In this task you will create a dynamic device group that automatically includes 
     ```
 
 
-      ![](../media/69.png)
+      
+    ![](../media/69.png)      
+      
 
 6. On the **Dynamic membership rules** blade, select **Save**.
 
@@ -320,6 +324,10 @@ There was an exception to Contoso's policy that specifies that members of the De
 In this task you will modify the existing configuration profile by removing the Privacy restriction from the device settings.
 
 1. Switch to **SEA-SVR1** and use password **Pa55w.rd** to login.
+
+   ![](../media/H2.png)
+
+   ![](../media/p1t1s1.2.png)
 
 2. On **SEA-SVR1**, in the **Microsoft Intune admin center** select **Devices (1)** and then **Configuration**, and on the **Devices | Configuration (2)** blade in the details pane select **Contoso Developer – standard (3)**.
 

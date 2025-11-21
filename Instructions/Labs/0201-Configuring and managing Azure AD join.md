@@ -159,11 +159,13 @@ In this task you will confirm that SEA-WS1 is successfully Entra joined by check
 
     ![](../media/p3t3s7.png)
 
-   > Notice that Joni Sherman has been added as a local Administrator on SEA-WS1. Also notice two security principals represented by their security identifiers (SID). These two SIDs represent the Entra ID global administrator role, and the Entra joined device administrator role. 
+   > **Note :** that Joni Sherman has been added as a local Administrator on SEA-WS1. Also notice two security principals represented by their security identifiers (SID). These two SIDs represent the Entra ID global administrator role, and the Entra joined device administrator role. 
 
 8. Close all open windows and sign out of SEA-WS1.
 
 9. Switch to **SEA-SVR1**.
+
+     ![](../media/H2.png)
 
 10. In Microsoft Edge, go to `https://entra.microsoft.com/` in the Microsoft Entra admin center,Sign in if required and expand **Identity**.
 
@@ -184,6 +186,8 @@ In this task you will confirm that SEA-WS1 is successfully Entra joined by check
 In this task you will sign in to Windows using an Entra user account and complete required authentication setup.
 
 1. Switch to **HOSTVM** and Sign out from **SEA-WS1** VM, if you are already signed in to admin and sign in with Other user.
+
+     ![](../media/dsk.png)
 
    >**Note** : Before proceeding with the next step, ensure that you are in basic session mode and able to view Clipboard in the menu bar as shown in the below image. If not please change it to the basic session by selecting the icon which was highlighted in the tool bar in the below image.
 
@@ -362,7 +366,7 @@ In this task you will configure Entra hybrid join using Microsoft Entra Connect 
 
 14. Switch to **SEA-CL2**.
 
-    ![](../media/p3t7s14.png)
+    ![](../media/H3.png)
 
 15. At the sign-in page, select the **Power** button and then select **Restart**.
 

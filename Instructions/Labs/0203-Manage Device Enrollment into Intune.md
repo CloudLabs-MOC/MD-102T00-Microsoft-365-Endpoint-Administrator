@@ -24,6 +24,10 @@ In this task you will review the available licenses in the Microsoft 365 admin c
 
 1. On **SEA-SVR1**, if necessary, sign in as **Contoso\\Administrator** with the password of **Pa55w.rd** and close **Server Manager**.
 
+    ![](../media/H2.png)
+
+    ![](../media/p1t1s1.2.png)
+
 2. On the taskbar select **Microsoft Edge**, in the address bar type **https://admin.microsoft.com**, and then press **Enter**.
 
 3. Sign in as user **<inject key="AzureAdUserEmail"></inject>**, and use the tenant Admin password **<inject key="AzureAdUserPassword"></inject>**, If the **Stay signed in?** prompt appears, select **No**. 

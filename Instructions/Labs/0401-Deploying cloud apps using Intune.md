@@ -30,6 +30,10 @@ In this task you will add the Microsoft Remote Desktop (Windows App) to Intune s
 
 1. On **SEA-SVR1**, if necessary, sign in as **Contoso\\Administrator** with the password **Pa55w.rd** and close **Server Manager**.
 
+     ![](../media/H2.png)
+
+    ![](../media/p1t1s1.2.png)
+
 2. On the taskbar, select **Microsoft Edge**.
 
 3. In Microsoft Edge, type **https://intune.microsoft.com** in the address bar, and then press **Enter**.
@@ -108,6 +112,8 @@ In this task you will sign in as Aaron Nicholls and install the Windows App from
 
 1. Switch to **HOSTVM** and sign in to **SEA-WS1** VM through desktop shortcut and verify that you are in basic session mode.
 
+     ![](../media/dsk.png)
+
 2. Sign in as **Aaron Nicholls** with the PIN **102938**.
 
 3. On the taskbar, select **Microsoft Edge**.
@@ -152,11 +158,11 @@ In this task you will sign in as Aaron Nicholls and install the Windows App from
 
 13. On the **Install Microsoft Remote Desktop** dialog box, select **Always allow portal.manage.microsoft.com to open links of this type in the associated app (1)** and then select **Open (2)**.
 
-   ![](../media/211.png)
+     ![](../media/211.png)
 
-   >It may take a few minutes for the app to install.
+     >**Note:** It may take a few minutes for the app to install.
 
-   ![](../media/212.png)
+     ![](../media/212.png)
 
 14. After the app is installed close all open windows.
 

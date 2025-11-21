@@ -73,7 +73,7 @@ In this task you will sign in to the SEA-SVR1 server using the Contoso administr
 
 9. In the Microsoft Entra admin center, in the left navigation pane, under **Entra ID (1)** click on  **Users (2)** and select **All users (3)**. On the **Users | All users** page, select **+ New user (4)** then select **Create new user (5)**.
 
-    > Take note of the users that already exist as members of the Azure AD domain. The **On-premises sync enabled** column states **No** for all current users. This indicates that each user was created directly in Azure AD and not synchronized from an on-premises directory service.
+    >**Note:** Take note of the users that already exist as members of the Azure AD domain. The **On-premises sync enabled** column states **No** for all current users. This indicates that each user was created directly in Azure AD and not synchronized from an on-premises directory service.
 
 11. On the **Create new user** page, enter the following:
 
@@ -96,7 +96,7 @@ In this task you will sign in to the SEA-SVR1 server using the Contoso administr
         ![](../media/p1t1s19.1.png)
 
 
-      > Note: The **Member** user type is the default user type. This user type is used for most users in an organization.
+      > **Note:** The **Member** user type is the default user type. This user type is used for most users in an organization.
 
 20. Scroll down under **Settings**, next to **Usage location**, select **United States (6)** and select **Next:Assignments (7)** located at the bottom of the page.
 
@@ -134,9 +134,9 @@ In this task you will sign in to the SEA-SVR1 server using the Contoso administr
     - Job title : **Helpdesk Manager (4)**
     - Department : **Operations (5)**
 
-        ![](../media/p1t1s34.png)
+      ![](../media/p1t1s34.png)
 
-         > Note: The **Member** user type is the default user type. This user type is used for most users in an organization.
+      >**Note:** The **Member** user type is the default user type. This user type is used for most users in an organization.
 
 35. Scroll down next to **Usage location**, select **United States (6)** and select **Next:Assignments (7)** located at the bottom of the page.
 
@@ -229,7 +229,9 @@ In this task, you will disable the security defaults in the Entra admin center b
         -Department "Sales" -JobTitle "Sales Rep"
     ```
 
-    ![](../media/p1t3s8.1.png)
+    
+    
+   ![](../media/p1t3s8.1.png)
 
 
     ```
@@ -243,7 +245,11 @@ In this task, you will disable the security defaults in the Entra admin center b
         -Department "Accounting" -JobTitle "Accountant"
     ```
 
-    ![](../media/p1t3s8.2.png)
+
+
+   ![](../media/p1t3s8.2.png)
+
+
 
     ```
     New-MgUser `
@@ -256,7 +262,11 @@ In this task, you will disable the security defaults in the Entra admin center b
         -Department "Marketing" -JobTitle "Marketing head"
     ```
 
+
+
     ![](../media/p1t3s8.3.png)
+
+
 
     ```
     New-MgUser `
@@ -279,7 +289,7 @@ In this task, you will disable the security defaults in the Entra admin center b
 
     ![](../media/p1t3s9.png)
 
-> Verify that the list of users from your tenant is displayed. Also take note of which users have a license assigned. Any user with the **isLicensed** value of **False** has not been assigned a license.
+    >**Note:** Verify that the list of users from your tenant is displayed. Also take note of which users have a license assigned. Any user with the **isLicensed** value of **False** has not been assigned a license.
 
 **Results**: After completing this exercise, you will have successfully created new user accounts in Entra ID.
 
@@ -543,11 +553,9 @@ In this task you will review available licenses, customize the sign-in page bran
 
     ![](../media/LC10.png)
 
-1. In the Microsoft 365 admin center, in the Navigation pane, select **Billing** > **Licenses**.
+1. In the Microsoft 365 admin center, in the Navigation pane, select **Billing** > **Licenses**. In the **Subscriptions** list, select **Office 365 E5 (no Teams)**.
 
-1. In the **Subscriptions** list, select **Office 365 E5 (no Teams)**.
-
-   > Take note of the users that are assigned the Office 365 E5 license. Notice the Assignment Paths column which indicates how license assignment is configured for each user. Edmund and Miranda both receive their license assignment from their membership in the Contoso_Managers group. Allan and Alex both receive heir license assignment from their membership in the Contoso_Admins group. You may need to select **Refresh** a couple of times to update the Assignment path column.
+   >**Note:** Take note of the users that are assigned the Office 365 E5 license. Notice the Assignment Paths column which indicates how license assignment is configured for each user. Edmund and Miranda both receive their license assignment from their membership in the Contoso_Managers group. Allan and Alex both receive heir license assignment from their membership in the Contoso_Admins group. You may need to select **Refresh** a couple of times to update the Assignment path column.
 
 22. Close Microsoft Edge.
 
