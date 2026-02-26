@@ -39,6 +39,10 @@ In this task you will sign in to the SEA-SVR1 server using the Contoso administr
 
     ![](../media/H2.png)
 
+    > **Note :** If you’re unable to switch the VM from the dropdown menu, you can also access the VM directly from the desktop of your Host VM.
+
+    ![](../media/1.png)
+
     ![](../media/p1t1s1.2.png)
 
 2. Close **Server Manager**.
@@ -72,6 +76,8 @@ In this task you will sign in to the SEA-SVR1 server using the Contoso administr
    >**Note**: If the prompt asks for **Action Required** Select **Ask later**.
 
 9. In the Microsoft Entra admin center, in the left navigation pane, under **Entra ID (1)** click on  **Users (2)** and select **All users (3)**. On the **Users | All users** page, select **+ New user (4)** then select **Create new user (5)**.
+
+    ![](../media/1000.png)
 
     >**Note:** Take note of the users that already exist as members of the Azure AD domain. The **On-premises sync enabled** column states **No** for all current users. This indicates that each user was created directly in Azure AD and not synchronized from an on-premises directory service.
 
@@ -190,7 +196,11 @@ In this task, you will disable the security defaults in the Entra admin center b
     Connect-MgGraph -scopes "user.readwrite.all, group.readwrite.all"
     ```
 
-4. A new tab in **Microsoft Edge** will appear prompting you to sign in. In the **Sign in to your account** dialog box, sign in as **<inject key="AzureAdUserEmail"></inject>** with the tenant password, and then select **Sign in**.
+4. Select **Work or school account** and click **continue** on **Let's get you sign in page**
+
+    ![](../media/1001.png)
+
+1. A new tab in **Microsoft Edge** will appear prompting you to sign in. In the **Sign in to your account** dialog box, sign in as **<inject key="AzureAdUserEmail"></inject>** with the tenant password, and then select **Sign in**.
 
     ![](../media/p1t3s4.1.png)
 
@@ -227,10 +237,8 @@ In this task, you will disable the security defaults in the Entra admin center b
         -PasswordProfile $PWProfile -AccountEnabled `
         -Department "Sales" -JobTitle "Sales Rep"
     ```
-
     
-    
-   ![](../media/p1t3s8.1.png)
+    ![](../media/p1t3s8.1.png)
 
 
     ```
@@ -244,11 +252,7 @@ In this task, you will disable the security defaults in the Entra admin center b
         -Department "Accounting" -JobTitle "Accountant"
     ```
 
-
-
    ![](../media/p1t3s8.2.png)
-
-
 
     ```
     New-MgUser `
@@ -260,18 +264,9 @@ In this task, you will disable the security defaults in the Entra admin center b
         -PasswordProfile $PWProfile -AccountEnabled `
         -Department "Marketing" -JobTitle "Marketing head"
     ```
-
-
-
-    
-    
+ 
     ![](../media/p1t3s8.3.png)
-
-
-
-    
-    
-    
+  
     ```
     New-MgUser `
         -DisplayName "Alex Wilber" `
@@ -283,7 +278,7 @@ In this task, you will disable the security defaults in the Entra admin center b
         -Department "Support" -JobTitle "Support Executive"
     ```    
    
-   ![](../media/p1t3s8.4.png)
+    ![](../media/p1t3s8.4.png)
 
 10. To confirm that the users was created, In the **PowerShell** window, type the following command and then press **Enter**:
 
@@ -322,6 +317,8 @@ In this task, you will review different administrative roles in Entra ID and ass
     ![](../media/p1t4s4.png)
 
 6. In the **Assignments** pane, select **Add assignments** and select **Allan Deyoung (1)** and select **Add (2)**. go back to the role assignment section by clicking on the cancel **X** on top right side.
+
+    ![](../media/1004.png)
 
     ![](../media/p1t4s5.1.png)
 
@@ -437,7 +434,7 @@ In this task you will use PowerShell to create a new security group, find it, an
     Get-MgGroup
     ```
 
-    ![](../media/p1t6s3.png)
+    ![](../media/1005.png)
 
 4. Verify that you get the list of groups in your tenant, including the Contoso_Sales group you just created.
 

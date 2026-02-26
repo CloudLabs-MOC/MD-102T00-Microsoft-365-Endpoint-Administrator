@@ -20,6 +20,10 @@
 
     ![](../media/switch.png)
 
+    > **Note :** If you’re unable to switch the VM from the dropdown menu, you can also access the VM directly from the desktop of your Host VM.
+
+    ![](../media/1.png)
+
 1. Click on **Next** from the bottom right and follow the instructions to perform the lab.
 
     ![](../media/Instr4.png)   

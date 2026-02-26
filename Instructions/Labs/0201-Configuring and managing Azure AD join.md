@@ -26,6 +26,10 @@ In this task you will configure device settings in Entra ID, allow users to join
 
     ![](../media/H2.png)
 
+    > **Note :** If you’re unable to switch the VM from the dropdown menu, you can also access the VM directly from the desktop of your Host VM.
+
+    ![](../media/1.png)
+
     ![](../media/p1t1s1.2.png)
 
 2. On the taskbar select **Microsoft Edge**, in the address bar type **https://entra.microsoft.com**, and then press **Enter**.
@@ -60,7 +64,7 @@ In this task you will configure device settings in Entra ID, allow users to join
 
     > Allan Deyoung will now be added as a Device Administrator on all Entra joined devices.
 
-13. Scroll back to or select the **Devices | Device settings** navigation link at the top of the page.
+13. In the navigation breadcrumbs, select the **Devices | Device settings** link at the top of the page.
 
     ![](../media/p3t1s13.png)
 
@@ -106,7 +110,7 @@ In this task you will join the SEA-WS1 computer to Entra ID using a user account
 
    >**Note**: Replace **"yourtenant"** with your Tenant Name
 
-9. On the **Enter password (1)** page, enter the tenant password provided by your instructor i.e **Pa55-w.rd!**  and then select **Sign in (2)**.
+9. On the **Enter password** page, enter the user password provided i.e **Pa55-w.rd!**  and then select **Sign in (2)**.
 
     ![](../media/p3t2s8.png) 
 
@@ -197,7 +201,7 @@ In this task you will sign in to Windows using an Entra user account and complet
 
     ![](../media/p3t4s2.png)
 
-3. Then sign in as **`JoniS@yourtenant.onmicrosoft.com`** with the Tenant password as provided by your instructor i.e **Pa55-w.rd!** . 
+3. Then sign in as **`JoniS@yourtenant.onmicrosoft.com`** with the user password as provided by your instructor i.e **Pa55-w.rd!** . 
 
     ![](../media/p3t4s3.png)
 
@@ -219,15 +223,15 @@ In this task you will sign in to Windows using an Entra user account and complet
 
     ![](../media/p3t4s5.3.png)
 
-1. In **Add your phone number** page fill your mobile number details and click **Next.**
+1. On the **Add your phone number** page, select your **Country code** and in the **Phone number** field, enter your mobile phone number which is able to receive text messages, then select **Next**.
 
     ![](../media/p3t4s5.4.png)
 
-9. When you receive the verification code, enter the code on the Phone page and then select **Next**.
+9. When you receive the verification code, enter the code on the **Verify your phone number** page and then select **Next**.
 
     ![](../media/p3t4s5.5.png)
 
-10. On the verification page, select **Next** and then select **Done**.
+10. On the **Phone number added** page, select **Done**.
 
 11. On the **Set up a PIN** page, in the **New PIN** and **Confirm PIN** boxes, type **102938** and then select **OK**.
 

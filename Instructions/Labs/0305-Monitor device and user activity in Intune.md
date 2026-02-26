@@ -16,13 +16,13 @@ To following lab(s) must be completed before this lab:
 
 - 0204-Enrolling devices into Intune
 
-- 0301-Creating and Deploying Configuration Profiles
+- 0301-Creating and Deploying Configuration Policies
 
   > Note: You will also need a mobile phone that can receive text messages used to secure Windows Hello sign in authentication to Azure AD.
 
 ### Scenario
 
-You need to review Aaron Nicholls sign-in activity and general information provided by the Audit logs.  You also need to verify the hardware on SEA-WS1 and confirm the configuration profile assigned to this device is successfully applied.
+You need to review Aaron Nicholls sign-in activity and general information provided by the Audit logs.  You also need to verify the hardware on SEA-WS1 and confirm the configuration policy assigned to this device is successfully applied.
 
 ### Task 1: Monitor user activity
 
@@ -74,7 +74,7 @@ In this task you will examine device activity in Intune, including hardware deta
 
 5. In the SEA-WS1 navigation pane, select **Hardware** and examine the hardware inventory.
 
-   ![](../media/176.png)
+   ![](../media/1010.png)
 
 6. In the SEA-WS1 navigation pane, select **Discovered apps** and examine the app inventory.
 

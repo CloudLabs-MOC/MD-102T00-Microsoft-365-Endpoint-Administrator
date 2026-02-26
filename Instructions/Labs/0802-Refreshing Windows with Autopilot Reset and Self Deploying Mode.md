@@ -71,10 +71,10 @@ In this task you will create a new Autopilot deployment profile configured for S
 
 15. Ensure that the following options are set:
 
-   - Language (Region): **Operating system default**
-   - Automatically configure keyboard: **Yes**
-   - Apply device name template: **Yes**
-   - Enter a name: **Contoso-%RAND:2%**
+    - Language (Region): **Operating system default**
+    - Automatically configure keyboard: **Yes**
+    - Apply device name template: **Yes**
+    - Enter a name: **Contoso-%RAND:2%**
 
 16. Select **Next**.
 
@@ -96,7 +96,7 @@ In this task you will remotely trigger an Autopilot Reset on the Autopilot-regis
 
 1. In the **Microsoft Intune admin center**, select **Devices (1)** and then select **All devices (2)**. Select the Autopilot PC (Begins with the name DESKTOP).
 
-    ![](../media/655.png)
+    ![](../media/1057.png)
 
 3. In the menu bar, select the ellipsis and then select **Autopilot Reset**.
 
@@ -150,7 +150,7 @@ In this task you will complete the Autopilot setup after the reset and verify th
 
 6. On the **All set!** page, select **OK**.
 
-    ![](../media/654.png)
+    ![](../media/1056.png)
 
 7. Select **Start** and select **Settings**. 
 

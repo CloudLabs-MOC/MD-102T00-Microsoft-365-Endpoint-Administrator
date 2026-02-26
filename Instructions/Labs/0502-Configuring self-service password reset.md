@@ -103,7 +103,7 @@ In this task you will enable self-service password reset for all users and confi
 
 1. Select **Registration** Select **No (1)** for **Require users to register when signing in**, and then select **Save (2)**.
 
-    ![](../media/315.png)
+    ![](../media/1021.png)
 
 1. In the navigation pane, select **On-premises integration**.
 
@@ -143,7 +143,7 @@ In this task you will sign in as a user and verify that they can successfully ch
 
 8. On the **My Account** page, in the navigation pane, select **Password**.
 
-9. On the **Change password** page, enter the following information and then select **submit**:
+9. On the **Change your password** page, enter the following information and then select **submit**:
 
      - New password: **Pa55w.rd1234!**
      - Confirm new password: **Pa55w.rd1234!**
@@ -172,6 +172,8 @@ In this task you will manually trigger an Azure AD Connect sync cycle to ensure 
     ```
     Start-ADSyncSyncCycle –PolicyType Delta
     ```
+
+    ![](../media/1022.png)
 
 4. Close Windows PowerShell, and then wait for approximately 3-4 minutes.
 

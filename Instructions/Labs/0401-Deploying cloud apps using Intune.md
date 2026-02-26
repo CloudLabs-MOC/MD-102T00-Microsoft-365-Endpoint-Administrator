@@ -52,6 +52,8 @@ In this task you will add the Microsoft Remote Desktop (Windows App) to Intune s
 
    ![](../media/192.png)
 
+   ![](../media/1011.png)
+
 10. On the **App information** page, verify the following information and then select **Next(5)**:
     - Name: **Windows App(1)**
     - Publisher: **Microsoft Corporation(2)**
@@ -119,6 +121,8 @@ In this task you will sign in as Aaron Nicholls and install the Windows App from
 3. On the taskbar, select **Microsoft Edge**.
 
 4. If necessary, at the **Welcome to Microsoft Edge** page, select **Confirm and continue**. Close the Welcome page.
+
+    ![](../media/1013.png)
 
 5. In the address bar browse to **https://portal.manage.microsoft.com** and then press **Enter**.
 
@@ -203,6 +207,8 @@ In this task you will add Microsoft 365 Apps (Excel, Outlook, PowerPoint, and Wo
 
 3. In the **Select app type** blade, under **Microsoft 365 Apps (1)**, select **Windows 10 and later** , and then click **Select (2)**.
 
+    ![](../media/1014.png)
+
     ![](../media/217.png)
 
 4. On the **Add Microsoft 365 Apps** blade, configure the following options and select **Next (3)**:
@@ -211,7 +217,7 @@ In this task you will add Microsoft 365 Apps (Excel, Outlook, PowerPoint, and Wo
 
     - Description: **Microsoft 365 Apps for the Research dept at Contoso (2)**
 
-      ![](../media/218.png)
+      ![](../media/1015.png)
 
 5. On the **Configure app suite** tab, expand the **Select Office apps** dropdown, and ensure that only the following apps are selected:
 
@@ -253,7 +259,7 @@ In this task you will add Microsoft 365 Apps (Excel, Outlook, PowerPoint, and Wo
 
 11. On the **Microsoft 365 Apps (Research)** page, select **Properties (1)**. In the details pane verify that **Research (2)** is listed under **Required** in the **Assignments** section.
 
-    ![](../media/224.png)
+    ![](../media/1016.png)
 
 ### Task 3: Force policy synchronization from the Intune console
 
@@ -314,7 +320,7 @@ In this task you will monitor app installation status in Intune to confirm deplo
 
 4. In the details pane, select **Microsoft 365 Apps \(Research\)**.
 
-   ![](../media/233.png)
+   ![](../media/1017.png)
 
 5. In the details pane, under **Monitor** and under **User install status**, verify that **1** is displayed under Installed.
 
@@ -338,9 +344,9 @@ In this task you will monitor app installation status in Intune to confirm deplo
 
 9. On the **SEA-WS1** blade select **Managed Apps (1)**, then on the **SEA-WS1 | Managed Apps** blade in the details pane select **Microsoft 365 Apps (Research) (2)**.
 
-   ![](../media/237.png)
+   ![](../media/1018.png)
 
-   ![](../media/238.png)
+   ![](../media/1019.png)
 
    > On the **Microsoft 365 Apps (Research) - Installation details** window, you can see the entire lifecycle of the application, that is - when it was created, assigned, installation time and status and the last time the device checked in (synced with Intune).
 

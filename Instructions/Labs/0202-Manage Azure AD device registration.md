@@ -58,7 +58,7 @@ In this task you will register the SEA-WS1 Windows device with Entra by adding J
 
    ![](../media/p4t2s6.png)
 
-7. On the **Enter password** page, enter the tenant password provided by your instructor **Pa55-w.rd!** and then select **Sign in**.
+7. On the **Enter password** page, enter the user password **Pa55-w.rd!** and then select **Sign in**.
 
    ![](../media/p4t2s7.png)
 
@@ -130,7 +130,7 @@ In this task you will test sign-in behavior on an Entra registered device and th
 
    ![](../media/p4t4s7.1.png)
 
-   > Notice that you do not have to restart to disconnect a registered device from Microsoft Entra.
+   > Notice that you do not have to restart to disconnect a registered device from Microsoft Entra ID.
 
 8. Sign out of SEA-WS1.
 

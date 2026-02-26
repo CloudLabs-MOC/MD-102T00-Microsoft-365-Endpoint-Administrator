@@ -87,7 +87,7 @@ In this task you will verify that the device is both Entra joined and Intune enr
 
     -  Microsoft Intune MDM Device CA
     -  MS-Organization-Access
-    -  MS-Organization-P2P-Access \[2023\]
+    -  MS-Organization-P2P-Access \[2026\]
 
     This indicates that the device is enrolled in Entra and Intune.
 

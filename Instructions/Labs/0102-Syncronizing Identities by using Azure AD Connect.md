@@ -16,6 +16,10 @@ In this task, you will install and configure Microsoft Entra Connect on the serv
 
     ![](../media/H2.png)
 
+    > **Note :** If you’re unable to switch the VM from the dropdown menu, you can also access the VM directly from the desktop of your Host VM.
+
+    ![](../media/1.png)
+
     ![](../media/p2t1s1.2.png)
 
 2. On the **taskbar**, select **Microsoft Edge**.
@@ -26,7 +30,7 @@ In this task, you will install and configure Microsoft Entra Connect on the serv
 
     ![](../media/p2t1s3.png)
 
-4. In the left navigantion pane, under **Entra ID**, select **Entra Connect (1)**. On the **Microsoft Entra Connect | Get started (2)** pane, select the **Manage (3)** tab.
+4. In the left navigation pane, under **Entra ID**, select **Entra Connect (1)**. On the **Microsoft Entra Connect | Get started (2)** pane, select the **Manage (3)** tab.
 
     ![](../media/p2t1s4.2.png)
 
@@ -38,7 +42,7 @@ In this task, you will install and configure Microsoft Entra Connect on the serv
 
     ![](../media/p2t1s4.3.png)
 
-    >**Note**: Azure AD Connect automatically downloads to the **Downloads** folder on SEA-SVR1.
+    >**Note**: Entra Connect automatically downloads to the **Downloads** folder on SEA-SVR1.
 
 8. Select **Open downloads folder** and then in the **Downloads** window, double-click **AzureAdConnect.msi**.
 

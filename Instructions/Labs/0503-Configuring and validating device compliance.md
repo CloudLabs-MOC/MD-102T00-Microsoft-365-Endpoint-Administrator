@@ -72,7 +72,7 @@ In this task you will create and assign a compliance policy that checks Windows 
 
      ![](../media/341.png)
 
-     ![](../media/341.png)
+     ![](../media/1023.png)
 
 12. On the **Actions for noncompliance** tab, note the action to **Mark device noncompliant** default setting is **immediately**. Select **Next (2)**. 
 
