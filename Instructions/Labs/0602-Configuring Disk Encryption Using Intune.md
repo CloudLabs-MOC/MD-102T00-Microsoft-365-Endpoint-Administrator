@@ -69,9 +69,9 @@ In this task you will create and assign a BitLocker device configuration policy 
      - Omit recovery options from the BitLocker setup wizard: **True (5)**
      - Save Bitlocker recovery info to AD DS: **True (6)**
 
-     ![](../media/1030.png)
+        ![](../media/1030.png)
 
-     ![](../media/1031.png)
+        ![](../media/1031.png)
 
 12. On the **Configurations settings** page, select **Next**.
 

@@ -67,6 +67,7 @@ In this task you will create and assign an Intune configuration profile that aut
 4. In the **Create a profile** blade, select the following options, and then select **Create**:
 
     - Platform: **iOS/iPadOS (1)**
+    
     - Profile type: **Templates (2)**
     
       ![](../media/134.png)

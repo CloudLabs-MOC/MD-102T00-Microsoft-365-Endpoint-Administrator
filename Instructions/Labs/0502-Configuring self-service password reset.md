@@ -96,7 +96,6 @@ In this task you will enable self-service password reset for all users and confi
 
     ![](../media/319.png)
 
-
 1. Select **Save**.
 
     ![](../media/320.png)

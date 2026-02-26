@@ -28,7 +28,7 @@ In this task you will create a new Deployment Share in MDT that will store the o
 
    > The **New Deployment Share Wizard** opens.
 
-6. On the **Path** page, under **Deployment share path**, change the value to **D:\DeploymentShare** and then select **Next**.
+6. On the **Path** page, under **Deployment share path**, change the value to **C:\DeploymentShare** and then select **Next**.
 
      ![](../media/506.png)
 
