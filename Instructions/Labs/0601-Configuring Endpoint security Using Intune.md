@@ -77,6 +77,8 @@ In this task you will create a Windows Security Experience policy in Intune to c
 
 15. On the **Assignments** tab, type **Contoso** in the search box and choose the **Contoso Developer Devices** group, and then select **Next**.
 
+    ![](../media/1026.png)
+
     ![](../media/386.png)
 
 16. On the **Review + create** tab, review the information and select **Save**.
@@ -157,7 +159,7 @@ In this task you will verify that the security policies are enforced on an enrol
 
    ![](../media/399.png)
 
-   ![](../media/400.png)
+   ![](../media/1028.png)
 
     > Notice that all security options are displayed. This is because SEA-CL1 is not enrolled to Intune.
 

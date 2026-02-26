@@ -35,6 +35,10 @@ For convenience, you can open the lab guide in a separate window by selecting th
 2. To Switch between the Virtual Machines, select the required VM from the dropdown.
 
    ![](../media/switch.png)
+
+   > **Note :** If you’re unable to switch the VM from the dropdown menu, you can also access the VM directly from the desktop of your Host VM.
+
+    ![](../media/1.png)
  
 ## Support Contact
  

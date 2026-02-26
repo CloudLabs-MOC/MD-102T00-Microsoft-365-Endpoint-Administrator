@@ -1,8 +1,8 @@
-# Practice Lab: Creating and Deploying Configuration Profiles
+# Practice Lab: Creating and Deploying Configuration Policies
 
 ## Summary
 
-In this lab, you will use Microsoft Intune to create and apply a Configuration profile for a Windows 11 device.
+In this lab, you will use Microsoft Intune to create and apply a Configuration policy for a Windows 11 device.
 
 ### Prerequisites
 
@@ -18,7 +18,7 @@ To following lab(s) must be completed before this lab:
 
   > Note: You will also need a mobile phone that can receive text messages used to secure Windows Hello sign in authentication to Azure AD.
 
-## Exercise 1: Create and apply a Configuration profile
+## ## Exercise 1: Create and apply a Configuration policy
 
 ### Scenario
 
@@ -53,7 +53,7 @@ In this task you will check the current settings on the SEA-WS1 device to unders
 
 5. Select the **Personalization (1)** setting and then on the Personalization page, select **Start (2)**. Ensure that **Show recently added apps** and **Show most used apps** are both set to **On**.
 
-   ![](../media/43.png)
+   ![](../media/1009.png)
 
    ![](../media/44.png)
 
@@ -87,7 +87,7 @@ In this task you will check the current settings on the SEA-WS1 device to unders
 
 14. Close the **Settings** window.
 
-### Task 2: Create a Configuration profile based on scenario requirements
+### Task 2: Create a Configuration policy based on scenario requirements
 
 In this task you will create a new Intune configuration profile that applies the required restrictions and Defender exclusions for Contoso developers.
 
@@ -208,9 +208,7 @@ In this task you will create a dynamic device group that automatically includes 
     (device.deviceOSType -contains "Windows")
     ```
 
-
-      
-    ![](../media/69.png)      
+     ![](../media/69.png)      
       
 
 6. On the **Dynamic membership rules** blade, select **Save**.
@@ -221,7 +219,7 @@ In this task you will create a dynamic device group that automatically includes 
 
    ![](../media/71.png)
 
-### Task 5: Assign a Configuration profile to Windows devices
+### Task 5: Assign a Configuration policy to Windows devices
 
 In this task you will assign the configuration profile to the developer device group so the settings apply to SEA-WS1.
 
@@ -249,7 +247,7 @@ In this task you will assign the configuration profile to the developer device g
 
 8. In the Microsoft Intune admin center, select **Devices** in the breadcrumb navigation menu.
 
-### Task 6: Verify that the Configuration profile is applied
+### Task 6: Verify that the Configuration policy is applied
 
 In this task you will verify on SEA-WS1 that Intune has applied the configuration profile and that all required changes are in effect.
 
@@ -311,15 +309,15 @@ In this task you will verify on SEA-WS1 that Intune has applied the configuratio
 
 16. Close the **Windows Security** page and then close the **Settings** app.
 
-**Results**: After completing this exercise, you will have successfully created and assigned a Configuration profile for a Windows 11 device.
+      > **Results**: After completing this exercise, you will have successfully created and assigned a Configuration policy for a Windows 11 device.
 
-## Exercise 2: Modify an assigned Configuration profile policy  
+## Exercise 2: Modify an assigned Configuration policy   
 
 ### Scenario
 
 There was an exception to Contoso's policy that specifies that members of the Developer department should not have the Privacy options blocked in Settings on their devices. This change should be implemented and tested.
 
-### Task 1: Change settings in an assigned Configuration profile
+### Task 1: Change settings in an assigned Configuration policy
 
 In this task you will modify the existing configuration profile by removing the Privacy restriction from the device settings.
 
@@ -349,7 +347,7 @@ In this task you will modify the existing configuration profile by removing the 
 
    ![](../media/94.png)
 
-### Task 2: Force device synchronization from Intune Manager admin center
+### Task 2: Force device synchronization from the Intune admin center
 
 In this task you will force a policy sync from the Intune admin center so the updated configuration applies to the device quickly.
 
@@ -379,6 +377,6 @@ In this task you will confirm on SEA-WS1 that the updated configuration has take
 
 4. Close all open windows and sign out of **SEA-WS1**.
 
-**Results**: After completing this exercise, you will have successfully modified an assigned a Configuration profile, modified a Configuration profile, and verified the changes.
+    > **Results**: After completing this exercise, you will have successfully modified an assigned a Configuration policy, and verified the changes.
 
 **END OF LAB**

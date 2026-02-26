@@ -84,9 +84,9 @@ In this task you will create enrollment restrictions that block Sales users from
 
    > Notice that there is a Default device type restriction that is assigned to **All Users**. This default restriction allows all device types.
 
-5. In the details pane, select the **Android restrictions** tab, and then select **Create restriction**.
+5. In the details pane, select the **Android restrictions (1)** tab, and then select **Create restriction (2)**.
 
-   ![](../media/p5t3s5.png)
+   ![](../media/1006.png)
 
 6. On the Create restriction page, in the Name box enter **Android Personal Device Restriction (1)**. Select **Next (2)**.
 

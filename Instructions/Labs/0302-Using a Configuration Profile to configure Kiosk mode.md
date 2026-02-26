@@ -1,8 +1,8 @@
-# Practice Lab: Using a Configuration Profile to configure Kiosk mode
+# Practice Lab: Using a Configuration Policy to configure Kiosk mode
 
 ## Summary
 
-In this lab, you use Microsoft Intune to create and apply a Configuration profile to run single-app Kiosk mode on a Windows 11 device.
+In this lab, you use Microsoft Intune to create and apply a Configuration policy to run single-app Kiosk mode on a Windows 11 device.
 
 ### Prerequisites
 
@@ -14,7 +14,7 @@ To following lab(s) must be completed before this lab:
 > Note: You will also need a mobile phone that can receive text messages used to secure Windows Hello sign in authentication to Azure AD.
 
 
-## Exercise 1: Create and apply a Configuration profile
+## Exercise 1: Create and apply a Configuration policy
 
 ### Scenario
 
@@ -117,7 +117,7 @@ In this task you will create a device group in Intune to target kiosk settings s
 
 11. On the **Groups | All groups** blade, verify that the **Contoso Kiosk Devices** group is displayed. You may need to select the Refresh button for the new group to become visible.
 
-### Task 3: Create a Configuration profile based on scenario requirements
+### Task 3: Create a Configuration policy based on scenario requirements
 
 In this task you will create a new Intune configuration profile that configures SEA-WS2 as a single-app, full-screen kiosk using Microsoft Edge in Public Browsing mode.
 
@@ -171,7 +171,7 @@ In this task you will create a new Intune configuration profile that configures 
 
 11. Close Microsoft Edge.
 
-### Task 4: Verify that the Configuration profile is applied
+### Task 4: Verify that the Configuration policy is applied
 
 In this task you will verify that the kiosk configuration has been applied by syncing the device and confirming it automatically signs in and launches Edge in kiosk mode.
 
@@ -201,8 +201,8 @@ In this task you will verify that the kiosk configuration has been applied by sy
 
 7. Restart **SEA-WS2**.
 
-   > Notice that SEA-WS2 automatically signs in and creates a profile. After the sign-in is complete, Microsoft Edge is displayed configured with InPrivate browsing. If SEA-WS2 does not sign in automatically, repeat steps 1-7 to ensure that the policy has refreshed on the device.
+   > Notice that SEA-WS2 automatically signs in and creates a user profile. After the sign-in is complete, Microsoft Edge is displayed configured with InPrivate browsing. If SEA-WS2 does not sign in automatically, repeat steps 1-7 to ensure that the policy has refreshed on the device.
 
-**Results**: After completing this exercise, you will have successfully created and assigned a Configuration profile to configure a Windows 11 device as a single-app kiosk.
+     > **Results**: After completing this exercise, you will have successfully created and assigned a configuration policy to configure a Windows 11 device as a single-app kiosk.
 
 **END OF LAB**

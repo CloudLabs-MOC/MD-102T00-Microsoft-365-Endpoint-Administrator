@@ -69,7 +69,7 @@ In this task you will create a new Windows 10 virtual machine in Hyper-V that wi
 
 1. In Actions click on **New(1)** and Click on **Virtual machine(2)**.
 
-   ![](media/001.png)
+   ![](../media/1051.png)
 
 1. In the before you begin page, click on **Next**.
 
@@ -176,6 +176,8 @@ In this task you will complete the Windows 10 setup on the VM and join it to the
    ![](media/018.png)
 
 1. Once Rebooted it asks for username and password. Enter **Admin** for username and **Pa55w.rd** for password.
+
+    ![](../media/1052.png)
 
 1. Once logged in to **SEA-W10-CL3** and search and select **Run** from Start menu to open Run command.
 
@@ -341,11 +343,17 @@ In this task you will reset the Windows 10 VM to simulate a brand-new device and
 
    ![](../media/628.png)
 
-4. Select **Next** and then select **Reset**.
+   ![](../media/1053.png)
 
-   >Note: Normally this task is not required for new deployment of physical devices. The device’s autopilot info is either provided by the manufacturer or can be obtained from the device prior to the OOBE. For the purposes of this lab, we must initiate a reset to simulate a new device OOBE.
+4. Select **Next** on Additional settings page and then select **Reset**.
 
-   >**Note**: This process can take 30-60 minutes and will reboot several times during the process.
+    ![](../media/1054.png)
+
+    ![](../media/1054.png)
+
+    **>Note:** Normally this task is not required for new deployment of physical devices. The device’s autopilot info is either provided by the manufacturer or can be obtained from the device prior to the OOBE. For the purposes of this lab, we must initiate a reset to simulate a new device OOBE.
+
+    >**Note**: This process can take 30-60 minutes and will reboot several times during the process.
 
 ### Task 7: Verify Autopilot deployment
 
@@ -382,6 +390,8 @@ In this task you will sign in to the reset device as Aaron, complete the Autopil
     ![](../media/634.png)
 
 7. On the **All set!** page, select **OK**.
+
+    ![](../media/1056.png)
 
 8. Select **Start** and select **Settings**. 
 

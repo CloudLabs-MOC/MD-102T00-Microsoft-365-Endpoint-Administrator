@@ -112,7 +112,7 @@ In this task you will sign in again as Alex Wilber to register MFA using your ph
 
    ![](../media/264.png)
 
-5. On the **Enter password (1)** page, enter the tenant password **Pa55-w.rd!** and select **Sign in (2)**.
+5. On the **Enter password (1)** page, enter the user password **Pa55-w.rd!** and select **Sign in (2)**.
 
    ![](../media/265.png)
 
@@ -239,7 +239,7 @@ In this task you will create a conditional access policy that requires Alex Wilb
 
    ![](../media/281.png)
 
-6. On the **New Conditional access policy** page, in the **Name** box enter **Contoso MFA Policy (1)**, then under **Assignments** select **0 users and groups selected (2)**.
+6. On the **New Conditional access policy** page, in the **Name** box enter **Contoso MFA Policy (1)**, then under **Assignments** select **0 users or agents (Preview) selected (2)**.
 
    ![](../media/282.png)
 
@@ -261,7 +261,7 @@ In this task you will create a conditional access policy that requires Alex Wilb
 
 11. On the **Select** section of the page, click **None** under Select specific resources.
 
-    ![](../media/286.png)
+    ![](../media/1020.png)
 
 12. On the **Select** page, select the check box next to **Office 365** and then click **Select**.
 
