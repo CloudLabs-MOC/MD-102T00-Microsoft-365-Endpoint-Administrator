@@ -18,6 +18,10 @@ In this task you will review the device registration settings in Entra ID to ens
 
     ![](../media/H2.png)
 
+    > **Note :** If you’re unable to switch the VM from the dropdown menu, you can also access the VM directly from the desktop of your Host VM.
+
+    ![](../media/1.png)
+
     ![](../media/p1t1s1.2.png)
 
 2. On the taskbar select **Microsoft Edge**, in the address bar type **https://entra.microsoft.com**, and then press **Enter**.

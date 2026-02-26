@@ -84,12 +84,16 @@ In this task you will sign in to the SEA-SVR1 server using the Contoso administr
 11. On the **Create new user** page, enter the following:
 
     - User Principal Name: **`ereeve` (1)**
+
     - Display Name: **Edmund Reeve (2)**
+
     - Uncheck **Auto-generated password (3)**
+
     - Next to **Password**, enter **Pa55-w.rd! (4)**
+
     - Select **Next:Properties (5)** located at the bottom of the page.
  
-      ![](../media/p1t1s14.png)
+        ![](../media/p1t1s14.png)
 
 1. Under the **Properties** tab.
 
@@ -240,6 +244,7 @@ In this task, you will disable the security defaults in the Entra admin center b
     
     ![](../media/p1t3s8.1.png)
 
+1. Next, type the following code to create a new user, and then press **Enter**. Be sure to replace **yourtenant** with your assigned tenant name:
 
     ```
     New-MgUser `
@@ -253,6 +258,8 @@ In this task, you will disable the security defaults in the Entra admin center b
     ```
 
    ![](../media/p1t3s8.2.png)
+
+1. Next, type the following code to create a new user, and then press **Enter**. Be sure to replace **yourtenant** with your assigned tenant name:
 
     ```
     New-MgUser `
@@ -276,7 +283,9 @@ In this task, you will disable the security defaults in the Entra admin center b
         -UserPrincipalName "AlexW@yourtenant.onmicrosoft.com" `
         -PasswordProfile $PWProfile -AccountEnabled `
         -Department "Support" -JobTitle "Support Executive"
-    ```    
+    ```  
+
+1. Next, type the following code to create a new user, and then press **Enter**. Be sure to replace **yourtenant** with your assigned tenant name:  
    
     ![](../media/p1t3s8.4.png)
 
