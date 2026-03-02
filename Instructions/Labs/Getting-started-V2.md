@@ -30,15 +30,9 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 ## Managing Your Virtual Machine
  
-1. Feel free to **Start, Stop, or Restart** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
-
-    - Once you finish using the lab for the day, please **stop or deallocate** the VM from the Resources tab as shown in the image below.
+1. Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands.
  
-    - **Label (2)** indicates **starting the VM**, and **label (3)** indicates **stopping or deallocating** it. Stopping or deallocating the VM helps preserve the VM uptime limit so you can continue working the next day without exhausting the available uptime.
- 
-    - Please note that once the lab is launched, the overall lab session cannot be paused and will continue to run until the allotted time is fully consumed. Only the VM itself can be stopped or deallocated as described above.
- 
-   ![Manage Your Virtual Machine](../media/res.png)
+      ![Manage Your Virtual Machine](../media/res.png)
 
 2. To Switch between the Virtual Machines, select the required VM from the dropdown.
 
