@@ -1,10 +1,10 @@
-# Practice Lab: Monitor device and user activity in Intune
+# Lab 11: Monitor device and user activity in Intune
 
 ## Summary
 
 In this lab, you will monitor user Sign-in activity, Audit logs, and device activity.
 
-> **!IMPORTANT**: Once you launch the track, you’ll have access to a virtual machine (VM) for **40 hours**. The displayed track duration of **30 days** indicates the time frame during which you can use your VM. Please plan your lab sessions accordingly. If the VM uptime of **40 hours** is fully exhausted before completing the labs, access will be lost. To avoid this and for detailed instructions on VM usage and stopping/deallocating the VM, refer to the Getting Started page.  
+> **!IMPORTANT**: Once you launch the track, you’ll have access to a virtual machine (VM) for **40 hours**. The displayed track duration of **4 days 8 hours (104 hours)** indicates the time frame during which you can use your VM. Please plan your lab sessions accordingly. If the VM uptime of **40 hours** is fully exhausted before completing the labs, access will be lost. To avoid this and for detailed instructions on VM usage and stopping/deallocating the VM, refer to the Getting Started page.  
 
 > If the full 40 hours of VM uptime is exhausted, the VM will no longer be accessible, and **the lab duration cannot be extended**.
 
@@ -102,4 +102,6 @@ In this task you will examine device activity in Intune, including hardware deta
 
 **Results**: After completing this exercise, you will have successfully monitored user Sign-in activity, Audit logs, and device activity.
 
-**END OF LAB**
+Click on **Next** from the lower right corner to move on to the next page.
+
+  ![](../media/pgn.png)

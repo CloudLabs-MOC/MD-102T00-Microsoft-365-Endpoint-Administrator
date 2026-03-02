@@ -1,10 +1,10 @@
-# Practice Lab: Deploying Windows 11 using Microsoft Deployment Toolkit
+# Lab 19: Deploying Windows 11 using Microsoft Deployment Toolkit
 
 ## Summary
 
 In this lab, you will use the Microsoft Deployment Toolkit to create and deploy a Windows 11 operating system image. 
 
-> **!IMPORTANT**: Once you launch the track, you’ll have access to a virtual machine (VM) for **40 hours**. The displayed track duration of **30 days** indicates the time frame during which you can use your VM. Please plan your lab sessions accordingly. If the VM uptime of **40 hours** is fully exhausted before completing the labs, access will be lost. To avoid this and for detailed instructions on VM usage and stopping/deallocating the VM, refer to the Getting Started page.  
+> **!IMPORTANT**: Once you launch the track, you’ll have access to a virtual machine (VM) for **40 hours**. The displayed track duration of **4 days 8 hours (104 hours)** indicates the time frame during which you can use your VM. Please plan your lab sessions accordingly. If the VM uptime of **40 hours** is fully exhausted before completing the labs, access will be lost. To avoid this and for detailed instructions on VM usage and stopping/deallocating the VM, refer to the Getting Started page.  
 
 > If the full 40 hours of VM uptime is exhausted, the VM will no longer be accessible, and **the lab duration cannot be extended**.
 
@@ -309,6 +309,7 @@ In this task you will create a new virtual machine and use the MDT boot image to
      ![](../media/557.png)
 
 16. Select **Security (1)**, and then select the check box next to **Enable Trusted Platform Module (2)**.
+
      ![](../media/558.png)
 
 17. Select **Processor (1)**, and then change the number of virtual processors to **2 (2)**. Select **OK (3)** to close the Settings dialog box.
@@ -408,4 +409,6 @@ In this task you will create a new virtual machine and use the MDT boot image to
 
 **Results**: After completing this exercise, you will have successfully used the Microsoft Deployment Toolkit to create and deploy a Windows 11 workstation.
 
-**END OF LAB**
+Click on **Next** from the lower right corner to move on to the next page.
+
+  ![](../media/pgn.png)
