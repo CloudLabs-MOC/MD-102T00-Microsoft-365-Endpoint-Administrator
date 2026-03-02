@@ -1,10 +1,10 @@
-# Practice Lab: Deploying Windows with Autopilot
+# Lab 20: Deploying Windows with Autopilot
 
 ## Summary
 
 In this lab you will learn how provision a Windows 11 device with Autopilot using User-driven mode.
 
-> **!IMPORTANT**: Once you launch the track, you’ll have access to a virtual machine (VM) for **40 hours**. The displayed track duration of **30 days** indicates the time frame during which you can use your VM. Please plan your lab sessions accordingly. If the VM uptime of **40 hours** is fully exhausted before completing the labs, access will be lost. To avoid this and for detailed instructions on VM usage and stopping/deallocating the VM, refer to the Getting Started page.  
+> **!IMPORTANT**: Once you launch the track, you’ll have access to a virtual machine (VM) for **40 hours**. The displayed track duration of **4 days 8 hours (104 hours)** indicates the time frame during which you can use your VM. Please plan your lab sessions accordingly. If the VM uptime of **40 hours** is fully exhausted before completing the labs, access will be lost. To avoid this and for detailed instructions on VM usage and stopping/deallocating the VM, refer to the Getting Started page.  
 
 > If the full 40 hours of VM uptime is exhausted, the VM will no longer be accessible, and **the lab duration cannot be extended**.
 
@@ -259,7 +259,7 @@ In this task you will import the device’s Autopilot CSV into Intune and create
 
 2. In **Microsoft Edge**, navigate to **https://intune.microsoft.com**. Sign in with your  **<inject key="AzureAdUserEmail"></inject>** account.
 
-    >Note: If prompted to register for MFA. Follow the same procedures you used earlier in the course to add your phone number.
+    > **Note:** If prompted to register for MFA. Follow the same procedures you used earlier in the course to add your phone number.
 
 4. In the **Microsoft Intune admin center** select **Devices (1)**, then in the **Device onboarding** section select **Enrollment (2)**, and in the **Windows** tab scroll down to **Windows Autopilot (3)** and select **Devices (4)**.
 
@@ -440,5 +440,6 @@ In this task you will sign in to the reset device as Aaron, complete the Autopil
 18. Close Microsoft Edge.
 
 **Results**: After completing this exercise, you will have provisioned a Windows device with Autopilot using User-driven mode.
+Click on **Next** from the lower right corner to move on to the next page.
 
-**END OF LAB**
+  ![](../media/pgn.png)

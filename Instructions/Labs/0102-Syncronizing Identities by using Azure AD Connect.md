@@ -1,10 +1,10 @@
-# Practice Lab: Synchronizing Identities by using Microsoft Entra Connect 
+# Lab 02: Synchronizing Identities by using Microsoft Entra Connect 
 
 ## Summary
 
 In this lab, you will configure synchronization from Active Directory Domain Services to Microsoft Entra ID.
 
-> **!IMPORTANT**: Once you launch the track, you’ll have access to a virtual machine (VM) for **40 hours**. The displayed track duration of **30 days** indicates the time frame during which you can use your VM. Please plan your lab sessions accordingly. If the VM uptime of **40 hours** is fully exhausted before completing the labs, access will be lost. To avoid this and for detailed instructions on VM usage and stopping/deallocating the VM, refer to the Getting Started page.  
+> **!IMPORTANT**: Once you launch the track, you’ll have access to a virtual machine (VM) for **40 hours**. The displayed track duration of **4 days 8 hours (104 hours)** indicates the time frame during which you can use your VM. Please plan your lab sessions accordingly. If the VM uptime of **40 hours** is fully exhausted before completing the labs, access will be lost. To avoid this and for detailed instructions on VM usage and stopping/deallocating the VM, refer to the Getting Started page.  
 
 > If the full 40 hours of VM uptime is exhausted, the VM will no longer be accessible, and **the lab duration cannot be extended**.
 
@@ -162,4 +162,6 @@ In this task, you will verify that the synchronization worked by checking the sy
 
 **Results**: After completing this exercise, you will have successfully configured Microsoft Entra Connect to synchronize identity from Active Directory Domain Services to Entra ID.
 
-**END OF LAB**
+Click on **Next** from the lower right corner to move on to the next page.
+
+  ![](../media/pgn.png)

@@ -1,10 +1,10 @@
-# Practice Lab: Using a Configuration policy to configure iOS and iPadOS Wi-Fi settings
+# Lab 09: Using a Configuration policy to configure iOS and iPadOS Wi-Fi settings
 
 ## Summary
 
 In this lab, you use Microsoft Intune to create and apply a Configuration policy to run configure Wi-Fi settings for iOS and iPadOS devices.
 
-> **!IMPORTANT**: Once you launch the track, you’ll have access to a virtual machine (VM) for **40 hours**. The displayed track duration of **30 days** indicates the time frame during which you can use your VM. Please plan your lab sessions accordingly. If the VM uptime of **40 hours** is fully exhausted before completing the labs, access will be lost. To avoid this and for detailed instructions on VM usage and stopping/deallocating the VM, refer to the Getting Started page.  
+> **!IMPORTANT**: Once you launch the track, you’ll have access to a virtual machine (VM) for **40 hours**. The displayed track duration of **4 days 8 hours (104 hours)** indicates the time frame during which you can use your VM. Please plan your lab sessions accordingly. If the VM uptime of **40 hours** is fully exhausted before completing the labs, access will be lost. To avoid this and for detailed instructions on VM usage and stopping/deallocating the VM, refer to the Getting Started page.  
 
 > If the full 40 hours of VM uptime is exhausted, the VM will no longer be accessible, and **the lab duration cannot be extended**.
 
@@ -71,9 +71,9 @@ In this task you will create and assign an Intune configuration profile that aut
 4. In the **Create a profile** blade, select the following options, and then select **Create**:
 
     - Platform: **iOS/iPadOS (1)**
-    
+
     - Profile type: **Templates (2)**
-    
+
       ![](../media/134.png)
 
 5. Select **Wi-Fi (1)** from the list of templates, and then select **Create (2)**.
@@ -119,4 +119,6 @@ In this task you will create and assign an Intune configuration profile that aut
 
 **Results**: After completing this exercise, you will have successfully created and assigned a Configuration policy to configure Wi-Fi settings for iOS and iPadOS devices.
 
-**END OF LAB**
+Click on **Next** from the lower right corner to move on to the next page.
+
+  ![](../media/pgn.png)
