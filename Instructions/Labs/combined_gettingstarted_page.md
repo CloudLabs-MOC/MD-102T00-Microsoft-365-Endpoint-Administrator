@@ -8,77 +8,70 @@ Welcome to your MD-102: Endpoint Administrator workshop! We've prepared a seamle
 
 ## Overview
 
-In these hands-on labs, you will develop the skills required to build, deploy, monitor, and troubleshoot AI-powered cloud solutions on Microsoft Azure. Working as an Azure Developer, you will implement Azure compute and containerization patterns, build serverless APIs with Azure Functions, and integrate services using event-driven and message-based architectures such as Azure Service Bus and Event Grid. The labs also cover Azure data services that support AI workloads, including Azure Cosmos DB for NoSQL, Azure Database for PostgreSQL with pgvector, and Azure Managed Redis for caching, streaming, and vector search. By completing these labs, you will gain the practical experience needed to connect services, orchestrate AI workflows, and build secure, scalable, and observable AI-driven applications on Azure.
+In these hands-on labs, you will gain practical experience in managing and securing modern endpoints in a Microsoft 365 environment. The labs are designed to help you understand how to configure identities, enroll and manage devices, deploy applications, enforce compliance, protect endpoints, and support secure Windows deployment and refresh scenarios using Microsoft Intune, Microsoft Entra ID, and related Microsoft 365 tools.
 
 ## Objectives
 
 By the end of these labs, you will be able to:
 
-1. **Provision and configure Azure AI infrastructure:** Deploy and manage Azure AI resources, Azure Functions, Azure Container Apps, Azure Container Registry, and supporting Azure services required for AI-powered applications.
+1. **Manage Microsoft Entra identities and synchronization:** Configure and manage identities, user accounts, and directory synchronization using Microsoft Entra ID and Azure AD Connect.
 
-2. **Develop cloud-native AI applications:** Build serverless APIs, containerized applications, and backend services that integrate Azure AI capabilities using the Azure SDKs, REST APIs, and modern application development patterns.
+2. **Configure device registration and enrollment:** Set up Azure AD join, device registration, and device enrollment into Microsoft Intune for Windows, iOS, and iPadOS devices.
 
-3. **Implement event-driven and distributed architectures:** Design and integrate applications using Azure Service Bus, Azure Event Grid, and asynchronous messaging to enable scalable, loosely coupled AI workflows.
+3. **Deploy and manage endpoint configurations:** Create and assign configuration profiles, configure kiosk mode, and apply Wi-Fi settings to supported devices.
 
-4. **Work with AI-ready data platforms:** Store, retrieve, and manage structured, unstructured, and vectorized data using Azure Cosmos DB for NoSQL, Azure Database for PostgreSQL with pgvector, Azure Managed Redis, and Azure Storage.
+4. **Validate and monitor endpoint management:** Use Group Policy Analytics to assess GPO support and monitor device and user activity in Intune.
 
-5. **Build intelligent search and retrieval solutions:** Implement vector search, semantic retrieval, and Retrieval-Augmented Generation (RAG) scenarios by combining Azure AI Search with vector-enabled databases and AI models.
+5. **Deploy and protect applications:** Publish cloud apps, configure app protection policies, and manage app security for mobile devices.
 
-6. **Deploy and manage containerized workloads:** Build, publish, deploy, and maintain container images using Azure Container Registry, Azure Container Apps, and Azure Container Registry Tasks.
+6. **Secure access and enforce compliance:** Configure multi-factor authentication, self-service password reset, and device compliance policies to strengthen security.
 
-7. **Secure AI applications and cloud resources:** Configure authentication, authorization, secrets management, managed identities, and network security to protect applications and Azure resources.
+7. **Implement endpoint security controls:** Configure endpoint security policies, manage disk encryption, and protect devices from unauthorized access.
 
-8. **Monitor, troubleshoot, and optimize applications:** Collect telemetry, diagnose failures, monitor application health, and improve the performance, scalability, and reliability of AI-powered cloud solutions using Azure monitoring and diagnostic tools.
-
-9. **Integrate Azure services into end-to-end AI workflows:** Connect compute, messaging, storage, databases, and AI services to build automated, scalable, and production-ready intelligent applications.
-
-10. **Apply cloud-native development best practices:** Build resilient, maintainable, and observable AI applications by following modern Azure development patterns, automation techniques, and operational best practices.
+8. **Deploy and refresh Windows devices:** Use Microsoft Deployment Toolkit, Windows Autopilot, and Autopilot Reset/Self-Deploying Mode to deploy and recover Windows devices efficiently.
 
 ## Pre-requisites
 
-- Experience with Azure development concepts.
-- Proficiency in a programming language such as C# or Python is recommended.
-- Familiarity with Azure compute, containerization, serverless development, event-driven architectures, data services, and REST APIs will help learners get the most from this course.
+- Basic understanding of Microsoft 365 and Microsoft Entra ID concepts.
+- Familiarity with Windows devices, user accounts, and endpoint management fundamentals.
+- Basic knowledge of Intune, Group Policy, and device security concepts is helpful.
+- Access required Microsoft 365 resources for completing the exercises.
 
 ## Architecture
 
-The lab architecture demonstrates how Azure's cloud-native services work together to build, deploy, integrate, and operate intelligent AI applications. Throughout these labs, you will provision compute resources, implement serverless and containerized workloads, connect applications using event-driven messaging, manage AI-ready data stores, and build secure, scalable, and observable AI-powered solutions.
+The lab architecture is built around the core services used to manage and secure endpoints in a Microsoft 365 environment. Throughout these labs, you will work with identity services, device enrollment and management tools, security and compliance controls, and Windows deployment capabilities to provide a complete endpoint administration experience.
 
-1. **Azure AI Services and Azure OpenAI:** Provide the intelligence layer for AI-powered applications, enabling capabilities such as natural language processing, document understanding, embeddings, and generative AI experiences.
+1. **Microsoft Entra ID and Azure AD Connect:** Provide identity management, authentication, and directory synchronization services for users and devices.
 
-2. **Azure Compute Services:** Azure Functions, Azure Container Apps, and Azure Container Registry host and execute serverless APIs, containerized applications, and background processing workloads that power AI solutions.
+2. **Microsoft Intune / Endpoint Manager:** Enables device enrollment, configuration, policy enforcement, app deployment, and monitoring across corporate devices.
 
-3. **Azure Messaging and Integration Services:** Azure Service Bus and Azure Event Grid enable reliable, asynchronous communication between distributed services, allowing applications to respond to events and orchestrate AI workflows.
+3. **Configuration Profiles and Device Settings:** Allow administrators to define and apply device settings such as Wi-Fi, kiosk restrictions, and other management policies.
 
-4. **Azure Data Services:** Azure Cosmos DB for NoSQL, Azure Database for PostgreSQL with pgvector, Azure Managed Redis, and Azure Storage provide persistent storage, vector search, caching, streaming, and document storage for AI-enabled applications.
+4. **Compliance and Security Policies:** Help ensure that devices meet organizational standards through device compliance, MFA, self-service password reset, and endpoint security policies.
 
-5. **Azure Developer Tools:** Azure Portal, Azure CLI, Visual Studio Code, Azure SDKs, and REST APIs are used to provision infrastructure, deploy applications, manage cloud resources, monitor workloads, and troubleshoot AI solutions throughout the labs.
+5. **Windows Deployment Services:** Support deployment and recovery of Windows devices using Microsoft Deployment Toolkit, Windows Autopilot, and Autopilot Reset/Self-Deploying Mode.
 
 ## Explanation of Components
 
-1. **Azure AI Services & Azure OpenAI:** Provide prebuilt and generative AI capabilities that enable applications to understand, generate, and process text, images, documents, and other content using REST APIs and Azure SDKs.
+1. **Microsoft Entra ID:** Provides identity and access management for users, groups, and device authentication in Microsoft 365.
 
-2. **Azure Functions:** Executes event-driven, serverless code that processes requests, orchestrates AI workflows, and integrates Azure services without managing infrastructure.
+2. **Azure AD Connect:** Synchronizes on-premises identities with Microsoft Entra ID to support hybrid identity scenarios.
 
-3. **Azure Container Apps:** Hosts containerized AI applications and APIs, providing scalable, managed execution for microservices and background processing workloads.
+3. **Microsoft Intune:** Manages device enrollment, configuration profiles, app deployment, compliance, and endpoint security.
 
-4. **Azure Container Registry (ACR):** Stores and manages container images used by Azure Container Apps and other Azure compute services, supporting secure image versioning and deployment.
+4. **Configuration Profiles:** Define security and device settings that can be applied to users and devices.
 
-5. **Azure Service Bus:** Provides reliable message queues and publish/subscribe messaging that decouple application components and enable asynchronous communication between AI services.
+5. **Group Policy Analytics:** Helps evaluate whether existing Group Policy objects are compatible with modern management approaches in Intune.
 
-6. **Azure Event Grid:** Delivers events from Azure resources and applications, allowing services to react automatically to changes and trigger downstream AI workflows.
+6. **Compliance Policies:** Ensure devices meet required standards before being allowed to access company resources.
 
-7. **Azure Cosmos DB for NoSQL:** Stores application data, conversation history, metadata, and other structured information using a globally distributed NoSQL database.
+7. **App Protection Policies:** Protect organizational data on mobile devices without requiring full device management.
 
-8. **Azure Database for PostgreSQL with pgvector:** Stores relational data while enabling vector similarity search, supporting Retrieval-Augmented Generation (RAG) and semantic search scenarios.
+8. **Endpoint Security Policies:** Manage security baselines, antivirus, firewall, disk encryption, and other protection settings.
 
-9. **Azure Managed Redis:** Improves application performance through distributed caching, streaming, session management, and vector search capabilities.
+9. **Windows Autopilot:** Simplifies and automates the provisioning of new Windows devices.
 
-10. **Azure Storage:** Provides secure storage for documents, images, datasets, application assets, and other files processed by AI applications.
-
-11. **Azure SDKs & REST APIs:** Enable developers to integrate Azure services into applications, automate workflows, and interact programmatically with Azure resources.
-
-12. **Azure Portal & Azure CLI:** Provide graphical and command-line tools for provisioning resources, deploying applications, monitoring services, and managing Azure infrastructure throughout the labs.
+10. **Microsoft Deployment Toolkit:** Provides a traditional deployment approach for Windows 11 imaging and operating system deployment.
 
 ## Accessing Your Lab Environment
  
