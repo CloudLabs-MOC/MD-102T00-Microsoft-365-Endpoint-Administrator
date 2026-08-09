@@ -20,27 +20,25 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
  
-  ![Explore Lab Resources](../media/env-1.png)
+  ![Explore Lab Resources](../media/envtab.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-![Use the Split Window Feature](../media/spl.png)
- 
+![Use the Split Window Feature](../media/splittab.png)
+
+## Lab Progress
+
+You can use the **Progress** tab to track your progress while working on the lab. A score will be provided after successful validation.
+
+![Use the Split Window Feature](../media/progresstab.png) 
+
 ## Managing Your Virtual Machine
  
-1. Feel free to **Start, Stop, or Restart** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands.
-
-    - Once you finish using the lab for the day, please **stop or deallocate** the VM from the Resources tab as shown in the image below.
+1. Feel free to **Start, Restart, or Stop (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
  
-    - **Label (2)** indicates **Starting the VM.** 
-    
-    - **label (3)** indicates **Stopping or Deallocating** it. This option will stops the VM and helps preserve the VM uptime limit so you can continue working the next day without exhausting the available uptime.
- 
-    - Please note that once the lab is launched, the overall lab session cannot be paused and will continue to run until the allotted time is fully consumed. Only the VM itself can be stopped or deallocated as described above.
- 
-      ![Manage Your Virtual Machine](../media/1234.png)
+      ![Manage Your Virtual Machine](../media/restab.png)
 
 2. To Switch between the Virtual Machines, select the required VM from the dropdown.
 
